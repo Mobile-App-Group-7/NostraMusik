@@ -96,7 +96,7 @@ For NotraMuse, we identified the following “must-have” features which a user
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://excalidraw.com/#json=3uVGkNZAHnULOCkX6VkLW,mz4Yn5VvIrfF6qlV0suhVA" width=600>
+<img src="https://github.com/NPlanche/Mobile-Apps-Projects/blob/main/NotraMuse.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
