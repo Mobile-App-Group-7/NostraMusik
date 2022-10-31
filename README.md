@@ -98,8 +98,11 @@ For NotraMuse, we identified the following “must-have” features which a user
 <img src="https://github.com/NPlanche/Mobile-Apps-Projects/blob/main/NotraMuse.png" width=600>
 
 ### [BONUS] Digital  Wireframes & Mockups
+<img src="https://github.com/NPlanche/Mobile-Apps-Projects/blob/main/NotraMuseWireframe_Digital.png" width=600>
+
 
 ### [BONUS] Interactive Prototype
+<img src='http://g.recordit.co/QW8IvcNX84.gif' width='' alt='Video Walkthrough' />
 
 ## Schema 
 [This section will be completed in Unit 9]
