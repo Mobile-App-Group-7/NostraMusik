@@ -1,7 +1,7 @@
 App Design Project - README
 ===
 
-# NotraMuse
+# NotraMuse - Group 7
 
 ## Table of Contents
 1. [Overview](#Overview)
