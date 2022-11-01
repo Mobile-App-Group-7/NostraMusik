@@ -103,7 +103,7 @@ For NotraMuse, we identified the following “must-have” features which a user
 
 
 ### [BONUS] Interactive Prototype
-<img src='http://g.recordit.co/QW8IvcNX84.gif' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/623MjtbyCU.gif' width='' alt='Video Walkthrough' />
 
 ## Schema 
 [This section will be completed in Unit 9]
