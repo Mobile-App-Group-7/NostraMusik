@@ -38,7 +38,7 @@ For NotraMuse, we identified the following “must-have” features which a user
 * User can see detailed information about a track, artist, album
 * User can add searched tracks to personalize playlist
 * User can play previews from saved tracks on the playlist
-* * User can play previews from searched tracks
+* User can play previews from searched tracks
 * User can visualize own profile user information 
 
 **Optional Nice-to-have Stories**
