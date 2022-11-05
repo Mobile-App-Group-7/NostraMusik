@@ -135,7 +135,7 @@ For NotraMuse, we identified the following “must-have” features which a user
    | release       | DateTime | date the song was released (default field) |  
    | track_no      | Number   | track number |
 
-#### UserAlbums 
+#### UserAlbums (optional)
    
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
@@ -145,7 +145,7 @@ For NotraMuse, we identified the following “must-have” features which a user
    | album_img     | File     | Cover image of the album |
 
    
-#### Albums
+#### Albums (optional)
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
