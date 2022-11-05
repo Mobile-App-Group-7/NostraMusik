@@ -1,0 +1,16 @@
+.DS_Store
+
+xcuserdata/
+
+*.xcscmblueprint
+*.xccheckout
+
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+timeline.xctimeline
+playground.xcworkspace
+
+.build/
