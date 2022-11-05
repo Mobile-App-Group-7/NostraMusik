@@ -108,7 +108,55 @@ For NotraMuse, we identified the following “must-have” features which a user
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### User
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | username      | String   | Username of the user |
+   | image         | String   | Password of the user |
+   
+#### UserPlaylists
+   
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | creator       | Pointer to user | Name of the playlist creator |
+   | name          | String   | Name of the playlist |
+   | playlist_img  | File     | Cover image of the playlist |
+   | songIds       | Array pointers to songs  | An array of ids of songs that are in the playlist |
+   
+#### Songs
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user's playlist (default field) |
+   | name          | String   | Name of the song |
+   | cover_image   | file     | cover image of the song |
+   | album_name    | String   | Name of the album this song belongs to |
+   | release       | DateTime | date the song was released (default field) |  
+   | track_no      | Number   | track number |
+
+#### UserAlbums 
+   
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user's album (default field) |
+   | creator       | Pointer to user | Name of the playlist creator |
+   | albumID       | Pointer to album| Name of the album |
+   | album_img     | File     | Cover image of the album |
+
+   
+#### Albums
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | name          | String   | Name of the album | 
+   | cover_image   | file     | cover image of the album|
+   | artist        | string   | name of the artist|  
+   | tracks        | JSON Object| Contains all the tracks in the album|
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
