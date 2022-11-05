@@ -106,7 +106,6 @@ For NotraMuse, we identified the following “must-have” features which a user
 <img src='http://g.recordit.co/623MjtbyCU.gif' width='' alt='Video Walkthrough' />
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
 #### User
 
