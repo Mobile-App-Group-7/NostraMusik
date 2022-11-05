@@ -50,7 +50,6 @@ For NotraMuse, we identified the following “must-have” features which a user
 * User has the ability to traverse over the top artist, tracks and albums on the current location
 * User can do customize search for only tracks, only artist and only albums
 * User can do combination of filter cutomize search
-* User can see details of top artist, tracks and albums world wide and default location set as the U.S.
 * User can edit profile name, add description and profile picture
 
 ### 2. Screen Archetypes
