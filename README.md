@@ -158,9 +158,121 @@ For NotraMuse, we identified the following “must-have” features which a user
    | tracks        | JSON Object| Contains all the tracks in the album|
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+List of network requests by screen:
+- Login/Sign Up Screen
+    - (Read/GET) Verify user login credentials 
+
+    ```swift
+    let username = userField.text!
+    let  password = passwordField.text!
+
+    PFUser.logInWithUsername(inBackground: username, password: password) {(user, error) in
+    if user != nil{
+        self.performSegue(withIdentifier: "loginSegue", sender: nil)
+    } else {
+        print("Error: \(String(describing: error))")
+    }
+    ```
+
+
+    - (Create/POST) Create a new user object
+    
+    ```swift
+    let user = PFUser()
+            user.username = userField.text
+            user.password = passwordField.text
+
+            user.signUpInBackground{ (success ,error) in
+                if success{
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+    ```
+- Home Feed Screen
+    - None
+- Profile Screen
+    - (Read/GET) Query logged in user object
+    ```swift
+    let query = PFQuery(className:"User")
+    query.whereKey("Username", equalTo:"SampleUser")
+    query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+        if let error = error {
+            // Log details of the failure
+            print(error.localizedDescription)
+        } else if let objects = objects {
+            // The find succeeded.
+            print("Successfully retrieved user information.")
+            // Do something with the found objects
+            user = objects
+        }
+    }
+    ```
+- Search Screen
+    - (Create/POST) Create a new track object on user playlist
+    ```swift
+    let track = PFObject(className: "Playlist")
+        
+        track["user"] = PFUser.current()!
+        track["title"] = track_title!
+        track["artist"] = artist!
+        
+        let imageData = uploadImage.image!.pngData()
+        let file = PFFileObject(name: "image.png", data: imageData!)
+        track["artist_pic"] = file
+
+        track["album"] = album!
+        
+        track.saveInBackground{  (success, error) in
+            usleep(3000)
+            if success {
+                print("saved!")
+            
+            } else {
+                print("Error!")
+            }
+        }
+    ```
+- Playlist Screen
+    - (Read/GET) Query all saved tracks where user is author
+    ```swift
+    let query = PFQuery(className:"Playlist")
+    query.whereKey("user", equalTo: currentUser)
+    query.order(byDescending: "updatedAt")
+    query.findObjectsInBackground { (tracks: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let tracks = tracks {
+          print("Successfully retrieved user's playlist.")
+       }
+    }
+    ```
+- Detail Screen
+    - None
+
+#### [OPTIONAL:] Existing API Endpoints
+##### last.fm API
+- Base URL - [https://www.last.fm/api](https://www.last.fm/api)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /tag.getTopTags | get the top global tags like rock, electronic, hip-hop
+    `GET`    | /tag.gettopartists&tag= | get all the top artists from a passed tag
+    `GET`    | /tag.gettoptracks&tag= | get all the top tracks from a passed tag
+    `GET`    | /tag.gettopalbums&tag= | get all the top albums from a passed tag
+    `GET`    | /geo.gettoptracks&country= | get all the top tracks from the passed country
+    `GET`    | /geo.gettopartists&country= | get all the top artist from the passed country
+    
+
+##### Deezer API
+- Base URL - [https://api.deezer.com](https://api.deezer.com)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /artist/artist_id | Receive artist info by id
+    `GET`    | /artist/artist_id/albums | Get all info on all of artist's albums
+    `GET`    | /album/album_id | Get info on a specific album by id
+    `GET`    | /album/album_id/tracks | Get info on that specific albums tracks 
+    `GET`    | /track/track_id | Get info about that specific track by id 
+    `GET`    | /search?q=word | Search query for anything that contains given word
+    `GET`    | /chart | Get top artist,tracks, albums, playlist, and podcast 
 
 ## Authors
 
