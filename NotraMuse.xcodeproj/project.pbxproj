@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB1947A24DF83370BD2D8CA /* Pods_NotraMuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C9D586CCE5C3859FA0C5F9 /* Pods_NotraMuse.framework */; };
 		A949CB8D2916D04A007995D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CB8C2916D04A007995D9 /* AppDelegate.swift */; };
 		A949CB8F2916D04A007995D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CB8E2916D04A007995D9 /* SceneDelegate.swift */; };
 		A949CB912916D04A007995D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CB902916D04A007995D9 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00DE3247BA0402664671A013 /* Pods-NotraMuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.release.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.release.xcconfig"; sourceTree = "<group>"; };
+		42C9D586CCE5C3859FA0C5F9 /* Pods_NotraMuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotraMuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		614F565F7F3FEA917E72998F /* Pods-NotraMuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.debug.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.debug.xcconfig"; sourceTree = "<group>"; };
 		A949CB892916D04A007995D9 /* NotraMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotraMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A949CB8C2916D04A007995D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A949CB8E2916D04A007995D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB1947A24DF83370BD2D8CA /* Pods_NotraMuse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35019B07BFF26AE3BE481031 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42C9D586CCE5C3859FA0C5F9 /* Pods_NotraMuse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86FE70757F321801BB5CDE7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				614F565F7F3FEA917E72998F /* Pods-NotraMuse.debug.xcconfig */,
+				00DE3247BA0402664671A013 /* Pods-NotraMuse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A949CB802916D04A007995D9 = {
 			isa = PBXGroup;
 			children = (
 				A949CB8B2916D04A007995D9 /* NotraMuse */,
 				A949CB8A2916D04A007995D9 /* Products */,
+				86FE70757F321801BB5CDE7E /* Pods */,
+				35019B07BFF26AE3BE481031 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A949CB9D2916D04B007995D9 /* Build configuration list for PBXNativeTarget "NotraMuse" */;
 			buildPhases = (
+				8F751145E92F83D7407975F1 /* [CP] Check Pods Manifest.lock */,
 				A949CB852916D04A007995D9 /* Sources */,
 				A949CB862916D04A007995D9 /* Frameworks */,
 				A949CB872916D04A007995D9 /* Resources */,
+				85DBEF4D52D07C4A288347FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85DBEF4D52D07C4A288347FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotraMuse/Pods-NotraMuse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotraMuse/Pods-NotraMuse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotraMuse/Pods-NotraMuse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F751145E92F83D7407975F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotraMuse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A949CB852916D04A007995D9 /* Sources */ = {
@@ -282,12 +350,13 @@
 		};
 		A949CB9E2916D04B007995D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614F565F7F3FEA917E72998F /* Pods-NotraMuse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62A46A45ND;
+				DEVELOPMENT_TEAM = 6KX735524S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NotraMuse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = FAU.NotraMuse;
+				PRODUCT_BUNDLE_IDENTIFIER = FAUNotraMuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,12 +379,13 @@
 		};
 		A949CB9F2916D04B007995D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DE3247BA0402664671A013 /* Pods-NotraMuse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62A46A45ND;
+				DEVELOPMENT_TEAM = 6KX735524S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NotraMuse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,7 +398,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = FAU.NotraMuse;
+				PRODUCT_BUNDLE_IDENTIFIER = FAUNotraMuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
