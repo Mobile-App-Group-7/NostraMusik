@@ -30,6 +30,7 @@ class LoginViewController: UIViewController {
             if success {
                 print("Successful Sign Up")
                 self.SetUpUserInfo()
+                //create userPlaylist
                 self.performSegue(withIdentifier: "SuccessfulLogSIgnUser", sender: nil)
             }else{
                 print("Error During Sign Up: \(error?.localizedDescription)")
