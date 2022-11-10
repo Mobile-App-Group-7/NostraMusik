@@ -62,7 +62,7 @@ class ProfileViewController: UIViewController {
     
     @IBAction func DeleteUserAccount(_ sender: Any) {
         if(PFUser.current() != nil) {
-            DeleteUserAlbum()//missing delete user playlist
+            DeleteUserAlbum()
             let main = UIStoryboard(name: "Main", bundle: nil)
             let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
             guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else {return}
@@ -70,7 +70,7 @@ class ProfileViewController: UIViewController {
         }
     }
     
-    func DeleteUserAlbum(){
+    func DeleteUserAlbum() {
         
         let query = PFQuery(className: "AlbumServer")
         
@@ -83,10 +83,10 @@ class ProfileViewController: UIViewController {
                     PFObject.deleteAll(inBackground: posts) { (succeeded, error) in
                         if (succeeded) {
                             print("All the Albums was deleted")// The array of objects was successfully deleted.
-                            self.DeleteUserPlaylist()//missing delete user albums
                         } else {
                             print("Error \(error?.localizedDescription)")// There was an error. Check the errors localizedDescription.
                         }
+                        self.DeleteUserPlaylist()//missing delete user albums
                     }
                 }else{
                     print("Error Objects: \(error?.localizedDescription)")
@@ -106,15 +106,24 @@ class ProfileViewController: UIViewController {
                     PFObject.deleteAll(inBackground: posts) { (succeeded, error) in
                         if (succeeded) {
                             print("All the Tracks was deleted")// The array of objects was successfully deleted.
-                            PFUser.current()!.deleteInBackground() //delete current user
                         } else {
                             print("Error \(error?.localizedDescription)")// There was an error. Check the errors localizedDescription.
                         }
+                        self.DeleteUserAccount()
                     }
                 }else{
                     print("Error Objects: \(error?.localizedDescription)")
                 }
          }
+    }
+    
+    func DeleteUserAccount() {
+        if PFUser.current() != nil {
+            PFUser.current()!.deleteInBackground(block: { (deleteSuccessful, error) -> Void in
+                    print("success = \(deleteSuccessful)")
+                    PFUser.logOut()
+                })
+        }
     }
     
     func DeleteUserPlaylist(){
@@ -129,10 +138,10 @@ class ProfileViewController: UIViewController {
                     PFObject.deleteAll(inBackground: posts) { (succeeded, error) in
                         if (succeeded) {
                             print("All the playlist was deleted")// The array of objects was successfully deleted.
-                            self.DeleteUserTracks()//missing delete user tracks
                         } else {
                             print("Error \(error?.localizedDescription)")// There was an error. Check the errors localizedDescription.
                         }
+                        self.DeleteUserTracks()//missing delete user tracks
                     }
                 }else{
                     print("Error Objects: \(error?.localizedDescription)")

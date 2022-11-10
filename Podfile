@@ -7,5 +7,6 @@ target 'NotraMuse' do
 
   # Pods for NotraMuse
   pod 'Parse'
+  pod 'AlamofireImage'
 
 end

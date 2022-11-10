@@ -7,12 +7,21 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
 class CreationOfObjectViewController: UIViewController {
-
+    
+    @IBOutlet weak var DisplayUserProfile: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let imageFile = PFUser.current()!["userProfileImageURL"] as! String
+        let url = URL(string: imageFile)!
+        
+        DisplayUserProfile.af.setImage(withURL: url)
+        
+        //DisplayUserProfile.setImage(withURL: )
         // Do any additional setup after loading the view.
     }
     
@@ -23,7 +32,7 @@ class CreationOfObjectViewController: UIViewController {
         parseObject["userID"] = PFUser.current()!
         parseObject["namePlaylist"] = "Your Playlist"
         parseObject["creatorName"] = "you"
-        parseObject["playlistImageURL"] = "-"
+        parseObject["playlistImageURL"] = "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?f=y"
 
         // Saves the new object.
         parseObject.saveInBackground {

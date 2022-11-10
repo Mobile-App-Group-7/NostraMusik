@@ -45,12 +45,37 @@ class LoginViewController: UIViewController {
         if currentUser != nil {
             currentUser!["userFirstName"] = "user\(randomInt)"
             currentUser!["userLastName"] = "userLast\(randomInt)"
-            currentUser!["userProfileImageURL"] = "-"
-            currentUser!["userBackgroundImageURL"] = "-"
+            currentUser!["userProfileImageURL"] = "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp"
+            currentUser!["userBackgroundImageURL"] = "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?f=y"
             currentUser!["userDescription"] = randomDescription
             currentUser!["userLocation"] = "United States"
+            currentUser!.saveInBackground() { (succeeded, error) in
+                if (succeeded) {
+                    print("Correctly Updated Account")// The array of objects was successfully deleted.
+                    self.CreateUserPlaylist()
+                } else {
+                    print("Error \(error?.localizedDescription)")// There was an error. Check the errors localizedDescription.
+                }
+            }
+        }
+    }
+    
+    func CreateUserPlaylist() {
+        var parseObject = PFObject(className:"PlaylistServer")
 
-            currentUser!.saveInBackground()
+        parseObject["userID"] = PFUser.current()!
+        parseObject["namePlaylist"] = "Your Playlist"
+        parseObject["creatorName"] = PFUser.current()!.username
+        parseObject["playlistImageURL"] = "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?f=y"
+
+        // Saves the new object.
+        parseObject.saveInBackground {
+          (success: Bool, error: Error?) in
+          if (success) {
+              print("Correct process of creating the object")
+          } else {
+            print("Error during the process of creating the object")
+          }
         }
     }
     
