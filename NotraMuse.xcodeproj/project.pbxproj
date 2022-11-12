@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D5B02DAC0F215C908144CCE /* Pods_NotraMuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051C8BD8F225CCD40DB85CD9 /* Pods_NotraMuse.framework */; };
 		A949CB8D2916D04A007995D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CB8C2916D04A007995D9 /* AppDelegate.swift */; };
 		A949CB8F2916D04A007995D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CB8E2916D04A007995D9 /* SceneDelegate.swift */; };
 		A949CB912916D04A007995D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CB902916D04A007995D9 /* ViewController.swift */; };
 		A949CB942916D04A007995D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A949CB922916D04A007995D9 /* Main.storyboard */; };
 		A949CB962916D04B007995D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A949CB952916D04B007995D9 /* Assets.xcassets */; };
 		A949CB992916D04B007995D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A949CB972916D04B007995D9 /* LaunchScreen.storyboard */; };
+		A9784C4C291ABF6A00CAD5CD /* ChartResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9784C4B291ABF6A00CAD5CD /* ChartResult.swift */; };
+		A98B48B829174B6000C4936C /* DeezerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B48B729174B6000C4936C /* DeezerAPI.swift */; };
+		A98B48BA29174B7500C4936C /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B48B929174B7500C4936C /* Album.swift */; };
+		A98B48BC29174B8700C4936C /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B48BB29174B8700C4936C /* Artist.swift */; };
+		A98B48BE29174B9600C4936C /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B48BD29174B9600C4936C /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		051C8BD8F225CCD40DB85CD9 /* Pods_NotraMuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotraMuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5861DCCBF30657E58820521F /* Pods-NotraMuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.release.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.release.xcconfig"; sourceTree = "<group>"; };
+		6DA0555721DB1C65D6628C0A /* Pods-NotraMuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.debug.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.debug.xcconfig"; sourceTree = "<group>"; };
 		A949CB892916D04A007995D9 /* NotraMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotraMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A949CB8C2916D04A007995D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A949CB8E2916D04A007995D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		A949CB952916D04B007995D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A949CB982916D04B007995D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A949CB9A2916D04B007995D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9784C4B291ABF6A00CAD5CD /* ChartResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartResult.swift; sourceTree = "<group>"; };
+		A98B48B729174B6000C4936C /* DeezerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerAPI.swift; sourceTree = "<group>"; };
+		A98B48B929174B7500C4936C /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		A98B48BB29174B8700C4936C /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		A98B48BD29174B9600C4936C /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5B02DAC0F215C908144CCE /* Pods_NotraMuse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C8B9C0D0CB6E59F5216B35C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				051C8BD8F225CCD40DB85CD9 /* Pods_NotraMuse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		277ECA6CF81AD915D482D6F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DA0555721DB1C65D6628C0A /* Pods-NotraMuse.debug.xcconfig */,
+				5861DCCBF30657E58820521F /* Pods-NotraMuse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A949CB802916D04A007995D9 = {
 			isa = PBXGroup;
 			children = (
 				A949CB8B2916D04A007995D9 /* NotraMuse */,
 				A949CB8A2916D04A007995D9 /* Products */,
+				277ECA6CF81AD915D482D6F8 /* Pods */,
+				1C8B9C0D0CB6E59F5216B35C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +97,11 @@
 				A949CB952916D04B007995D9 /* Assets.xcassets */,
 				A949CB972916D04B007995D9 /* LaunchScreen.storyboard */,
 				A949CB9A2916D04B007995D9 /* Info.plist */,
+				A98B48B729174B6000C4936C /* DeezerAPI.swift */,
+				A98B48B929174B7500C4936C /* Album.swift */,
+				A98B48BB29174B8700C4936C /* Artist.swift */,
+				A98B48BD29174B9600C4936C /* Song.swift */,
+				A9784C4B291ABF6A00CAD5CD /* ChartResult.swift */,
 			);
 			path = NotraMuse;
 			sourceTree = "<group>";
@@ -74,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A949CB9D2916D04B007995D9 /* Build configuration list for PBXNativeTarget "NotraMuse" */;
 			buildPhases = (
+				F870E947828F48A092D0370F /* [CP] Check Pods Manifest.lock */,
 				A949CB852916D04A007995D9 /* Sources */,
 				A949CB862916D04A007995D9 /* Frameworks */,
 				A949CB872916D04A007995D9 /* Resources */,
+				32657980076F6DE7E64B25CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +174,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32657980076F6DE7E64B25CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotraMuse/Pods-NotraMuse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotraMuse/Pods-NotraMuse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotraMuse/Pods-NotraMuse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F870E947828F48A092D0370F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotraMuse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A949CB852916D04A007995D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98B48BE29174B9600C4936C /* Song.swift in Sources */,
+				A98B48BC29174B8700C4936C /* Artist.swift in Sources */,
+				A9784C4C291ABF6A00CAD5CD /* ChartResult.swift in Sources */,
 				A949CB912916D04A007995D9 /* ViewController.swift in Sources */,
 				A949CB8D2916D04A007995D9 /* AppDelegate.swift in Sources */,
 				A949CB8F2916D04A007995D9 /* SceneDelegate.swift in Sources */,
+				A98B48B829174B6000C4936C /* DeezerAPI.swift in Sources */,
+				A98B48BA29174B7500C4936C /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +370,7 @@
 		};
 		A949CB9E2916D04B007995D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DA0555721DB1C65D6628C0A /* Pods-NotraMuse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +384,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +400,7 @@
 		};
 		A949CB9F2916D04B007995D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5861DCCBF30657E58820521F /* Pods-NotraMuse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +414,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

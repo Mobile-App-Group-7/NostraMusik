@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.6.2)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - SwiftAudioPlayer (7.6.0)
+
+DEPENDENCIES:
+  - AlamofireImage
+  - SwiftAudioPlayer
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - SwiftAudioPlayer
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
+  SwiftAudioPlayer: a546709faf47f3ab0cb59e41ba4432e6bb61db0a
+
+PODFILE CHECKSUM: fa5b72f26fe3be842bcfaf46b296dc1ad61f1277
+
+COCOAPODS: 1.11.3
