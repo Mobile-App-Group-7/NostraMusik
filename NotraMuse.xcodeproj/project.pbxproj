@@ -7,27 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A949CB8D2916D04A007995D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CB8C2916D04A007995D9 /* AppDelegate.swift */; };
-		A949CB8F2916D04A007995D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CB8E2916D04A007995D9 /* SceneDelegate.swift */; };
-		A949CB912916D04A007995D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CB902916D04A007995D9 /* ViewController.swift */; };
-		A949CB942916D04A007995D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A949CB922916D04A007995D9 /* Main.storyboard */; };
-		A949CB962916D04B007995D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A949CB952916D04B007995D9 /* Assets.xcassets */; };
-		A949CB992916D04B007995D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A949CB972916D04B007995D9 /* LaunchScreen.storyboard */; };
+		520C0A842922D692004EA851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0A832922D692004EA851 /* AppDelegate.swift */; };
+		520C0A862922D692004EA851 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0A852922D692004EA851 /* SceneDelegate.swift */; };
+		520C0A882922D692004EA851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0A872922D692004EA851 /* ViewController.swift */; };
+		520C0A8B2922D692004EA851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520C0A892922D692004EA851 /* Main.storyboard */; };
+		520C0A8D2922D693004EA851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520C0A8C2922D693004EA851 /* Assets.xcassets */; };
+		520C0A902922D693004EA851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520C0A8E2922D693004EA851 /* LaunchScreen.storyboard */; };
+		520C0A9B2922D693004EA851 /* NotraMuseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0A9A2922D693004EA851 /* NotraMuseTests.swift */; };
+		520C0AA52922D693004EA851 /* NotraMuseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0AA42922D693004EA851 /* NotraMuseUITests.swift */; };
+		520C0AA72922D693004EA851 /* NotraMuseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0AA62922D693004EA851 /* NotraMuseUITestsLaunchTests.swift */; };
+		520C0AB52922DB2E004EA851 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 520C0AB42922DB2E004EA851 /* Orbitron-Medium.ttf */; };
+		520C0AB62922DB2E004EA851 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 520C0AB42922DB2E004EA851 /* Orbitron-Medium.ttf */; };
+		520C0AB72922DB2E004EA851 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 520C0AB42922DB2E004EA851 /* Orbitron-Medium.ttf */; };
+		520C0AB92922DB46004EA851 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0AB82922DB46004EA851 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		520C0A972922D693004EA851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 520C0A782922D692004EA851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 520C0A7F2922D692004EA851;
+			remoteInfo = NotraMuse;
+		};
+		520C0AA12922D693004EA851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 520C0A782922D692004EA851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 520C0A7F2922D692004EA851;
+			remoteInfo = NotraMuse;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		A949CB892916D04A007995D9 /* NotraMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotraMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A949CB8C2916D04A007995D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A949CB8E2916D04A007995D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A949CB902916D04A007995D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A949CB932916D04A007995D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A949CB952916D04B007995D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A949CB982916D04B007995D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A949CB9A2916D04B007995D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520C0A802922D692004EA851 /* NotraMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotraMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		520C0A832922D692004EA851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		520C0A852922D692004EA851 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		520C0A872922D692004EA851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		520C0A8A2922D692004EA851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		520C0A8C2922D693004EA851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		520C0A8F2922D693004EA851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		520C0A912922D693004EA851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520C0A962922D693004EA851 /* NotraMuseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotraMuseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		520C0A9A2922D693004EA851 /* NotraMuseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotraMuseTests.swift; sourceTree = "<group>"; };
+		520C0AA02922D693004EA851 /* NotraMuseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotraMuseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		520C0AA42922D693004EA851 /* NotraMuseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotraMuseUITests.swift; sourceTree = "<group>"; };
+		520C0AA62922D693004EA851 /* NotraMuseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotraMuseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		520C0AB42922DB2E004EA851 /* Orbitron-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Medium.ttf"; sourceTree = "<group>"; };
+		520C0AB82922DB46004EA851 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A949CB862916D04A007995D9 /* Frameworks */ = {
+		520C0A7D2922D692004EA851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520C0A932922D693004EA851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520C0A9D2922D693004EA851 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,46 +82,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A949CB802916D04A007995D9 = {
+		520C0A772922D692004EA851 = {
 			isa = PBXGroup;
 			children = (
-				A949CB8B2916D04A007995D9 /* NotraMuse */,
-				A949CB8A2916D04A007995D9 /* Products */,
+				520C0A822922D692004EA851 /* NotraMuse */,
+				520C0A992922D693004EA851 /* NotraMuseTests */,
+				520C0AA32922D693004EA851 /* NotraMuseUITests */,
+				520C0A812922D692004EA851 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A949CB8A2916D04A007995D9 /* Products */ = {
+		520C0A812922D692004EA851 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A949CB892916D04A007995D9 /* NotraMuse.app */,
+				520C0A802922D692004EA851 /* NotraMuse.app */,
+				520C0A962922D693004EA851 /* NotraMuseTests.xctest */,
+				520C0AA02922D693004EA851 /* NotraMuseUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A949CB8B2916D04A007995D9 /* NotraMuse */ = {
+		520C0A822922D692004EA851 /* NotraMuse */ = {
 			isa = PBXGroup;
 			children = (
-				A949CB8C2916D04A007995D9 /* AppDelegate.swift */,
-				A949CB8E2916D04A007995D9 /* SceneDelegate.swift */,
-				A949CB902916D04A007995D9 /* ViewController.swift */,
-				A949CB922916D04A007995D9 /* Main.storyboard */,
-				A949CB952916D04B007995D9 /* Assets.xcassets */,
-				A949CB972916D04B007995D9 /* LaunchScreen.storyboard */,
-				A949CB9A2916D04B007995D9 /* Info.plist */,
+				520C0AB32922DAF2004EA851 /* Fonts */,
+				520C0A832922D692004EA851 /* AppDelegate.swift */,
+				520C0A852922D692004EA851 /* SceneDelegate.swift */,
+				520C0A872922D692004EA851 /* ViewController.swift */,
+				520C0A892922D692004EA851 /* Main.storyboard */,
+				520C0A8C2922D693004EA851 /* Assets.xcassets */,
+				520C0A8E2922D693004EA851 /* LaunchScreen.storyboard */,
+				520C0A912922D693004EA851 /* Info.plist */,
+				520C0AB82922DB46004EA851 /* LoginViewController.swift */,
 			);
 			path = NotraMuse;
+			sourceTree = "<group>";
+		};
+		520C0A992922D693004EA851 /* NotraMuseTests */ = {
+			isa = PBXGroup;
+			children = (
+				520C0A9A2922D693004EA851 /* NotraMuseTests.swift */,
+			);
+			path = NotraMuseTests;
+			sourceTree = "<group>";
+		};
+		520C0AA32922D693004EA851 /* NotraMuseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				520C0AA42922D693004EA851 /* NotraMuseUITests.swift */,
+				520C0AA62922D693004EA851 /* NotraMuseUITestsLaunchTests.swift */,
+			);
+			path = NotraMuseUITests;
+			sourceTree = "<group>";
+		};
+		520C0AB32922DAF2004EA851 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				520C0AB42922DB2E004EA851 /* Orbitron-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A949CB882916D04A007995D9 /* NotraMuse */ = {
+		520C0A7F2922D692004EA851 /* NotraMuse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A949CB9D2916D04B007995D9 /* Build configuration list for PBXNativeTarget "NotraMuse" */;
+			buildConfigurationList = 520C0AAA2922D693004EA851 /* Build configuration list for PBXNativeTarget "NotraMuse" */;
 			buildPhases = (
-				A949CB852916D04A007995D9 /* Sources */,
-				A949CB862916D04A007995D9 /* Frameworks */,
-				A949CB872916D04A007995D9 /* Resources */,
+				520C0A7C2922D692004EA851 /* Sources */,
+				520C0A7D2922D692004EA851 /* Frameworks */,
+				520C0A7E2922D692004EA851 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +160,69 @@
 			);
 			name = NotraMuse;
 			productName = NotraMuse;
-			productReference = A949CB892916D04A007995D9 /* NotraMuse.app */;
+			productReference = 520C0A802922D692004EA851 /* NotraMuse.app */;
 			productType = "com.apple.product-type.application";
+		};
+		520C0A952922D693004EA851 /* NotraMuseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520C0AAD2922D693004EA851 /* Build configuration list for PBXNativeTarget "NotraMuseTests" */;
+			buildPhases = (
+				520C0A922922D693004EA851 /* Sources */,
+				520C0A932922D693004EA851 /* Frameworks */,
+				520C0A942922D693004EA851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				520C0A982922D693004EA851 /* PBXTargetDependency */,
+			);
+			name = NotraMuseTests;
+			productName = NotraMuseTests;
+			productReference = 520C0A962922D693004EA851 /* NotraMuseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		520C0A9F2922D693004EA851 /* NotraMuseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520C0AB02922D693004EA851 /* Build configuration list for PBXNativeTarget "NotraMuseUITests" */;
+			buildPhases = (
+				520C0A9C2922D693004EA851 /* Sources */,
+				520C0A9D2922D693004EA851 /* Frameworks */,
+				520C0A9E2922D693004EA851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				520C0AA22922D693004EA851 /* PBXTargetDependency */,
+			);
+			name = NotraMuseUITests;
+			productName = NotraMuseUITests;
+			productReference = 520C0AA02922D693004EA851 /* NotraMuseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A949CB812916D04A007995D9 /* Project object */ = {
+		520C0A782922D692004EA851 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					A949CB882916D04A007995D9 = {
-						CreatedOnToolsVersion = 14.1;
+					520C0A7F2922D692004EA851 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					520C0A952922D693004EA851 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 520C0A7F2922D692004EA851;
+					};
+					520C0A9F2922D693004EA851 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 520C0A7F2922D692004EA851;
 					};
 				};
 			};
-			buildConfigurationList = A949CB842916D04A007995D9 /* Build configuration list for PBXProject "NotraMuse" */;
+			buildConfigurationList = 520C0A7B2922D692004EA851 /* Build configuration list for PBXProject "NotraMuse" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +230,105 @@
 				en,
 				Base,
 			);
-			mainGroup = A949CB802916D04A007995D9;
-			productRefGroup = A949CB8A2916D04A007995D9 /* Products */;
+			mainGroup = 520C0A772922D692004EA851;
+			productRefGroup = 520C0A812922D692004EA851 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A949CB882916D04A007995D9 /* NotraMuse */,
+				520C0A7F2922D692004EA851 /* NotraMuse */,
+				520C0A952922D693004EA851 /* NotraMuseTests */,
+				520C0A9F2922D693004EA851 /* NotraMuseUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A949CB872916D04A007995D9 /* Resources */ = {
+		520C0A7E2922D692004EA851 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A949CB992916D04B007995D9 /* LaunchScreen.storyboard in Resources */,
-				A949CB962916D04B007995D9 /* Assets.xcassets in Resources */,
-				A949CB942916D04A007995D9 /* Main.storyboard in Resources */,
+				520C0AB52922DB2E004EA851 /* Orbitron-Medium.ttf in Resources */,
+				520C0A902922D693004EA851 /* LaunchScreen.storyboard in Resources */,
+				520C0A8D2922D693004EA851 /* Assets.xcassets in Resources */,
+				520C0A8B2922D692004EA851 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520C0A942922D693004EA851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520C0AB62922DB2E004EA851 /* Orbitron-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520C0A9E2922D693004EA851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520C0AB72922DB2E004EA851 /* Orbitron-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A949CB852916D04A007995D9 /* Sources */ = {
+		520C0A7C2922D692004EA851 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A949CB912916D04A007995D9 /* ViewController.swift in Sources */,
-				A949CB8D2916D04A007995D9 /* AppDelegate.swift in Sources */,
-				A949CB8F2916D04A007995D9 /* SceneDelegate.swift in Sources */,
+				520C0AB92922DB46004EA851 /* LoginViewController.swift in Sources */,
+				520C0A882922D692004EA851 /* ViewController.swift in Sources */,
+				520C0A842922D692004EA851 /* AppDelegate.swift in Sources */,
+				520C0A862922D692004EA851 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520C0A922922D693004EA851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520C0A9B2922D693004EA851 /* NotraMuseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520C0A9C2922D693004EA851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520C0AA52922D693004EA851 /* NotraMuseUITests.swift in Sources */,
+				520C0AA72922D693004EA851 /* NotraMuseUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		520C0A982922D693004EA851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 520C0A7F2922D692004EA851 /* NotraMuse */;
+			targetProxy = 520C0A972922D693004EA851 /* PBXContainerItemProxy */;
+		};
+		520C0AA22922D693004EA851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 520C0A7F2922D692004EA851 /* NotraMuse */;
+			targetProxy = 520C0AA12922D693004EA851 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		A949CB922916D04A007995D9 /* Main.storyboard */ = {
+		520C0A892922D692004EA851 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A949CB932916D04A007995D9 /* Base */,
+				520C0A8A2922D692004EA851 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A949CB972916D04B007995D9 /* LaunchScreen.storyboard */ = {
+		520C0A8E2922D693004EA851 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A949CB982916D04B007995D9 /* Base */,
+				520C0A8F2922D693004EA851 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,13 +336,13 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A949CB9B2916D04B007995D9 /* Debug */ = {
+		520C0AA82922D693004EA851 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -216,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -226,13 +396,13 @@
 			};
 			name = Debug;
 		};
-		A949CB9C2916D04B007995D9 /* Release */ = {
+		520C0AA92922D693004EA851 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -270,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,14 +450,14 @@
 			};
 			name = Release;
 		};
-		A949CB9E2916D04B007995D9 /* Debug */ = {
+		520C0AAB2922D693004EA851 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62A46A45ND;
+				DEVELOPMENT_TEAM = X89MGYD6ML;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NotraMuse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = FAU.NotraMuse;
+				PRODUCT_BUNDLE_IDENTIFIER = fau.NotraMuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -308,14 +478,14 @@
 			};
 			name = Debug;
 		};
-		A949CB9F2916D04B007995D9 /* Release */ = {
+		520C0AAC2922D693004EA851 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62A46A45ND;
+				DEVELOPMENT_TEAM = X89MGYD6ML;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NotraMuse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,7 +498,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = FAU.NotraMuse;
+				PRODUCT_BUNDLE_IDENTIFIER = fau.NotraMuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -336,28 +506,122 @@
 			};
 			name = Release;
 		};
+		520C0AAE2922D693004EA851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X89MGYD6ML;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fau.NotraMuseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotraMuse.app/NotraMuse";
+			};
+			name = Debug;
+		};
+		520C0AAF2922D693004EA851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X89MGYD6ML;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fau.NotraMuseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotraMuse.app/NotraMuse";
+			};
+			name = Release;
+		};
+		520C0AB12922D693004EA851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X89MGYD6ML;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fau.NotraMuseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NotraMuse;
+			};
+			name = Debug;
+		};
+		520C0AB22922D693004EA851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X89MGYD6ML;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fau.NotraMuseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NotraMuse;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A949CB842916D04A007995D9 /* Build configuration list for PBXProject "NotraMuse" */ = {
+		520C0A7B2922D692004EA851 /* Build configuration list for PBXProject "NotraMuse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A949CB9B2916D04B007995D9 /* Debug */,
-				A949CB9C2916D04B007995D9 /* Release */,
+				520C0AA82922D693004EA851 /* Debug */,
+				520C0AA92922D693004EA851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A949CB9D2916D04B007995D9 /* Build configuration list for PBXNativeTarget "NotraMuse" */ = {
+		520C0AAA2922D693004EA851 /* Build configuration list for PBXNativeTarget "NotraMuse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A949CB9E2916D04B007995D9 /* Debug */,
-				A949CB9F2916D04B007995D9 /* Release */,
+				520C0AAB2922D693004EA851 /* Debug */,
+				520C0AAC2922D693004EA851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520C0AAD2922D693004EA851 /* Build configuration list for PBXNativeTarget "NotraMuseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520C0AAE2922D693004EA851 /* Debug */,
+				520C0AAF2922D693004EA851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520C0AB02922D693004EA851 /* Build configuration list for PBXNativeTarget "NotraMuseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520C0AB12922D693004EA851 /* Debug */,
+				520C0AB22922D693004EA851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A949CB812916D04A007995D9 /* Project object */;
+	rootObject = 520C0A782922D692004EA851 /* Project object */;
 }
