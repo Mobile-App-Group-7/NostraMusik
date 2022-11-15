@@ -8,7 +8,7 @@ App Design Project - README
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 3. [Schema](#Schema)
-4. [Sprint 1](#Sprint1-Progress:)
+4. [Sprint 1](#Sprint-1-Progress:)
 5. [Authors](#Authors)
 
 ## Overview
