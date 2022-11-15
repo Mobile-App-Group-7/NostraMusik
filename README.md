@@ -280,11 +280,11 @@ List of network requests by screen:
 
 Login Screen UI:
 
-<img src='https://media.giphy.com/media/280eeLXkrTfcmZRxiA/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/48hmYTAOWagJCGdI5q/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Home Screen UI with horizontal scrolling per category: 
 
-<img src='https://media.giphy.com/media/280eeLXkrTfcmZRxiA/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/X4ysNFR8KFwMLBlpxo/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ##Leonardo Osorio
 
@@ -316,7 +316,7 @@ Initialize code project and Music API:
 
 Show Track Info and Artist Info:
 
-<img src='https://i.imgur.com/Al6gtAS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/DtDokMzMNk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Authors
 

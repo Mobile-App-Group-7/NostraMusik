@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFy-Vp-a4p">
-                                <rect key="frame" x="20" y="524.33333333333337" width="374" height="21"/>
+                                <rect key="frame" x="20" y="504.33333333333326" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.78144782779999999" green="0.4845833182" blue="0.92491501570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -45,14 +45,14 @@
                                     <constraint firstAttribute="width" secondItem="4Qk-IF-gfz" secondAttribute="height" multiplier="207:110" id="vMh-Ij-stu"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bG6-Uv-fV5">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bG6-Uv-fV5">
                                 <rect key="frame" x="20" y="440.33333333333331" width="374" height="34"/>
                                 <color key="textColor" red="0.78144782779999999" green="0.4845833182" blue="0.92491501570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZGV-8d-A0v">
-                                <rect key="frame" x="20" y="550.33333333333337" width="374" height="34"/>
+                                <rect key="frame" x="20" y="530.33333333333337" width="374" height="34"/>
                                 <color key="textColor" red="0.78144782779999999" green="0.4845833182" blue="0.92491501570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -80,7 +80,7 @@
                             <constraint firstItem="bG6-Uv-fV5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7VL-Xr-lZ2"/>
                             <constraint firstItem="4Qk-IF-gfz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cwo-8C-TYl"/>
                             <constraint firstItem="4Qk-IF-gfz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E3D-u9-i2P"/>
-                            <constraint firstItem="qFy-Vp-a4p" firstAttribute="top" secondItem="bG6-Uv-fV5" secondAttribute="bottom" constant="50" id="GPQ-4s-TLk"/>
+                            <constraint firstItem="qFy-Vp-a4p" firstAttribute="top" secondItem="bG6-Uv-fV5" secondAttribute="bottom" constant="30" id="GPQ-4s-TLk"/>
                             <constraint firstItem="4Qk-IF-gfz" firstAttribute="top" secondItem="8re-Zp-bAp" secondAttribute="bottom" id="Gbs-Kd-kMz"/>
                             <constraint firstItem="8re-Zp-bAp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jvl-TU-h3b"/>
                             <constraint firstItem="8re-Zp-bAp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="KI6-Sq-34b"/>
