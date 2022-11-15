@@ -30,12 +30,14 @@ To kick off this session, we want to list out the things a user can do within ou
 **Required Must-have Stories**
 For NotraMuse, we identified the following “must-have” features which a user needs to be able to perform for the app to work:
 
+After Sprint 1 most use cases are made in parts and just need to be joined to have the completed user story
+
 * User can login
 * User can sign up
 * User stays logged in across restarts
 * User can explore the top artists, tracks and albums world wide and default location set as the U.S.
 * User can search for tracks, albums, and artists
-* User can see detailed information about a track, artist, album
+[x] User can see detailed information about a track, artist, album
 * User can add searched tracks to personalize playlist
 * User can play previews from saved tracks on the playlist
 * User can play previews from searched tracks
@@ -271,6 +273,50 @@ List of network requests by screen:
     `GET`    | /track/track_id | Get info about that specific track by id 
     `GET`    | /search?q=word | Search query for anything that contains given word
     `GET`    | /chart | Get top artist,tracks, albums, playlist, and podcast 
+    
+#Sprint 1 Progress:
+
+##Nelson Mendez
+
+Login Screen UI:
+
+<img src='https://media.giphy.com/media/280eeLXkrTfcmZRxiA/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Home Screen UI with horizontal scrolling per category: 
+
+<img src='https://media.giphy.com/media/280eeLXkrTfcmZRxiA/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+##Leonardo Osorio
+
+Configure Parse Server:
+
+<img src='https://media.giphy.com/media/j0DWQlOuOeMo4eqCDW/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://media.giphy.com/media/06mPBij1oSqjRBVHkE/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Setting up functionality to be used with View Controllers and Parse Server:
+
+<img src='https://media.giphy.com/media/LVrZUhzTt7w2RiG0y6/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://media.giphy.com/media/n13djs2mMNCipKZBrQ/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://media.giphy.com/media/Td30Fqpgm6Nq3K7fmt/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://media.giphy.com/media/hC7HrC2I9NMFmmm1AN/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://media.giphy.com/media/SJijqjSi4Fof0aJpLu/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+##Carter Sellgren
+
+Initialize code project and Music API:
+
+<img src='https://i.imgur.com/Al6gtAS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+##Nelly Delgado
+
+Show Track Info and Artist Info:
+
+<img src='https://i.imgur.com/Al6gtAS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Authors
 
