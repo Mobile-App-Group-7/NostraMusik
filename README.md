@@ -8,7 +8,7 @@ App Design Project - README
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 3. [Schema](#Schema)
-4. [Sprint 1](#Sprint 1 Progress:)
+4. [Sprint 1](#Sprint-1)
 5. [Authors](#Authors)
 
 ## Overview
@@ -275,7 +275,7 @@ List of network requests by screen:
     `GET`    | /search?q=word | Search query for anything that contains given word
     `GET`    | /chart | Get top artist,tracks, albums, playlist, and podcast 
     
-# Sprint 1 Progress:
+## Sprint 1
 
 ## Nelson Mendez
 
