@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		038386112923F8300017B5A5 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038386102923F8300017B5A5 /* ArtistViewController.swift */; };
+		03CB29A82923F2C30080FFF3 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB29A72923F2C30080FFF3 /* TrackViewController.swift */; };
 		520C0A842922D692004EA851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0A832922D692004EA851 /* AppDelegate.swift */; };
 		520C0A862922D692004EA851 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0A852922D692004EA851 /* SceneDelegate.swift */; };
 		520C0A882922D692004EA851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0A872922D692004EA851 /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		038386102923F8300017B5A5 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		03CB29A72923F2C30080FFF3 /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
 		520C0A802922D692004EA851 /* NotraMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotraMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		520C0A832922D692004EA851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		520C0A852922D692004EA851 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				524958A829235267003F8AC4 /* HomeViewController.swift */,
 				524958AA2923531F003F8AC4 /* HomeSongTableViewCell.swift */,
 				52F1C50429237A8A000FC636 /* SongCollectionViewCell.swift */,
+				03CB29A72923F2C30080FFF3 /* TrackViewController.swift */,
+				038386102923F8300017B5A5 /* ArtistViewController.swift */,
 			);
 			path = NotraMuse;
 			sourceTree = "<group>";
@@ -286,7 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CB29A82923F2C30080FFF3 /* TrackViewController.swift in Sources */,
 				524958AB2923531F003F8AC4 /* HomeSongTableViewCell.swift in Sources */,
+				038386112923F8300017B5A5 /* ArtistViewController.swift in Sources */,
 				524958A929235267003F8AC4 /* HomeViewController.swift in Sources */,
 				520C0AB92922DB46004EA851 /* LoginViewController.swift in Sources */,
 				520C0A882922D692004EA851 /* ViewController.swift in Sources */,
