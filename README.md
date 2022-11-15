@@ -274,9 +274,9 @@ List of network requests by screen:
     `GET`    | /search?q=word | Search query for anything that contains given word
     `GET`    | /chart | Get top artist,tracks, albums, playlist, and podcast 
     
-#Sprint 1 Progress:
+# Sprint 1 Progress:
 
-##Nelson Mendez
+## Nelson Mendez
 
 Login Screen UI:
 
@@ -286,7 +286,7 @@ Home Screen UI with horizontal scrolling per category:
 
 <img src='https://media.giphy.com/media/X4ysNFR8KFwMLBlpxo/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-##Leonardo Osorio
+## Leonardo Osorio
 
 Configure Parse Server:
 
@@ -306,13 +306,13 @@ Setting up functionality to be used with View Controllers and Parse Server:
 
 <img src='https://media.giphy.com/media/SJijqjSi4Fof0aJpLu/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-##Carter Sellgren
+## Carter Sellgren
 
 Initialize code project and Music API:
 
 <img src='https://i.imgur.com/Al6gtAS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-##Nelly Delgado
+## Nelly Delgado
 
 Show Track Info and Artist Info:
 
