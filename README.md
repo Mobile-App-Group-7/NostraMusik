@@ -317,7 +317,7 @@ Initialize code project and Music API:
 
 Show Track Info and Artist Info:
 
-<img src='http://g.recordit.co/DtDokMzMNk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/y7O3RFXOh3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Authors
 
