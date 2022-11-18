@@ -17,6 +17,9 @@
 		C7FA6B03291AB85D00F060AE /* ObjectCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA6B02291AB85C00F060AE /* ObjectCreationViewController.swift */; };
 		C7FA6B05291AD0BB00F060AE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA6B04291AD0BB00F060AE /* ProfileViewController.swift */; };
 		C7FA6B07291AD9BB00F060AE /* CreationOfObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA6B06291AD9BB00F060AE /* CreationOfObjectViewController.swift */; };
+		C7FA6B09292092EB00F060AE /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA6B08292092EB00F060AE /* PlaylistViewController.swift */; };
+		C7FA6B0B29213D0400F060AE /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA6B0A29213D0400F060AE /* AlbumViewController.swift */; };
+		C7FA6B0D29227B2700F060AE /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA6B0C29227B2700F060AE /* TrackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		C7FA6B02291AB85C00F060AE /* ObjectCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectCreationViewController.swift; sourceTree = "<group>"; };
 		C7FA6B04291AD0BB00F060AE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C7FA6B06291AD9BB00F060AE /* CreationOfObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationOfObjectViewController.swift; sourceTree = "<group>"; };
+		C7FA6B08292092EB00F060AE /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		C7FA6B0A29213D0400F060AE /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		C7FA6B0C29227B2700F060AE /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 				C7FA6B02291AB85C00F060AE /* ObjectCreationViewController.swift */,
 				C7FA6B04291AD0BB00F060AE /* ProfileViewController.swift */,
 				C7FA6B06291AD9BB00F060AE /* CreationOfObjectViewController.swift */,
+				C7FA6B08292092EB00F060AE /* PlaylistViewController.swift */,
+				C7FA6B0A29213D0400F060AE /* AlbumViewController.swift */,
+				C7FA6B0C29227B2700F060AE /* TrackViewController.swift */,
 			);
 			path = NotraMuse;
 			sourceTree = "<group>";
@@ -216,8 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FA6B03291AB85D00F060AE /* ObjectCreationViewController.swift in Sources */,
+				C7FA6B0D29227B2700F060AE /* TrackViewController.swift in Sources */,
 				C7FA6B07291AD9BB00F060AE /* CreationOfObjectViewController.swift in Sources */,
+				C7FA6B09292092EB00F060AE /* PlaylistViewController.swift in Sources */,
 				C7FA6B01291A064D00F060AE /* LoginViewController.swift in Sources */,
+				C7FA6B0B29213D0400F060AE /* AlbumViewController.swift in Sources */,
 				C7FA6B05291AD0BB00F060AE /* ProfileViewController.swift in Sources */,
 				A949CB8D2916D04A007995D9 /* AppDelegate.swift in Sources */,
 				A949CB8F2916D04A007995D9 /* SceneDelegate.swift in Sources */,
