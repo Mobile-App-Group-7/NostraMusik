@@ -25,6 +25,8 @@
 		524958A929235267003F8AC4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524958A829235267003F8AC4 /* HomeViewController.swift */; };
 		524958AB2923531F003F8AC4 /* HomeSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524958AA2923531F003F8AC4 /* HomeSongTableViewCell.swift */; };
 		52F1C50529237A8A000FC636 /* SongCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1C50429237A8A000FC636 /* SongCollectionViewCell.swift */; };
+		E253832E29299B6D007AC30B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253832D29299B6D007AC30B /* SearchViewController.swift */; };
+		E25383302929A128007AC30B /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253832F2929A128007AC30B /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		524958A829235267003F8AC4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		524958AA2923531F003F8AC4 /* HomeSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSongTableViewCell.swift; sourceTree = "<group>"; };
 		52F1C50429237A8A000FC636 /* SongCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollectionViewCell.swift; sourceTree = "<group>"; };
+		E253832D29299B6D007AC30B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E253832F2929A128007AC30B /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				52F1C50429237A8A000FC636 /* SongCollectionViewCell.swift */,
 				03CB29A72923F2C30080FFF3 /* TrackViewController.swift */,
 				038386102923F8300017B5A5 /* ArtistViewController.swift */,
+				E253832D29299B6D007AC30B /* SearchViewController.swift */,
+				E253832F2929A128007AC30B /* SearchTableViewCell.swift */,
 			);
 			path = NotraMuse;
 			sourceTree = "<group>";
@@ -292,9 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E253832E29299B6D007AC30B /* SearchViewController.swift in Sources */,
 				03CB29A82923F2C30080FFF3 /* TrackViewController.swift in Sources */,
 				524958AB2923531F003F8AC4 /* HomeSongTableViewCell.swift in Sources */,
 				038386112923F8300017B5A5 /* ArtistViewController.swift in Sources */,
+				E25383302929A128007AC30B /* SearchTableViewCell.swift in Sources */,
 				524958A929235267003F8AC4 /* HomeViewController.swift in Sources */,
 				520C0AB92922DB46004EA851 /* LoginViewController.swift in Sources */,
 				520C0A882922D692004EA851 /* ViewController.swift in Sources */,
