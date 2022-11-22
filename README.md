@@ -325,7 +325,7 @@ Create classes for different items returned by API:
 
 Search Screen Layout: 
 
-<img src='http://g.recordit.co/T1F43FiWlF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/T1F43FiWlF.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
 
 
 ## Sprint 1
