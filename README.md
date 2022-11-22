@@ -293,7 +293,7 @@ Playlist Screen FrontEnd Layout:
 
 Show all the code created:
 
-<img src='https://giphy.com/gifs/8o3YV5HK6cP6c6lPrn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://giphy.com/gifs/8o3YV5HK6cP6c6lPrn' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Workflow of Playlist:
 
