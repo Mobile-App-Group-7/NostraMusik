@@ -293,27 +293,27 @@ Playlist Screen FrontEnd Layout:
 
 Show all the code created:
 
-<img src='https://giphy.com/gifs/8o3YV5HK6cP6c6lPrn' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/8o3YV5HK6cP6c6lPrn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Workflow of Playlist:
 
-<img src='https://giphy.com/gifs/galv34LoIdVz1iPTaQ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://giphy.com/gifs/galv34LoIdVz1iPTaQ' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Workflow of Tracks:
 
-<img src='https://giphy.com/gifs/mOJrACSKkpamWSfQLe.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://giphy.com/gifs/mOJrACSKkpamWSfQLe' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Workflow of Album:
 
-<img src='https://giphy.com/gifs/B9PviSP8HN6FO54qE1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://giphy.com/gifs/B9PviSP8HN6FO54qE1' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<img src='https://giphy.com/gifs/vTlF27iXZzmU3BkIxI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://giphy.com/gifs/vTlF27iXZzmU3BkIxI' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Workflow of User:
 
-<img src='https://giphy.com/gifs/F040el5AAXpKPknkpq.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://giphy.com/gifs/F040el5AAXpKPknkpq' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<img src='https://giphy.com/gifs/SChC5HBkIKMj296XJS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://giphy.com/gifs/SChC5HBkIKMj296XJS' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Carter Sellgren
 
