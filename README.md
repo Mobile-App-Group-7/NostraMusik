@@ -8,8 +8,9 @@ App Design Project - README
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 3. [Schema](#Schema)
-4. [Sprint 1](#Sprint-1)
-5. [Authors](#Authors)
+4. [Sprint 2](#Sprint-2)
+5. [Sprint 1](#Sprint-1)
+6. [Authors](#Authors)
 
 ## Overview
 ### Description
@@ -275,6 +276,58 @@ List of network requests by screen:
     `GET`    | /search?q=word | Search query for anything that contains given word
     `GET`    | /chart | Get top artist,tracks, albums, playlist, and podcast 
     
+    
+## Sprint 2
+
+## Nelson Mendez
+
+Album Screen UI:
+
+<img src='https://media.giphy.com/media/cimvuohY0zd4VmbQbn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+    
+Playlist Screen FrontEnd Layout:
+
+<img src='https://media.giphy.com/media/RCLiPVVkrdNhfOW2Mx/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Leonardo Osorio
+
+Show all the code created:
+
+<img src='https://giphy.com/gifs/8o3YV5HK6cP6c6lPrn' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Workflow of Playlist:
+
+<img src='https://giphy.com/gifs/galv34LoIdVz1iPTaQ' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Workflow of Tracks:
+
+<img src='https://giphy.com/gifs/mOJrACSKkpamWSfQLe' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Workflow of Album:
+
+<img src='https://giphy.com/gifs/B9PviSP8HN6FO54qE1' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://giphy.com/gifs/vTlF27iXZzmU3BkIxI' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Workflow of User:
+
+<img src='https://giphy.com/gifs/F040el5AAXpKPknkpq' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://giphy.com/gifs/SChC5HBkIKMj296XJS' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Carter Sellgren
+
+Create classes for different items returned by API:
+
+<img src='https://i.imgur.com/JCfiATk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Nelly Delgado
+
+Search Screen Layout: 
+
+<img src='http://g.recordit.co/T1F43FiWlF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
 ## Sprint 1
 
 ## Nelson Mendez
@@ -318,7 +371,6 @@ Initialize code project and Music API:
 Show Track Info and Artist Info:
 
 <img src='http://g.recordit.co/y7O3RFXOh3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='http://g.recordit.co/T1F43FiWlF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## Authors

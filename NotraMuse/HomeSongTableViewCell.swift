@@ -37,7 +37,7 @@ extension HomeSongTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as! ItemCollectionViewCell
-        cell.itemTitleLabel.text = "Song Name New"
+        cell.ItemTitleLabel.text = "Song Name New"
         /*let imageURL = URL(string: "")
         let data = try? Data(contentsOf: imageURL!)
         if let imageData = data{
