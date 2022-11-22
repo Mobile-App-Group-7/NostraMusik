@@ -9,6 +9,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBAction func ClickingHomeUnit(_ sender: UIButton) {
+        //self.performSegue(withIdentifier: "MoveToAlbumView", sender: self)
+        
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -37,8 +42,22 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSongsTableCell", for: indexPath)
-        return cell
+        if indexPath.row == 0{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSongsTableCell", for: indexPath) as! HomeSongTableViewCell
+            cell.RowLabel.text = "Top Songs"
+            cell.indexPathVar = indexPath.row
+            return cell
+        } else if indexPath.row == 1{
+            let cell =  tableView.dequeueReusableCell(withIdentifier: "HomeSongsTableCell", for: indexPath) as! HomeSongTableViewCell
+            cell.RowLabel.text = "Top Albums"
+            cell.indexPathVar = indexPath.row
+            return cell
+        } else{
+            let cell =  tableView.dequeueReusableCell(withIdentifier: "HomeSongsTableCell", for: indexPath) as! HomeSongTableViewCell
+            cell.RowLabel.text = "Top Artists"
+            cell.indexPathVar = indexPath.row
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -47,4 +66,5 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         let height = (view.frame.size.height - (navigationBarHeight*2) - tabBarheight) / 3
         return height
     }
+    
 }
