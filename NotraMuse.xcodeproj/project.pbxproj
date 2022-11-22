@@ -28,6 +28,11 @@
 		5273AD1E292CB8A100183301 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD1D292CB8A100183301 /* ItemCollectionViewCell.swift */; };
 		5273AD20292CBC5500183301 /* FullAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD1F292CBC5500183301 /* FullAlbumTableViewCell.swift */; };
 		5273AD22292CBC5900183301 /* SonginAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD21292CBC5900183301 /* SonginAlbumTableViewCell.swift */; };
+		5273AD27292D32CE00183301 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD26292D32CE00183301 /* PlaylistViewController.swift */; };
+		5273AD29292D335900183301 /* PlaylistsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD28292D335900183301 /* PlaylistsTableViewCell.swift */; };
+		5273AD2B292D38DF00183301 /* SinglePlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2A292D38DF00183301 /* SinglePlaylistViewController.swift */; };
+		5273AD2D292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2C292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift */; };
+		5273AD2F292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2E292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift */; };
 		E253832E29299B6D007AC30B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253832D29299B6D007AC30B /* SearchViewController.swift */; };
 		E25383302929A128007AC30B /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253832F2929A128007AC30B /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +78,11 @@
 		5273AD1D292CB8A100183301 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCollectionViewCell.swift; path = ../../../LocalMusicApp/NotraMuse/NotraMuse/ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		5273AD1F292CBC5500183301 /* FullAlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullAlbumTableViewCell.swift; sourceTree = "<group>"; };
 		5273AD21292CBC5900183301 /* SonginAlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonginAlbumTableViewCell.swift; sourceTree = "<group>"; };
+		5273AD26292D32CE00183301 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		5273AD28292D335900183301 /* PlaylistsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsTableViewCell.swift; sourceTree = "<group>"; };
+		5273AD2A292D38DF00183301 /* SinglePlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaylistViewController.swift; sourceTree = "<group>"; };
+		5273AD2C292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaylistInfoTableViewCell.swift; sourceTree = "<group>"; };
+		5273AD2E292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaylistSongTableViewCell.swift; sourceTree = "<group>"; };
 		E253832D29299B6D007AC30B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E253832F2929A128007AC30B /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,15 +145,13 @@
 				520C0A912922D693004EA851 /* Info.plist */,
 				520C0AB82922DB46004EA851 /* LoginViewController.swift */,
 				524958A829235267003F8AC4 /* HomeViewController.swift */,
-				5273AD18292CB7DA00183301 /* FullAlbumViewController.swift */,
-				03CB29A72923F2C30080FFF3 /* TrackViewController.swift */,
-				038386102923F8300017B5A5 /* ArtistViewController.swift */,
+				5273AD31292D45D900183301 /* PlaylistHomeScreen */,
+				5273AD30292D45A300183301 /* SinglePlaylistViewCells */,
+				5273AD23292D303200183301 /* DifferentInfoViews */,
 				524958AA2923531F003F8AC4 /* HomeSongTableViewCell.swift */,
 				5273AD1D292CB8A100183301 /* ItemCollectionViewCell.swift */,
-				5273AD1F292CBC5500183301 /* FullAlbumTableViewCell.swift */,
-				5273AD21292CBC5900183301 /* SonginAlbumTableViewCell.swift */,
-				E253832D29299B6D007AC30B /* SearchViewController.swift */,
-				E253832F2929A128007AC30B /* SearchTableViewCell.swift */,
+				5273AD24292D304800183301 /* FullAlbumView */,
+				5273AD25292D305E00183301 /* SearchFuctionality */,
 			);
 			path = NotraMuse;
 			sourceTree = "<group>";
@@ -171,6 +179,53 @@
 				520C0AB42922DB2E004EA851 /* Orbitron-Medium.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5273AD23292D303200183301 /* DifferentInfoViews */ = {
+			isa = PBXGroup;
+			children = (
+				5273AD18292CB7DA00183301 /* FullAlbumViewController.swift */,
+				03CB29A72923F2C30080FFF3 /* TrackViewController.swift */,
+				038386102923F8300017B5A5 /* ArtistViewController.swift */,
+			);
+			path = DifferentInfoViews;
+			sourceTree = "<group>";
+		};
+		5273AD24292D304800183301 /* FullAlbumView */ = {
+			isa = PBXGroup;
+			children = (
+				5273AD1F292CBC5500183301 /* FullAlbumTableViewCell.swift */,
+				5273AD21292CBC5900183301 /* SonginAlbumTableViewCell.swift */,
+			);
+			path = FullAlbumView;
+			sourceTree = "<group>";
+		};
+		5273AD25292D305E00183301 /* SearchFuctionality */ = {
+			isa = PBXGroup;
+			children = (
+				E253832D29299B6D007AC30B /* SearchViewController.swift */,
+				E253832F2929A128007AC30B /* SearchTableViewCell.swift */,
+			);
+			path = SearchFuctionality;
+			sourceTree = "<group>";
+		};
+		5273AD30292D45A300183301 /* SinglePlaylistViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				5273AD2E292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift */,
+				5273AD2C292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift */,
+			);
+			path = SinglePlaylistViewCells;
+			sourceTree = "<group>";
+		};
+		5273AD31292D45D900183301 /* PlaylistHomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5273AD26292D32CE00183301 /* PlaylistViewController.swift */,
+				5273AD28292D335900183301 /* PlaylistsTableViewCell.swift */,
+				5273AD2A292D38DF00183301 /* SinglePlaylistViewController.swift */,
+			);
+			path = PlaylistHomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +373,14 @@
 				5273AD20292CBC5500183301 /* FullAlbumTableViewCell.swift in Sources */,
 				520C0A842922D692004EA851 /* AppDelegate.swift in Sources */,
 				520C0A862922D692004EA851 /* SceneDelegate.swift in Sources */,
+				5273AD27292D32CE00183301 /* PlaylistViewController.swift in Sources */,
 				5273AD22292CBC5900183301 /* SonginAlbumTableViewCell.swift in Sources */,
 				5273AD19292CB7DA00183301 /* FullAlbumViewController.swift in Sources */,
+				5273AD2B292D38DF00183301 /* SinglePlaylistViewController.swift in Sources */,
+				5273AD2F292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift in Sources */,
 				5273AD1E292CB8A100183301 /* ItemCollectionViewCell.swift in Sources */,
+				5273AD29292D335900183301 /* PlaylistsTableViewCell.swift in Sources */,
+				5273AD2D292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
