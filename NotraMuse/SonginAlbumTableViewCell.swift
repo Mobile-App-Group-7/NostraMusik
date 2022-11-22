@@ -1,14 +1,19 @@
 //
-//  SongTableViewCell.swift
+//  SonginAlbumTableViewCell.swift
 //  NotraMuse
 //
-//  Created by Nelson  on 11/15/22.
+//  Created by Nelson  on 11/21/22.
 //
 
 import UIKit
 
-class SongTableViewCell: UITableViewCell {
+class SonginAlbumTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var TrackTitleLabel: UILabel!
+    @IBOutlet weak var AlbumImage: UIImageView!
+    @IBOutlet weak var TrackDurationLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
