@@ -7,10 +7,12 @@ PODS:
     - Parse/Core (= 1.19.3)
   - Parse/Core (1.19.3):
     - Bolts/Tasks (= 1.9.1)
+  - SwiftAudioPlayer (7.6.0)
 
 DEPENDENCIES:
   - AlamofireImage
   - Parse
+  - SwiftAudioPlayer
 
 SPEC REPOS:
   trunk:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - AlamofireImage
     - Bolts
     - Parse
+    - SwiftAudioPlayer
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
+  SwiftAudioPlayer: a546709faf47f3ab0cb59e41ba4432e6bb61db0a
 
-PODFILE CHECKSUM: e08f9bbd5603bc6daa49c1bed111609fa214fb8f
+PODFILE CHECKSUM: 8a39d8cfeeab0a46099d4d4fcabcd5678d81e901
 
 COCOAPODS: 1.11.3

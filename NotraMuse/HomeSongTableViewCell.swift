@@ -11,7 +11,11 @@ class HomeSongTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var RowTitleLabel: UILabel!
-    
+    var chart: ChartResult? {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
     var indexPathVar = 0
     
     override func awakeFromNib() {
@@ -20,7 +24,6 @@ class HomeSongTableViewCell: UITableViewCell {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.reloadData()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,19 +35,47 @@ class HomeSongTableViewCell: UITableViewCell {
 }
 extension HomeSongTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        if self.chart == nil {
+            return 7
+        }
+        
+        if indexPathVar == 0 {
+            return self.chart!.getSongs().count
+        }
+        else if indexPathVar == 1 {
+            return self.chart!.getAlbums().count
+        }
+        else {
+            return self.chart!.getArtists().count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as! ItemCollectionViewCell
-        cell.ItemTitleLabel.text = "Song Name New"
-        /*let imageURL = URL(string: "")
-        let data = try? Data(contentsOf: imageURL!)
-        if let imageData = data{
-            cell.imageView.image = UIImage(data: imageData)
+        
+        if self.chart == nil {
+            cell.ItemTitleLabel.text = "Loading..."
+            return cell
         }
-         */
+        
+        if indexPathVar == 0 {
+            let song = self.chart!.getSongs()[indexPath.row]
+            cell.ItemTitleLabel.text = song.getTitle()
             
+            if song.getSongImageUrl() != nil {
+                cell.ItemImage.af.setImage(withURL: song.getSongImageUrl()!)
+            }
+        }
+        else if indexPathVar == 1 {
+            let album = self.chart!.getAlbums()[indexPath.row]
+            cell.ItemImage.af.setImage(withURL: album.getCoverImageUrl()!)
+            cell.ItemTitleLabel.text = album.getTitle()
+        }
+        else {
+            let artist = self.chart!.getArtists()[indexPath.row]
+            cell.ItemImage.af.setImage(withURL: artist.getProfilePictureUrl())
+            cell.ItemTitleLabel.text = artist.getName()
+        }
         
         return cell
     }

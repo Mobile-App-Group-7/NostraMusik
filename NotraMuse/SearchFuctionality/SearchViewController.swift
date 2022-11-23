@@ -9,17 +9,9 @@ import UIKit
 
 class SearchViewController: UIViewController, UITableViewDataSource,UITableViewDelegate,UISearchResultsUpdating {
     
-    
-    
     @IBOutlet weak var tableview: UITableView!
     
-    let data = ["Flawless", "Knee Scocks", "Anti-Hero", "Yellow",
-                "Dark Red", "CUFF IT", "Shirt", "The Astronaut",
-                "Nxde", "Heather", "Whiskey on You",
-                "Heart like a truck", "DON'T SAY NOTHING", "Prety Girls Walk", "Bikini Bottom",
-                "Unholy", "About You", "Motion Sickness", "Double Denim","angleeyes", "titi te pregunto", "calm down", "ojitos lindos", "la bachata", "despecha","todo de ti", "una vaina loca", "avispas","manana te felicito", "i'm Good","Made you look", "Lift me up", "Tukoh Taka","poker Face", "Daydream" ]
-    
-    var filteredData: [String]!
+    var searchResult = [Song]()
     
     var searchController: UISearchController!
     
@@ -30,9 +22,7 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         // Do any additional setup after loading the view.
         tableview.dataSource = self
         tableview.delegate = self
-        
-        filteredData = data
-        
+                
         // Initializing with searchResultsController set to nil means that
         // searchController will use this view controller to display the search results
         searchController = UISearchController(searchResultsController: nil)
@@ -53,25 +43,32 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredData.count
+        return searchResult.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchTableViewCell") as! SearchTableViewCell
                  
-        cell.songLabel?.text = filteredData[indexPath.row]
+        cell.songLabel?.text = searchResult[indexPath.row].getTitle()
         return cell
         
     }
     
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text {
-            filteredData = searchText.isEmpty ? data : data.filter({(dataString: String) -> Bool in
-                return dataString.range(of:searchText, options: .caseInsensitive) != nil
-            })
-            
-            tableview.reloadData()
+            Task {
+                let (songs, error) = await Deezer.shared.searchSongs(searchTerm: searchText)
+                
+                if error == nil {
+                    self.searchResult = songs!
+                }
+                else {
+                    print("Error searching for songs: \(String(describing: error))")
+                }
+                
+                tableview.reloadData()
+            }
         }    /*
               // MARK: - Navigation
               
