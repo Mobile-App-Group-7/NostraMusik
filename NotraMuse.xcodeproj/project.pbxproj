@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02AD28B071CA0CFCD139E1BF /* Pods_NotraMuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5487C89400304DBC9AF1AA /* Pods_NotraMuse.framework */; };
 		038386112923F8300017B5A5 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038386102923F8300017B5A5 /* ArtistViewController.swift */; };
 		03CB29A82923F2C30080FFF3 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB29A72923F2C30080FFF3 /* TrackViewController.swift */; };
+		34E7F114BA62D7999DE4B3C7 /* Pods_NotraMuseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED52763646B232EF26035D49 /* Pods_NotraMuseTests.framework */; };
 		520C0A842922D692004EA851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0A832922D692004EA851 /* AppDelegate.swift */; };
 		520C0A862922D692004EA851 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0A852922D692004EA851 /* SceneDelegate.swift */; };
 		520C0A882922D692004EA851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0A872922D692004EA851 /* ViewController.swift */; };
@@ -25,7 +27,6 @@
 		524958A929235267003F8AC4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524958A829235267003F8AC4 /* HomeViewController.swift */; };
 		524958AB2923531F003F8AC4 /* HomeSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524958AA2923531F003F8AC4 /* HomeSongTableViewCell.swift */; };
 		5273AD19292CB7DA00183301 /* FullAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD18292CB7DA00183301 /* FullAlbumViewController.swift */; };
-		5273AD1E292CB8A100183301 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD1D292CB8A100183301 /* ItemCollectionViewCell.swift */; };
 		5273AD20292CBC5500183301 /* FullAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD1F292CBC5500183301 /* FullAlbumTableViewCell.swift */; };
 		5273AD22292CBC5900183301 /* SonginAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD21292CBC5900183301 /* SonginAlbumTableViewCell.swift */; };
 		5273AD27292D32CE00183301 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD26292D32CE00183301 /* PlaylistViewController.swift */; };
@@ -33,6 +34,9 @@
 		5273AD2B292D38DF00183301 /* SinglePlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2A292D38DF00183301 /* SinglePlaylistViewController.swift */; };
 		5273AD2D292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2C292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift */; };
 		5273AD2F292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2E292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift */; };
+		92044B5ADD4E9B8B3AF7A977 /* Pods_NotraMuse_NotraMuseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED119C4B44DD02E6E0D6C901 /* Pods_NotraMuse_NotraMuseUITests.framework */; };
+		C7665BAC292E70300064BF32 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7665BAB292E70300064BF32 /* ItemCollectionViewCell.swift */; };
+		C7665BAE292E78CD0064BF32 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7665BAD292E78CD0064BF32 /* ProfileViewController.swift */; };
 		E253832E29299B6D007AC30B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253832D29299B6D007AC30B /* SearchViewController.swift */; };
 		E25383302929A128007AC30B /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253832F2929A128007AC30B /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +61,8 @@
 /* Begin PBXFileReference section */
 		038386102923F8300017B5A5 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		03CB29A72923F2C30080FFF3 /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		1B3780E77FC3D86FF6BDAAB8 /* Pods-NotraMuseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuseTests.release.xcconfig"; path = "Target Support Files/Pods-NotraMuseTests/Pods-NotraMuseTests.release.xcconfig"; sourceTree = "<group>"; };
+		22F671FD81E80434A3B27810 /* Pods-NotraMuse-NotraMuseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse-NotraMuseUITests.release.xcconfig"; path = "Target Support Files/Pods-NotraMuse-NotraMuseUITests/Pods-NotraMuse-NotraMuseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		520C0A802922D692004EA851 /* NotraMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotraMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		520C0A832922D692004EA851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		520C0A852922D692004EA851 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +81,6 @@
 		524958A829235267003F8AC4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		524958AA2923531F003F8AC4 /* HomeSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSongTableViewCell.swift; sourceTree = "<group>"; };
 		5273AD18292CB7DA00183301 /* FullAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullAlbumViewController.swift; sourceTree = "<group>"; };
-		5273AD1D292CB8A100183301 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCollectionViewCell.swift; path = ../../../LocalMusicApp/NotraMuse/NotraMuse/ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		5273AD1F292CBC5500183301 /* FullAlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullAlbumTableViewCell.swift; sourceTree = "<group>"; };
 		5273AD21292CBC5900183301 /* SonginAlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonginAlbumTableViewCell.swift; sourceTree = "<group>"; };
 		5273AD26292D32CE00183301 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
@@ -83,8 +88,17 @@
 		5273AD2A292D38DF00183301 /* SinglePlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaylistViewController.swift; sourceTree = "<group>"; };
 		5273AD2C292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaylistInfoTableViewCell.swift; sourceTree = "<group>"; };
 		5273AD2E292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaylistSongTableViewCell.swift; sourceTree = "<group>"; };
+		5EB8D92D7D63BEB169B4F501 /* Pods-NotraMuse-NotraMuseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse-NotraMuseUITests.debug.xcconfig"; path = "Target Support Files/Pods-NotraMuse-NotraMuseUITests/Pods-NotraMuse-NotraMuseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E5487C89400304DBC9AF1AA /* Pods_NotraMuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotraMuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8559857B7261EB75BE58213 /* Pods-NotraMuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.release.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.release.xcconfig"; sourceTree = "<group>"; };
+		C7665BAB292E70300064BF32 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		C7665BAD292E78CD0064BF32 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CE628C28B4B01447DE230F42 /* Pods-NotraMuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.debug.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.debug.xcconfig"; sourceTree = "<group>"; };
+		D166A9E13E05CC887C9D6A13 /* Pods-NotraMuseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuseTests.debug.xcconfig"; path = "Target Support Files/Pods-NotraMuseTests/Pods-NotraMuseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E253832D29299B6D007AC30B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E253832F2929A128007AC30B /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		ED119C4B44DD02E6E0D6C901 /* Pods_NotraMuse_NotraMuseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotraMuse_NotraMuseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED52763646B232EF26035D49 /* Pods_NotraMuseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotraMuseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AD28B071CA0CFCD139E1BF /* Pods_NotraMuse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E7F114BA62D7999DE4B3C7 /* Pods_NotraMuseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,12 +122,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92044B5ADD4E9B8B3AF7A977 /* Pods_NotraMuse_NotraMuseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A855B85D9BE50CFD862514A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE628C28B4B01447DE230F42 /* Pods-NotraMuse.debug.xcconfig */,
+				A8559857B7261EB75BE58213 /* Pods-NotraMuse.release.xcconfig */,
+				5EB8D92D7D63BEB169B4F501 /* Pods-NotraMuse-NotraMuseUITests.debug.xcconfig */,
+				22F671FD81E80434A3B27810 /* Pods-NotraMuse-NotraMuseUITests.release.xcconfig */,
+				D166A9E13E05CC887C9D6A13 /* Pods-NotraMuseTests.debug.xcconfig */,
+				1B3780E77FC3D86FF6BDAAB8 /* Pods-NotraMuseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3CBD9AB425D47D8320816871 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E5487C89400304DBC9AF1AA /* Pods_NotraMuse.framework */,
+				ED119C4B44DD02E6E0D6C901 /* Pods_NotraMuse_NotraMuseUITests.framework */,
+				ED52763646B232EF26035D49 /* Pods_NotraMuseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		520C0A772922D692004EA851 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +159,8 @@
 				520C0A992922D693004EA851 /* NotraMuseTests */,
 				520C0AA32922D693004EA851 /* NotraMuseUITests */,
 				520C0A812922D692004EA851 /* Products */,
+				2A855B85D9BE50CFD862514A /* Pods */,
+				3CBD9AB425D47D8320816871 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,9 +191,10 @@
 				5273AD30292D45A300183301 /* SinglePlaylistViewCells */,
 				5273AD23292D303200183301 /* DifferentInfoViews */,
 				524958AA2923531F003F8AC4 /* HomeSongTableViewCell.swift */,
-				5273AD1D292CB8A100183301 /* ItemCollectionViewCell.swift */,
 				5273AD24292D304800183301 /* FullAlbumView */,
 				5273AD25292D305E00183301 /* SearchFuctionality */,
+				C7665BAB292E70300064BF32 /* ItemCollectionViewCell.swift */,
+				C7665BAD292E78CD0064BF32 /* ProfileViewController.swift */,
 			);
 			path = NotraMuse;
 			sourceTree = "<group>";
@@ -235,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 520C0AAA2922D693004EA851 /* Build configuration list for PBXNativeTarget "NotraMuse" */;
 			buildPhases = (
+				1E265C258C6A61A2C9F0091D /* [CP] Check Pods Manifest.lock */,
 				520C0A7C2922D692004EA851 /* Sources */,
 				520C0A7D2922D692004EA851 /* Frameworks */,
 				520C0A7E2922D692004EA851 /* Resources */,
+				7B2E643C72CCDF23D6B84828 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 520C0AAD2922D693004EA851 /* Build configuration list for PBXNativeTarget "NotraMuseTests" */;
 			buildPhases = (
+				9E190A27AAEEC6C0EB0CD6A7 /* [CP] Check Pods Manifest.lock */,
 				520C0A922922D693004EA851 /* Sources */,
 				520C0A932922D693004EA851 /* Frameworks */,
 				520C0A942922D693004EA851 /* Resources */,
@@ -270,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 520C0AB02922D693004EA851 /* Build configuration list for PBXNativeTarget "NotraMuseUITests" */;
 			buildPhases = (
+				BDD9294EBB099A9F5F60511C /* [CP] Check Pods Manifest.lock */,
 				520C0A9C2922D693004EA851 /* Sources */,
 				520C0A9D2922D693004EA851 /* Frameworks */,
 				520C0A9E2922D693004EA851 /* Resources */,
+				D432D3E524E24F499D24DB5E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,6 +405,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E265C258C6A61A2C9F0091D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotraMuse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B2E643C72CCDF23D6B84828 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotraMuse/Pods-NotraMuse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotraMuse/Pods-NotraMuse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotraMuse/Pods-NotraMuse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E190A27AAEEC6C0EB0CD6A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotraMuseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD9294EBB099A9F5F60511C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotraMuse-NotraMuseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D432D3E524E24F499D24DB5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotraMuse-NotraMuseUITests/Pods-NotraMuse-NotraMuseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotraMuse-NotraMuseUITests/Pods-NotraMuse-NotraMuseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotraMuse-NotraMuseUITests/Pods-NotraMuse-NotraMuseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		520C0A7C2922D692004EA851 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -364,6 +515,7 @@
 			files = (
 				E253832E29299B6D007AC30B /* SearchViewController.swift in Sources */,
 				03CB29A82923F2C30080FFF3 /* TrackViewController.swift in Sources */,
+				C7665BAE292E78CD0064BF32 /* ProfileViewController.swift in Sources */,
 				524958AB2923531F003F8AC4 /* HomeSongTableViewCell.swift in Sources */,
 				038386112923F8300017B5A5 /* ArtistViewController.swift in Sources */,
 				E25383302929A128007AC30B /* SearchTableViewCell.swift in Sources */,
@@ -373,12 +525,12 @@
 				5273AD20292CBC5500183301 /* FullAlbumTableViewCell.swift in Sources */,
 				520C0A842922D692004EA851 /* AppDelegate.swift in Sources */,
 				520C0A862922D692004EA851 /* SceneDelegate.swift in Sources */,
+				C7665BAC292E70300064BF32 /* ItemCollectionViewCell.swift in Sources */,
 				5273AD27292D32CE00183301 /* PlaylistViewController.swift in Sources */,
 				5273AD22292CBC5900183301 /* SonginAlbumTableViewCell.swift in Sources */,
 				5273AD19292CB7DA00183301 /* FullAlbumViewController.swift in Sources */,
 				5273AD2B292D38DF00183301 /* SinglePlaylistViewController.swift in Sources */,
 				5273AD2F292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift in Sources */,
-				5273AD1E292CB8A100183301 /* ItemCollectionViewCell.swift in Sources */,
 				5273AD29292D335900183301 /* PlaylistsTableViewCell.swift in Sources */,
 				5273AD2D292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift in Sources */,
 			);
@@ -552,6 +704,7 @@
 		};
 		520C0AAB2922D693004EA851 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE628C28B4B01447DE230F42 /* Pods-NotraMuse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -580,6 +733,7 @@
 		};
 		520C0AAC2922D693004EA851 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8559857B7261EB75BE58213 /* Pods-NotraMuse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -608,6 +762,7 @@
 		};
 		520C0AAE2922D693004EA851 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D166A9E13E05CC887C9D6A13 /* Pods-NotraMuseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -628,6 +783,7 @@
 		};
 		520C0AAF2922D693004EA851 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B3780E77FC3D86FF6BDAAB8 /* Pods-NotraMuseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -648,6 +804,7 @@
 		};
 		520C0AB12922D693004EA851 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB8D92D7D63BEB169B4F501 /* Pods-NotraMuse-NotraMuseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -666,6 +823,7 @@
 		};
 		520C0AB22922D693004EA851 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F671FD81E80434A3B27810 /* Pods-NotraMuse-NotraMuseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
