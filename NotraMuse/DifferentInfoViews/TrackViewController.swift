@@ -27,13 +27,25 @@ class TrackViewController: UIViewController {
     
     @IBOutlet weak var tracknumLabel: UILabel!
     
+   
+    var titulo: String?
+    var artist: String?
     
+    var track: Song?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        nameLabl.text = track?.getTitle()
+        
+        print(titulo)
+        
+        
+        
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*

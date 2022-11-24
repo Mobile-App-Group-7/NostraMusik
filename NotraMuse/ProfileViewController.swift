@@ -9,10 +9,21 @@ import UIKit
 import Parse
 
 class ProfileViewController: UIViewController {
+    
 
+    let user = PFUser()
+    
+    @IBOutlet weak var profileImg: UIImageView!
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    @IBOutlet weak var resetButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        var currentUser = PFUser.current()
+        usernameLabel.text = currentUser?.username
         // Do any additional setup after loading the view.
     }
     

@@ -193,6 +193,7 @@
 				520C0A852922D692004EA851 /* SceneDelegate.swift */,
 				520C0A872922D692004EA851 /* ViewController.swift */,
 				520C0A892922D692004EA851 /* Main.storyboard */,
+				A9EE7F25292EBDBA00BF9622 /* Album.swift */,
 				520C0A8C2922D693004EA851 /* Assets.xcassets */,
 				520C0A8E2922D693004EA851 /* LaunchScreen.storyboard */,
 				520C0A912922D693004EA851 /* Info.plist */,
@@ -286,7 +287,6 @@
 			isa = PBXGroup;
 			children = (
 				A9EE7F23292EBD9900BF9622 /* DeezerAPI.swift */,
-				A9EE7F25292EBDBA00BF9622 /* Album.swift */,
 				A9EE7F27292EBDD800BF9622 /* Artist.swift */,
 				A9EE7F29292EBDE900BF9622 /* Song.swift */,
 				A9EE7F2B292EBDFD00BF9622 /* ChartResult.swift */,

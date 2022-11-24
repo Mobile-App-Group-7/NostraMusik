@@ -9,7 +9,8 @@ import UIKit
 
 class SearchTableViewCell: UITableViewCell {
     
-        
+    @IBOutlet weak var coverView: UIImageView!
+    
     @IBOutlet weak var songLabel: UILabel!
     
     override func awakeFromNib() {
