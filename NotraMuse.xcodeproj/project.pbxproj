@@ -35,6 +35,11 @@
 		5273AD2D292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2C292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift */; };
 		5273AD2F292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2E292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift */; };
 		92044B5ADD4E9B8B3AF7A977 /* Pods_NotraMuse_NotraMuseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED119C4B44DD02E6E0D6C901 /* Pods_NotraMuse_NotraMuseUITests.framework */; };
+		A9EE7F24292EBD9900BF9622 /* DeezerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F23292EBD9900BF9622 /* DeezerAPI.swift */; };
+		A9EE7F26292EBDBA00BF9622 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F25292EBDBA00BF9622 /* Album.swift */; };
+		A9EE7F28292EBDD800BF9622 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F27292EBDD800BF9622 /* Artist.swift */; };
+		A9EE7F2A292EBDE900BF9622 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F29292EBDE900BF9622 /* Song.swift */; };
+		A9EE7F2C292EBDFD00BF9622 /* ChartResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F2B292EBDFD00BF9622 /* ChartResult.swift */; };
 		C7665BAC292E70300064BF32 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7665BAB292E70300064BF32 /* ItemCollectionViewCell.swift */; };
 		C7665BAE292E78CD0064BF32 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7665BAD292E78CD0064BF32 /* ProfileViewController.swift */; };
 		E253832E29299B6D007AC30B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E253832D29299B6D007AC30B /* SearchViewController.swift */; };
@@ -91,6 +96,11 @@
 		5EB8D92D7D63BEB169B4F501 /* Pods-NotraMuse-NotraMuseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse-NotraMuseUITests.debug.xcconfig"; path = "Target Support Files/Pods-NotraMuse-NotraMuseUITests/Pods-NotraMuse-NotraMuseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E5487C89400304DBC9AF1AA /* Pods_NotraMuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotraMuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8559857B7261EB75BE58213 /* Pods-NotraMuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.release.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.release.xcconfig"; sourceTree = "<group>"; };
+		A9EE7F23292EBD9900BF9622 /* DeezerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerAPI.swift; sourceTree = "<group>"; };
+		A9EE7F25292EBDBA00BF9622 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		A9EE7F27292EBDD800BF9622 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		A9EE7F29292EBDE900BF9622 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		A9EE7F2B292EBDFD00BF9622 /* ChartResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartResult.swift; sourceTree = "<group>"; };
 		C7665BAB292E70300064BF32 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7665BAD292E78CD0064BF32 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CE628C28B4B01447DE230F42 /* Pods-NotraMuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.debug.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +187,7 @@
 		520C0A822922D692004EA851 /* NotraMuse */ = {
 			isa = PBXGroup;
 			children = (
+				A9EE7F22292EBD8B00BF9622 /* Deezer */,
 				520C0AB32922DAF2004EA851 /* Fonts */,
 				520C0A832922D692004EA851 /* AppDelegate.swift */,
 				520C0A852922D692004EA851 /* SceneDelegate.swift */,
@@ -269,6 +280,18 @@
 				5273AD2A292D38DF00183301 /* SinglePlaylistViewController.swift */,
 			);
 			path = PlaylistHomeScreen;
+			sourceTree = "<group>";
+		};
+		A9EE7F22292EBD8B00BF9622 /* Deezer */ = {
+			isa = PBXGroup;
+			children = (
+				A9EE7F23292EBD9900BF9622 /* DeezerAPI.swift */,
+				A9EE7F25292EBDBA00BF9622 /* Album.swift */,
+				A9EE7F27292EBDD800BF9622 /* Artist.swift */,
+				A9EE7F29292EBDE900BF9622 /* Song.swift */,
+				A9EE7F2B292EBDFD00BF9622 /* ChartResult.swift */,
+			);
+			path = Deezer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,24 +536,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9EE7F2C292EBDFD00BF9622 /* ChartResult.swift in Sources */,
 				E253832E29299B6D007AC30B /* SearchViewController.swift in Sources */,
 				03CB29A82923F2C30080FFF3 /* TrackViewController.swift in Sources */,
 				C7665BAE292E78CD0064BF32 /* ProfileViewController.swift in Sources */,
 				524958AB2923531F003F8AC4 /* HomeSongTableViewCell.swift in Sources */,
 				038386112923F8300017B5A5 /* ArtistViewController.swift in Sources */,
 				E25383302929A128007AC30B /* SearchTableViewCell.swift in Sources */,
+				A9EE7F24292EBD9900BF9622 /* DeezerAPI.swift in Sources */,
 				524958A929235267003F8AC4 /* HomeViewController.swift in Sources */,
 				520C0AB92922DB46004EA851 /* LoginViewController.swift in Sources */,
 				520C0A882922D692004EA851 /* ViewController.swift in Sources */,
 				5273AD20292CBC5500183301 /* FullAlbumTableViewCell.swift in Sources */,
 				520C0A842922D692004EA851 /* AppDelegate.swift in Sources */,
+				A9EE7F2A292EBDE900BF9622 /* Song.swift in Sources */,
 				520C0A862922D692004EA851 /* SceneDelegate.swift in Sources */,
+				A9EE7F28292EBDD800BF9622 /* Artist.swift in Sources */,
 				C7665BAC292E70300064BF32 /* ItemCollectionViewCell.swift in Sources */,
 				5273AD27292D32CE00183301 /* PlaylistViewController.swift in Sources */,
 				5273AD22292CBC5900183301 /* SonginAlbumTableViewCell.swift in Sources */,
 				5273AD19292CB7DA00183301 /* FullAlbumViewController.swift in Sources */,
 				5273AD2B292D38DF00183301 /* SinglePlaylistViewController.swift in Sources */,
 				5273AD2F292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift in Sources */,
+				A9EE7F26292EBDBA00BF9622 /* Album.swift in Sources */,
 				5273AD29292D335900183301 /* PlaylistsTableViewCell.swift in Sources */,
 				5273AD2D292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift in Sources */,
 			);

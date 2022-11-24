@@ -9,6 +9,7 @@ target 'NotraMuse' do
 
   pod 'AlamofireImage'
   pod 'Parse'
+  pod 'SwiftAudioPlayer'
 
   target 'NotraMuseTests' do
     inherit! :search_paths
