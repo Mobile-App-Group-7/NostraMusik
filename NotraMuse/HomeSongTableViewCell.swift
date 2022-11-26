@@ -17,6 +17,9 @@ class HomeSongTableViewCell: UITableViewCell {
         }
     }
     var indexPathVar = 0
+    var parent: UIViewController?
+    
+    var sendingData: Any?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +36,7 @@ class HomeSongTableViewCell: UITableViewCell {
     }
 
 }
+
 extension HomeSongTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if self.chart == nil {
@@ -87,7 +91,19 @@ extension HomeSongTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("\(indexPathVar)")
+        
+        if indexPathVar == 0 {
+            self.sendingData = self.chart!.getSongs()[indexPath.row]
+            self.parent?.performSegue(withIdentifier: "showSongInfo", sender: self)
+        }
+        else if indexPathVar == 1 {
+            self.sendingData = self.chart!.getAlbums()[indexPath.row]
+            self.parent?.performSegue(withIdentifier: "showAlbumInfo", sender: self)
+        }
+        else {
+            self.sendingData = self.chart!.getArtists()[indexPath.row]
+            self.parent?.performSegue(withIdentifier: "showArtistInfo", sender: self)
+        }
         
     }
 }

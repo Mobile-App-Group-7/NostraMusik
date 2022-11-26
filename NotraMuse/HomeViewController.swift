@@ -43,7 +43,6 @@ class HomeViewController: UIViewController {
         delegate.window?.rootViewController = loginViewController
     }
     
-    
     /*
     // MARK: - Navigation
 
@@ -66,18 +65,21 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
             let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSongsTableCell", for: indexPath) as! HomeSongTableViewCell
             cell.RowTitleLabel.text = "Top Songs"
             cell.indexPathVar = indexPath.row
+            cell.parent = self
             cell.chart = self.chart
             return cell
         } else if indexPath.row == 1{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "HomeSongsTableCell", for: indexPath) as! HomeSongTableViewCell
             cell.RowTitleLabel.text = "Top Albums"
             cell.indexPathVar = indexPath.row
+            cell.parent = self
             cell.chart = self.chart
             return cell
         } else{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "HomeSongsTableCell", for: indexPath) as! HomeSongTableViewCell
             cell.RowTitleLabel.text = "Top Artists"
             cell.indexPathVar = indexPath.row
+            cell.parent = self
             cell.chart = self.chart
             return cell
         }
@@ -89,5 +91,21 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         let height = (view.frame.size.height - (navigationBarHeight*2) - tabBarheight) / 3
         return height
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard sender is HomeSongTableViewCell else {
+            return
+        }
+        
+        if segue.identifier == "showSongInfo" {
+            
+        }
+        else if segue.identifier == "showAlbumInfo" {
+            let album = (sender as! HomeSongTableViewCell).sendingData as! Album
+            (segue.destination as! FullAlbumViewController).album = album
+        }
+        else if segue.identifier == "showArtistInfo" {
+            
+        }
+    }
 }

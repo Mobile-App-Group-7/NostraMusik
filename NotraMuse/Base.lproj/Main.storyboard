@@ -328,11 +328,11 @@
             <objects>
                 <viewController id="DnY-Td-jaA" customClass="ArtistViewController" customModule="NotraMuse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qhV-dp-2NA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zI-lv-6lb">
-                                <rect key="frame" x="27" y="409" width="367" height="46"/>
+                                <rect key="frame" x="27" y="389" width="367" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="DXw-ZM-Psi"/>
                                     <constraint firstAttribute="width" constant="367" id="sUt-nI-GL6"/>
@@ -342,7 +342,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Albums:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wV-He-0Sk">
-                                <rect key="frame" x="20" y="638" width="360" height="28.666666666666629"/>
+                                <rect key="frame" x="20" y="618" width="360" height="28.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28.670000000000002" id="c58-Fg-55U"/>
                                     <constraint firstAttribute="width" constant="360" id="t47-Eh-2Wg"/>
@@ -352,7 +352,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Fans: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Js-m1-kqL">
-                                <rect key="frame" x="20" y="504" width="374" height="51"/>
+                                <rect key="frame" x="20" y="484" width="374" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="6Xx-Gc-DMm"/>
                                     <constraint firstAttribute="height" constant="51" id="VbV-Vx-ZkA"/>
@@ -362,7 +362,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-gR-mpb">
-                                <rect key="frame" x="20" y="124" width="374" height="263.66666666666669"/>
+                                <rect key="frame" x="20" y="123.99999999999999" width="374" height="243.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="244" id="Awu-0v-bjc"/>
                                     <constraint firstAttribute="width" constant="374" id="sTp-pQ-vMl"/>
@@ -401,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fst-7P-daS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4046.376811594203" y="-214.95535714285714"/>
+            <point key="canvasLocation" x="4954" y="-421"/>
         </scene>
         <!--Search-->
         <scene sceneID="S39-ff-E4x">
@@ -523,7 +523,6 @@
                                                                 <outlet property="ItemTitleLabel" destination="tPZ-M6-K6L" id="LvW-Ne-7aR"/>
                                                                 <outlet property="itemImage" destination="47S-d9-mQx" id="2RD-Qd-24F"/>
                                                                 <outlet property="itemTitleLabel" destination="5nB-4A-LlY" id="vW2-Cr-BEh"/>
-                                                                <segue destination="fy6-yO-LSO" kind="show" id="bJg-1e-0Cc"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -574,25 +573,28 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="qlD-Tw-Fw6" id="xWp-oE-7hl"/>
+                        <segue destination="DnY-Td-jaA" kind="presentation" identifier="showArtistInfo" id="y2H-te-mqP"/>
+                        <segue destination="fy6-yO-LSO" kind="presentation" identifier="showAlbumInfo" id="Yb9-Qf-422"/>
+                        <segue destination="k8c-w5-A0B" kind="presentation" identifier="showSongInfo" id="SZD-ix-oBz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6U5-ct-cLs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2447.826086956522" y="-215.625"/>
+            <point key="canvasLocation" x="3009" y="-341"/>
         </scene>
         <!--Track View Controller-->
         <scene sceneID="hwc-Xe-VSl">
             <objects>
                 <viewController id="k8c-w5-A0B" customClass="TrackViewController" customModule="NotraMuse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O26-dc-wR1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.quarternote.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Rm-zb-8nR">
-                                <rect key="frame" x="20" y="81" width="374" height="355.66666666666663"/>
+                                <rect key="frame" x="20" y="81" width="374" height="335.66666666666663"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cbT-Y8-IkG">
-                                <rect key="frame" x="150" y="489.66666666666669" width="24.666666666666657" height="26"/>
+                                <rect key="frame" x="150" y="469.66666666666669" width="24.666666666666657" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21.329999999999998" id="Ilo-Fj-kd1"/>
                                     <constraint firstAttribute="width" constant="24.670000000000002" id="kwR-sj-1p2"/>
@@ -601,7 +603,7 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MH4-Oo-us3">
-                                <rect key="frame" x="28" y="452.33333333333331" width="359" height="31.333333333333314"/>
+                                <rect key="frame" x="28" y="432.33333333333331" width="359" height="31.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -619,7 +621,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="vzp-oQ-sLM">
-                                <rect key="frame" x="28.000000000000004" y="562.66666666666663" width="39.333333333333343" height="238"/>
+                                <rect key="frame" x="28.000000000000004" y="542.66666666666663" width="39.333333333333343" height="238"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="8hL-0C-H53">
                                         <rect key="frame" x="0.0" y="-2.3333333333333357" width="39.333333333333336" height="35"/>
@@ -643,13 +645,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Realease Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6v-k9-0zO">
-                                <rect key="frame" x="87" y="709" width="125.33333333333331" height="24"/>
+                                <rect key="frame" x="87" y="689" width="125.33333333333331" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwJ-me-5Dh">
-                                <rect key="frame" x="87" y="776" width="124" height="24"/>
+                                <rect key="frame" x="87" y="756" width="124" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -706,7 +708,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJs-rE-Dko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3242.0289855072465" y="-214.95535714285714"/>
+            <point key="canvasLocation" x="4955" y="248"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YuE-fa-9hZ">
@@ -864,13 +866,13 @@
         <!--FullAlbumViewController-->
         <scene sceneID="R4s-ad-MzR">
             <objects>
-                <viewController storyboardIdentifier="FullAlbumViewController" title="FullAlbumViewController" modalPresentationStyle="fullScreen" id="fy6-yO-LSO" customClass="FullAlbumViewController" customModule="NotraMuse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FullAlbumViewController" title="FullAlbumViewController" id="fy6-yO-LSO" customClass="FullAlbumViewController" customModule="NotraMuse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ne6-ru-igd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ue4-Od-AWA">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FullAlbumTableViewCell" rowHeight="365" id="usG-63-Y2L" customClass="FullAlbumTableViewCell" customModule="NotraMuse" customModuleProvider="target">
@@ -1013,7 +1015,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thv-dB-OTu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4930" y="-215"/>
+            <point key="canvasLocation" x="4954" y="-1102"/>
         </scene>
     </scenes>
     <resources>
