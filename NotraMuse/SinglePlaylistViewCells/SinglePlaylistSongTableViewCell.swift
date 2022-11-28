@@ -12,6 +12,7 @@ class SinglePlaylistSongTableViewCell: UITableViewCell {
     @IBOutlet weak var songTitleLabel: UILabel!
     @IBOutlet weak var AlbumImage: UIImageView!
     @IBOutlet weak var songDurationLabel: UILabel!
+    @IBOutlet weak var artistNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
