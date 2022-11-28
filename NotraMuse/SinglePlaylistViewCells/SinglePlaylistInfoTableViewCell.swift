@@ -11,6 +11,8 @@ class SinglePlaylistInfoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var playlistLabel: UILabel!
     @IBOutlet weak var playlistImage: UIImageView!
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

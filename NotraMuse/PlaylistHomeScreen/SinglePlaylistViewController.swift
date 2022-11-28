@@ -70,7 +70,7 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0{
-            return 300
+            return 290
         } else{
             let navigationBarHeight = self.navigationController!.navigationBar.frame.height
             let tabBarheight = self.tabBarController!.tabBar.frame.height
