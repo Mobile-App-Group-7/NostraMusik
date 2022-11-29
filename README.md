@@ -307,11 +307,20 @@ Keep Restart:
 
 <img src='https://media.giphy.com/media/Xbc9ONr7fQxQ4TjMLp/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+Fixtures Extra Workflow of User:
+
+<img src='https://media.giphy.com/media/F040el5AAXpKPknkpq/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://media.giphy.com/media/SChC5HBkIKMj296XJS/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Carter Sellgren
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Worked on API Incorporation Fixtures:
+
+<img src='https://i.imgur.com/y4ZWXDn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Nelly Delgado
+
 
 <img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
