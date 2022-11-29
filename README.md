@@ -320,9 +320,8 @@ Worked on API Incorporation Fixtures:
 <img src='https://i.imgur.com/y4ZWXDn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Nelly Delgado
-
-
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/pkDTiSFo5s.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/0hIdykkBQV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Sprint 2
 

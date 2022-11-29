@@ -13,6 +13,9 @@ class SearchTableViewCell: UITableViewCell {
     
     @IBOutlet weak var songLabel: UILabel!
     
+    
+    @IBOutlet weak var addtoplaylistButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

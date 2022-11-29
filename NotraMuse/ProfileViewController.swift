@@ -17,13 +17,32 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var usernameLabel: UILabel!
     
-    @IBOutlet weak var resetButton: UIButton!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var lastnameLabel: UILabel!
+    
+    
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var currentUser = PFUser.current()
+        let currentUser = PFUser.current()
         usernameLabel.text = currentUser?.username
+        nameLabel.text = "Harvey"
+        lastnameLabel.text = "Machado"
+        locationLabel.text="Peru"
+        descriptionLabel.text = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        descriptionLabel.adjustsFontSizeToFitWidth = true
+        descriptionLabel.minimumScaleFactor=0.5
         // Do any additional setup after loading the view.
     }
     

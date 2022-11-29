@@ -11,8 +11,11 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
     
     @IBOutlet weak var tableview: UITableView!
     
-    var searchResult = [Song]()
     
+    
+    
+    var searchResult = [Song]()
+    var selectedIndex: Int?
     var searchController: UISearchController!
     
     
@@ -56,6 +59,18 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            self.selectedIndex = indexPath.row
+            self.performSegue(withIdentifier: "searchtotrack", sender: nil)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "searchtotrack" {
+            let view = segue.destination as! TrackViewController
+            let selectedSong = self.searchResult[self.selectedIndex!]
+            view.track = selectedSong
+        }
+    }
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text {
             Task {

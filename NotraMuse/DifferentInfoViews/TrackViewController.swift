@@ -28,8 +28,6 @@ class TrackViewController: UIViewController {
     @IBOutlet weak var tracknumLabel: UILabel!
     
    
-    var titulo: String?
-    var artist: String?
     
     var track: Song?
     
@@ -38,13 +36,11 @@ class TrackViewController: UIViewController {
         
         
         nameLabl.text = track?.getTitle()
+        trackimg.af.setImage(withURL: (track?.getSongImageUrl())!)
+
+
         
-        print(titulo)
-        
-        
-        
-        // Do any additional setup after loading the view.
-    }
+}
     
     
 
