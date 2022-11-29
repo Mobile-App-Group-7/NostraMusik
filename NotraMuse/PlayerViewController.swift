@@ -14,6 +14,7 @@ class PlayerViewController: UIViewController {
     var imageURL: String = ""
     var artistName: String = ""
     
+    
     var player: AVPlayer?
     var playerItem: AVPlayerItem?
     
@@ -21,11 +22,27 @@ class PlayerViewController: UIViewController {
     @IBOutlet weak var songTitleLabel: UILabel!
     @IBOutlet weak var albumImage: UIImageView!
     @IBOutlet weak var artistnameLabel: UILabel!
-    
+    @IBOutlet weak var currentTimeLabel: UILabel!
+    @IBOutlet weak var songDurationLabel: UILabel!
     @IBOutlet weak var playPauseBtn: UIButton!
     @IBOutlet weak var forwardBtn: UIButton!
     @IBOutlet weak var backwardBtn: UIButton!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var songSlider: UISlider!
+    
+    @IBAction func changeAudioTime(_ sender: Any) {
+        print(songSlider.value)
+        
+        if let duration = player?.currentItem?.asset.duration{
+            let totalSeconds = CMTimeGetSeconds(duration)
+            let value = Float64(songSlider.value) * totalSeconds
+            
+            let seekTime = CMTime(value: Int64(value), timescale: 1)
+            
+            player?.seek(to: seekTime)
+            
+        }
+    }
     
     @IBAction func pressPlayPauseButton(_ sender: Any) {
         if player!.timeControlStatus == .playing{
@@ -83,6 +100,20 @@ class PlayerViewController: UIViewController {
                 player = AVPlayer(playerItem: playerItem)
         player!.play()
         
+        let interval = CMTime(value: 1, timescale: 2)
+        player?.addPeriodicTimeObserver(forInterval: interval, queue: DispatchQueue.main, using: { [self](progressTime) in
+            let seconds = CMTimeGetSeconds(progressTime)
+            let secondsString = String(format: "%02d", Int(seconds.truncatingRemainder(dividingBy: 60)))
+            let minutesString = String(format: "%02d", Int(seconds / 60))
+            self.currentTimeLabel.text = "\(minutesString):\(secondsString)"
+            
+            if let duration = self.player?.currentItem?.asset.duration{
+                let durationSeconds = CMTimeGetSeconds(duration)
+                
+                songSlider.value = Float(seconds / durationSeconds)
+            }
+
+        })
         
         player?.volume = 0.3
         
@@ -97,35 +128,18 @@ class PlayerViewController: UIViewController {
         slider.value = 0.3
         slider.addTarget(self, action: #selector(didSlideSlider(_:)), for: .valueChanged)
        // holder.addSubview(slider)
-        //let urlString = Bundle.main.path(forResource: "Test", ofType: "mp3")
-//        let url =  URL(string: "https://cdns-preview-8.dzcdn.net/stream/c-828a4c6ef4e912f1459f09791d26f863-4.mp3")
-//        let urlString = url?.path
-//        do {
-//            try AVAudioSession.sharedInstance().setMode(.default)
-//            try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
-//
-//            print(urlString as Any)
-//            if let urlString = urlString {
-//                let urlString = "Nothing"
-//                print(urlString)
-//            } else{
-//                print("urlWorks")
-//                return
-//            }
-//            guard let urlString = urlString else {
-//                return
-//            }
-//            player = try AVAudioPlayer(contentsOf: URL(string: urlString)!)
-//
-//            guard let player = player else {
-//                return
-//            }
-//            player.play()
-//
-//        }
-//        catch{
-//            print("error with audio player")
-//        }
+        
+        if let duration = player?.currentItem?.asset.duration{
+            let seconds = CMTimeGetSeconds(duration)
+            
+            //print("Duration: \(duration)")
+            //print("seconds: \(seconds)")
+            let secondsText = Int(seconds.truncatingRemainder(dividingBy: 60))
+            
+            let minutesText = String(format: "%02d", Int(seconds) / 60)
+            songDurationLabel.text = "\(minutesText):\(secondsText)"
+        }
+        
     }
     
     @objc func didSlideSlider(_ slider: UISlider){
@@ -141,4 +155,5 @@ class PlayerViewController: UIViewController {
         }
     }
 
+    
 }
