@@ -309,11 +309,11 @@ Keep Restart:
 
 ## Carter Sellgren
 
-<img src='https://media.giphy.com/media/cimvuohY0zd4VmbQbn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Nelly Delgado
 
-<img src='https://media.giphy.com/media/cimvuohY0zd4VmbQbn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Sprint 2
 
