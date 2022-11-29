@@ -27,13 +27,33 @@ class PlayerViewController: UIViewController {
     @IBOutlet weak var backwardBtn: UIButton!
     @IBOutlet weak var slider: UISlider!
     
+    @IBAction func pressPlayPauseButton(_ sender: Any) {
+        if player!.timeControlStatus == .playing{
+            player?.pause()
+            playPauseBtn.setBackgroundImage(UIImage(systemName: "play"), for: .normal)
+            //holder.addSubview(playPauseBtn)
+            print("inside played constraint with \(holder.subviews.count)")
+        } else if player!.timeControlStatus == .paused{
+            player?.play()
+            playPauseBtn.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
+            //holder.addSubview(playPauseBtn)
+            print("inside paused constraint with \(holder.subviews.count)")
+        }
+    }
+    
+    @IBAction func pressforwardButton(_ sender: Any) {
+    }
+    
+    @IBAction func pressBackwardButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         songTitleLabel.text = track
 
         //)(UIImage(systemName: "person.fill"))
-        artistnameLabel.text = artistName        // Do any additional setup after loading the view.
+        artistnameLabel.text = artistName
+        configure()// Do any additional setup after loading the view.
     }
     
 
@@ -47,13 +67,13 @@ class PlayerViewController: UIViewController {
     }
     */
     
-    override func viewDidLayoutSubviews() {
+    /*override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         print("inside view did layout submvies")
         if holder.subviews.count == 7 {
             configure()
         }
-    }
+    }*/
     
     func configure(){
         
@@ -65,6 +85,12 @@ class PlayerViewController: UIViewController {
         
         
         player?.volume = 0.3
+        
+        playPauseBtn.setBackgroundImage(UIImage(systemName: "pause.fill"), for: .normal)
+        playPauseBtn.tintColor = UIColor(red: 200/255, green: 115/255,blue: 200/255, alpha: 1)
+        backwardBtn.tintColor = UIColor(red: 200/255, green: 115/255,blue: 200/255, alpha: 1)
+        forwardBtn.tintColor = UIColor(red: 200/255, green: 115/255,blue: 200/255, alpha: 1)
+        //holder.addSubview(playPauseBtn)
         
         //slider.frame = CGRect(x: 20, y: holder.frame.size.height-100, width: holder.frame.size.width-40, height: 50)
         
@@ -110,6 +136,8 @@ class PlayerViewController: UIViewController {
         super.viewDidDisappear(animated)
         if let player = player {
             player.pause()
+            playPauseBtn.setBackgroundImage(UIImage(systemName: "play"), for: .normal)
+
         }
     }
 

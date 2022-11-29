@@ -115,7 +115,7 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
         
         PVC.track = song_name as! String
         PVC.imageURL = url as! String
-        PVC.artistName = "El Chingon"
+        PVC.artistName = "Artist Name Here"
     }
 
 
