@@ -35,17 +35,18 @@ For NotraMuse, we identified the following “must-have” features which a user
 
 After Sprint 1 most use cases are made in parts and just need to be joined to have the completed user story
 
-* User can login
-* User can sign up
-* User stays logged in across restarts
-* User can explore the top artists, tracks and albums world wide and default location set as the U.S.
-* User can search for tracks, albums, and artists
-[x] User can see detailed information about a track, artist, album
+[x] User can login
+[x] User can sign up
+[x] User stays logged in across restarts
+[x] User can explore the top artists, tracks and albums world wide and default location set as the U.S.
+[x] User can search for tracks, albums, and artists
+* User can see detailed information about a track, artist, album
 * User can add searched tracks to personalize playlist
 * User can play previews from saved tracks on the playlist
 * User can play previews from searched tracks
-* User can visualize saved tracks on playlist
-* User can visualize own profile user information 
+
+[x] User can visualize saved tracks on playlist
+[x] User can visualize own profile user information 
 
 **Optional Nice-to-have Stories**
 
@@ -294,7 +295,17 @@ User can see info of a song from their playlist:
 
 ## Leonardo Osorio
 
-<img src='https://media.giphy.com/media/cimvuohY0zd4VmbQbn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Playlist and LogOut:
+
+<img src='https://media.giphy.com/media/QdS6eKF65cNUDabFDA/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+user Sign Up:
+
+<img src='https://media.giphy.com/media/rU0v6inuFhWjXYGJBw/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Keep Restart:
+
+<img src='https://media.giphy.com/media/Xbc9ONr7fQxQ4TjMLp/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Carter Sellgren
 
