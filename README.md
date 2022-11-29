@@ -8,6 +8,7 @@ App Design Project - README
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 3. [Schema](#Schema)
+4. [Sprint 3](#Sprint-3)
 4. [Sprint 2](#Sprint-2)
 5. [Sprint 1](#Sprint-1)
 6. [Authors](#Authors)
@@ -277,6 +278,32 @@ List of network requests by screen:
     `GET`    | /chart | Get top artist,tracks, albums, playlist, and podcast 
     
     
+## Sprint 3
+
+## Nelson Mendez
+
+*Note audio can't be heard due to being a gif but music is played when view controller is displayed
+
+User can play a song:
+
+<img src='https://media.giphy.com/media/XIiNpoq3d5mZtpv6an/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+User can see info of a song from their playlist:
+
+<img src='https://media.giphy.com/media/zXiaGJuc12TaLdc8oB/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Leonardo Osorio
+
+<img src='https://media.giphy.com/media/cimvuohY0zd4VmbQbn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Carter Sellgren
+
+<img src='https://media.giphy.com/media/cimvuohY0zd4VmbQbn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Nelly Delgado
+
+<img src='https://media.giphy.com/media/cimvuohY0zd4VmbQbn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Sprint 2
 
 ## Nelson Mendez
