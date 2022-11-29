@@ -54,6 +54,7 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
             let playlistImg = playlist["playlistImageURL"] as! String
             let url = URL(string: playlistImg)!
             cell.playlistImage.af.setImage(withURL: url)
+            
             return cell
         }
         else{
@@ -70,7 +71,8 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0{
-            return 325
+            
+            return 330
         } else{
             let navigationBarHeight = self.navigationController!.navigationBar.frame.height
             let tabBarheight = self.tabBarController!.tabBar.frame.height
@@ -78,6 +80,42 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
             return height
         }
         
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        if indexPath.row != 0{
+//            let vc = storyboard!.instantiateViewController(withIdentifier: "PlayerViewController") as? PlayerViewController
+//
+//            let currentTrack = tracks[indexPath.row - 1]
+//            let track_name = currentTrack["trackName"]
+//            print(track_name as Any)
+//            //vc.songTitleLabel.text = track_name
+//            let trackImageURL = currentTrack["trackPosterURL"] as! String
+//            let url = URL(string: trackImageURL)!
+//            vc!.albumImage.af.setImage(withURL: url)
+//            vc!.artistnameLabel.text = "El Chingon"
+//            present(vc!, animated: true)
+//        }
+//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        let cell = sender as! SinglePlaylistSongTableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        
+        let currentTrack = tracks[indexPath.item - 1]
+        let song_name = currentTrack["trackName"]
+        let url = currentTrack["trackPosterURL"]
+        
+        let PVC = segue.destination as! PlayerViewController
+        
+        PVC.track = song_name as! String
+        PVC.imageURL = url as! String
+        PVC.artistName = "El Chingon"
     }
 
 

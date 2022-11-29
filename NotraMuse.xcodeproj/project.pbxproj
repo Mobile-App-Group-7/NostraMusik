@@ -34,6 +34,8 @@
 		5273AD2B292D38DF00183301 /* SinglePlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2A292D38DF00183301 /* SinglePlaylistViewController.swift */; };
 		5273AD2D292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2C292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift */; };
 		5273AD2F292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD2E292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift */; };
+		52897C142935A7FB008FFC26 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52897C132935A7FB008FFC26 /* PlayerViewController.swift */; };
+		52897C162935DA8B008FFC26 /* Test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52897C152935DA8A008FFC26 /* Test.mp3 */; };
 		92044B5ADD4E9B8B3AF7A977 /* Pods_NotraMuse_NotraMuseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED119C4B44DD02E6E0D6C901 /* Pods_NotraMuse_NotraMuseUITests.framework */; };
 		A9EE7F24292EBD9900BF9622 /* DeezerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F23292EBD9900BF9622 /* DeezerAPI.swift */; };
 		A9EE7F26292EBDBA00BF9622 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F25292EBDBA00BF9622 /* Album.swift */; };
@@ -93,6 +95,8 @@
 		5273AD2A292D38DF00183301 /* SinglePlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaylistViewController.swift; sourceTree = "<group>"; };
 		5273AD2C292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaylistInfoTableViewCell.swift; sourceTree = "<group>"; };
 		5273AD2E292D3A3400183301 /* SinglePlaylistSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaylistSongTableViewCell.swift; sourceTree = "<group>"; };
+		52897C132935A7FB008FFC26 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		52897C152935DA8A008FFC26 /* Test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Test.mp3; sourceTree = "<group>"; };
 		5EB8D92D7D63BEB169B4F501 /* Pods-NotraMuse-NotraMuseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse-NotraMuseUITests.debug.xcconfig"; path = "Target Support Files/Pods-NotraMuse-NotraMuseUITests/Pods-NotraMuse-NotraMuseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E5487C89400304DBC9AF1AA /* Pods_NotraMuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotraMuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8559857B7261EB75BE58213 /* Pods-NotraMuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.release.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,11 +191,13 @@
 		520C0A822922D692004EA851 /* NotraMuse */ = {
 			isa = PBXGroup;
 			children = (
+				52897C152935DA8A008FFC26 /* Test.mp3 */,
 				A9EE7F22292EBD8B00BF9622 /* Deezer */,
 				520C0AB32922DAF2004EA851 /* Fonts */,
 				520C0A832922D692004EA851 /* AppDelegate.swift */,
 				520C0A852922D692004EA851 /* SceneDelegate.swift */,
 				520C0A872922D692004EA851 /* ViewController.swift */,
+				52897C132935A7FB008FFC26 /* PlayerViewController.swift */,
 				520C0A892922D692004EA851 /* Main.storyboard */,
 				A9EE7F25292EBDBA00BF9622 /* Album.swift */,
 				520C0A8C2922D693004EA851 /* Assets.xcassets */,
@@ -404,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				520C0AB52922DB2E004EA851 /* Orbitron-Medium.ttf in Resources */,
+				52897C162935DA8B008FFC26 /* Test.mp3 in Resources */,
 				520C0A902922D693004EA851 /* LaunchScreen.storyboard in Resources */,
 				520C0A8D2922D693004EA851 /* Assets.xcassets in Resources */,
 				520C0A8B2922D692004EA851 /* Main.storyboard in Resources */,
@@ -543,6 +550,7 @@
 				524958AB2923531F003F8AC4 /* HomeSongTableViewCell.swift in Sources */,
 				038386112923F8300017B5A5 /* ArtistViewController.swift in Sources */,
 				E25383302929A128007AC30B /* SearchTableViewCell.swift in Sources */,
+				52897C142935A7FB008FFC26 /* PlayerViewController.swift in Sources */,
 				A9EE7F24292EBD9900BF9622 /* DeezerAPI.swift in Sources */,
 				524958A929235267003F8AC4 /* HomeViewController.swift in Sources */,
 				520C0AB92922DB46004EA851 /* LoginViewController.swift in Sources */,
