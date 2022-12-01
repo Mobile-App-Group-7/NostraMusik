@@ -11,9 +11,6 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
     
     @IBOutlet weak var tableview: UITableView!
     
-    
-    
-    
     var searchResult = [Song]()
     var selectedIndex: Int?
     var searchController: UISearchController!
@@ -55,6 +52,7 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         
         cell.coverView.af.setImage(withURL: searchResult[indexPath.row].getSongImageUrl()!)
         cell.songLabel?.text = searchResult[indexPath.row].getTitle()
+        cell.track = searchResult[indexPath.row]
         return cell
         
     }

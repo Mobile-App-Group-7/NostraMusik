@@ -672,6 +672,9 @@
                                                     <rect key="frame" x="340" y="53" width="43" height="41"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="AddTrackToPlaylist:" destination="16E-Ra-96j" eventType="touchUpInside" id="qM9-B7-lse"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

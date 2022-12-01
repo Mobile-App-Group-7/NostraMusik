@@ -7,42 +7,35 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
 class ProfileViewController: UIViewController {
     
-
     let user = PFUser()
     
     @IBOutlet weak var profileImg: UIImageView!
-    
     @IBOutlet weak var usernameLabel: UILabel!
-    
-    
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var lastnameLabel: UILabel!
-    
-    
     @IBOutlet weak var locationLabel: UILabel!
-    
-    
     @IBOutlet weak var descriptionLabel: UILabel!
-    
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let imageFile = PFUser.current()!["userProfileImageURL"] as! String
+        let url = URL(string: imageFile)!
+        
+        profileImg.af.setImage(withURL: url)
         let currentUser = PFUser.current()
         usernameLabel.text = currentUser?.username
-        nameLabel.text = "Harvey"
-        lastnameLabel.text = "Machado"
-        locationLabel.text="Peru"
-        descriptionLabel.text = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        nameLabel.text = currentUser!["userFirstName"] as? String
+        lastnameLabel.text = currentUser!["userLastName"] as? String
+        locationLabel.text = currentUser!["userLocation"] as? String
+        descriptionLabel.text = currentUser!["userDescription"] as? String
         descriptionLabel.adjustsFontSizeToFitWidth = true
         descriptionLabel.minimumScaleFactor=0.5
+        
         // Do any additional setup after loading the view.
     }
     

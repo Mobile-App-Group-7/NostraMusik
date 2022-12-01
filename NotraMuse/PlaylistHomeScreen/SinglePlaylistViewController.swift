@@ -60,7 +60,7 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "SinglePlaylistSongTableViewCell", for: indexPath) as! SinglePlaylistSongTableViewCell
             let currentTrack = tracks[indexPath.row - 1]
-            cell.songDurationLabel.text = "04:44"
+            cell.songDurationLabel.text = "04:44" // need to fix
             cell.songTitleLabel.text = currentTrack["trackName"] as? String
             let trackImageURL = currentTrack["trackPosterURL"] as! String
             let url = URL(string: trackImageURL)!
