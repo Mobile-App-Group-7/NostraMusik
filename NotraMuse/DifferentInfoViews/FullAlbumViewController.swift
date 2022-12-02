@@ -10,6 +10,7 @@ import UIKit
 class FullAlbumViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    var album: Album?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,17 @@ class FullAlbumViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        // Do any additional setup after loading the view.
+        // need to fetch album because the chart data does not contain the data needed
+        Task {
+            let (album, error) = await Deezer.shared.fetchAlbum(albumId: String(album!.getId()))
+            if error != nil {
+                print("Unable to get data from deezer api: \(String(describing: error))")
+            }
+            else {
+                self.album = album
+                tableView.reloadData()
+            }
+        }
     }
     
 
@@ -33,24 +44,33 @@ class FullAlbumViewController: UIViewController {
 }
 extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if album?.getSongs() != nil {
+            return album!.getSongs()!.count + 1
+        }
+        
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "FullAlbumTableViewCell", for: indexPath) as! FullAlbumTableViewCell
-            cell.AlbumTitleLabel.text = "Album"
+            cell.AlbumTitleLabel.text = album?.getTitle()
             cell.AlbumReleaseDate.text = "November 21,2022"
-            cell.ArtistNameLabel.text = "Artist"
+            cell.ArtistNameLabel.text = album?.getArtists()?.getName()
+            if album?.getCoverImageUrl() != nil {
+                cell.AlbumImage.af.setImage(withURL: (album!.getArtists()?.getProfilePictureUrl()!)!)
+            }
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SonginAlbumTableViewCell", for: indexPath) as! SonginAlbumTableViewCell
-            cell.TrackTitleLabel.text = "Song Name Here"
-            cell.TrackDurationLabel.text = "02:10"
+            cell.TrackTitleLabel.text = self.album?.getSongs()![indexPath.row - 1].getTitle()
+            cell.TrackDurationLabel.text = String((self.album?.getSongs()![indexPath.row - 1].getSongDuration())!)
+            cell.AlbumImage.af.setImage(withURL: album!.getCoverImageUrl()!)
             return cell
         }
         
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0{
             return 352

@@ -353,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJH-57-jm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3382.608695652174" y="462.72321428571428"/>
+            <point key="canvasLocation" x="3916" y="463"/>
         </scene>
         <!--PlayerViewController-->
         <scene sceneID="XFf-kY-2KA">
@@ -544,7 +544,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEH-Mm-2xa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4366.666666666667" y="462.72321428571428"/>
+            <point key="canvasLocation" x="4680" y="463"/>
         </scene>
         <!--Artist View Controller-->
         <scene sceneID="15q-uY-dR4">
@@ -555,13 +555,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zI-lv-6lb">
-                                <rect key="frame" x="50" y="454" width="314" height="30"/>
+                                <rect key="frame" x="50" y="405" width="314" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Fans: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Js-m1-kqL">
-                                <rect key="frame" x="20" y="525" width="374" height="51"/>
+                                <rect key="frame" x="20" y="476" width="374" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="6Xx-Gc-DMm"/>
                                     <constraint firstAttribute="height" constant="51" id="VbV-Vx-ZkA"/>
@@ -571,7 +571,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-gR-mpb">
-                                <rect key="frame" x="20" y="204" width="374" height="240.66666666666669"/>
+                                <rect key="frame" x="20" y="155" width="374" height="240.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="244" id="Awu-0v-bjc"/>
                                     <constraint firstAttribute="width" constant="374" id="sTp-pQ-vMl"/>
@@ -579,19 +579,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="noFans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79h-Uv-fz8">
-                                <rect key="frame" x="179" y="535" width="215" height="24"/>
+                                <rect key="frame" x="179" y="486" width="215" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="noAlbums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brv-ga-azl">
-                                <rect key="frame" x="229" y="649" width="165" height="41"/>
+                                <rect key="frame" x="229" y="600" width="165" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Albums:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wV-He-0Sk">
-                                <rect key="frame" x="20" y="657" width="204" height="24"/>
+                                <rect key="frame" x="20" y="608" width="204" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -624,6 +624,7 @@
                             <constraint firstItem="uQa-tT-RsT" firstAttribute="bottom" secondItem="9wV-He-0Sk" secondAttribute="bottom" constant="181" id="ybQ-fw-BYh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zLX-fd-Hn0"/>
                     <connections>
                         <outlet property="artistLabel" destination="zAW-gR-mpb" id="ISa-E0-rwI"/>
                         <outlet property="nameLabel" destination="6zI-lv-6lb" id="o0O-dV-fs4"/>
@@ -633,7 +634,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fst-7P-daS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4046.376811594203" y="-214.95535714285714"/>
+            <point key="canvasLocation" x="3864" y="-893"/>
         </scene>
         <!--Search-->
         <scene sceneID="S39-ff-E4x">
@@ -785,7 +786,6 @@
                                                                 <outlet property="ItemTitleLabel" destination="tPZ-M6-K6L" id="LvW-Ne-7aR"/>
                                                                 <outlet property="itemImage" destination="47S-d9-mQx" id="2RD-Qd-24F"/>
                                                                 <outlet property="itemTitleLabel" destination="5nB-4A-LlY" id="vW2-Cr-BEh"/>
-                                                                <segue destination="fy6-yO-LSO" kind="show" id="Uv3-K3-fzw"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -836,11 +836,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="qlD-Tw-Fw6" id="xWp-oE-7hl"/>
+                        <segue destination="fy6-yO-LSO" kind="show" identifier="homeToAlbum" id="PDH-G8-6aA"/>
+                        <segue destination="DnY-Td-jaA" kind="show" identifier="homeToArtist" id="z8r-lU-PwB"/>
+                        <segue destination="k8c-w5-A0B" kind="show" identifier="homeToTrack" id="8YP-R6-eBd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6U5-ct-cLs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2447.826086956522" y="-215.625"/>
+            <point key="canvasLocation" x="2449" y="-215"/>
         </scene>
         <!--Track View Controller-->
         <scene sceneID="hwc-Xe-VSl">
@@ -851,7 +854,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.quarternote.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Rm-zb-8nR">
-                                <rect key="frame" x="20" y="177.00000000000003" width="374" height="210.66666666666669"/>
+                                <rect key="frame" x="20" y="125" width="374" height="262.66666666666663"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cbT-Y8-IkG">
                                 <rect key="frame" x="150" y="440.66666666666669" width="24.666666666666657" height="26"/>
@@ -975,7 +978,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJs-rE-Dko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3242.0289855072465" y="-214.95535714285714"/>
+            <point key="canvasLocation" x="3864" y="-215"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YuE-fa-9hZ">
@@ -1384,9 +1387,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thv-dB-OTu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4930" y="-215"/>
+            <point key="canvasLocation" x="3864" y="-1576"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="8YP-R6-eBd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="17611" width="512" height="512"/>
         <image name="backward.circle" catalog="system" width="128" height="123"/>

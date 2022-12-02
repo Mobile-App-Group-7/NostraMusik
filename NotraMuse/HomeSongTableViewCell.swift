@@ -17,6 +17,7 @@ class HomeSongTableViewCell: UITableViewCell {
         }
     }
     var indexPathVar = 0
+    var parent: UIViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -73,7 +74,7 @@ extension HomeSongTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
         }
         else {
             let artist = self.chart!.getArtists()[indexPath.row]
-            cell.ItemImage.af.setImage(withURL: artist.getProfilePictureUrl())
+            cell.ItemImage.af.setImage(withURL: artist.getProfilePictureUrl()!)
             cell.ItemTitleLabel.text = artist.getName()
         }
         
@@ -87,7 +88,14 @@ extension HomeSongTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("\(indexPathVar)")
-        
+        if indexPathVar == 0 {
+            self.parent?.performSegue(withIdentifier: "homeToTrack", sender: self.chart!.getSongs()[indexPath.row])
+        }
+        else if indexPathVar == 1 {
+            self.parent?.performSegue(withIdentifier: "homeToAlbum", sender: self.chart!.getAlbums()[indexPath.row])
+        }
+        else {
+            self.parent?.performSegue(withIdentifier: "homeToArtist", sender: self.chart!.getArtists()[indexPath.row])
+        }
     }
 }

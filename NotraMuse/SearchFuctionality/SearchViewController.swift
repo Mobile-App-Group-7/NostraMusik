@@ -58,8 +58,8 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            self.selectedIndex = indexPath.row
-            self.performSegue(withIdentifier: "searchtotrack", sender: nil)
+        self.selectedIndex = indexPath.row
+        self.performSegue(withIdentifier: "searchtotrack", sender: nil)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -69,6 +69,7 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
             view.track = selectedSong
         }
     }
+    
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text {
             Task {

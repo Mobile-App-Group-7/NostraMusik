@@ -21,11 +21,24 @@ class ArtistViewController: UIViewController {
     
     @IBOutlet weak var numalbumLabel: UILabel!
     
+    var artist: Artist?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        Task {
+            let (art, error) = await Deezer.shared.fetchArtist(artistId: String(artist!.getId()))
+            if error != nil {
+                print("Error with deezer api: \(String(describing: error))")
+            }
+            else {
+                numfansLabel.text = String(art!.getNumFans()!)
+                artistLabel.af.setImage(withURL: art!.getProfilePictureUrl()!)
+                nameLabel.text = art!.getName()
+                numalbumLabel.text = String(art!.getNumAlbums()!)
+            }
+        }
     }
     
 

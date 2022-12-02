@@ -66,12 +66,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
             let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSongsTableCell", for: indexPath) as! HomeSongTableViewCell
             cell.RowTitleLabel.text = "Top Songs"
             cell.indexPathVar = indexPath.row
+            cell.selectionStyle = .none
+            cell.parent = self
             cell.chart = self.chart
             return cell
         } else if indexPath.row == 1{
             let cell =  tableView.dequeueReusableCell(withIdentifier: "HomeSongsTableCell", for: indexPath) as! HomeSongTableViewCell
             cell.RowTitleLabel.text = "Top Albums"
             cell.indexPathVar = indexPath.row
+            cell.selectionStyle = .none
+            cell.parent = self
             cell.chart = self.chart
             return cell
         } else{
@@ -79,6 +83,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
             cell.RowTitleLabel.text = "Top Artists"
             cell.indexPathVar = indexPath.row
             cell.chart = self.chart
+            cell.selectionStyle = .none
+            cell.parent = self
             return cell
         }
     }
@@ -89,5 +95,23 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         let height = (view.frame.size.height - (navigationBarHeight*2) - tabBarheight) / 3
         return height
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "homeToTrack" {
+            let view = segue.destination as! TrackViewController
+            view.track = (sender as! Song)
+        }
+        else if segue.identifier == "homeToAlbum" {
+            let view = segue.destination as! FullAlbumViewController
+            view.album = (sender as! Album)
+            
+        }
+        else if segue.identifier == "homeToArtist" {
+            let view = segue.destination as! ArtistViewController
+            view.artist = (sender as! Artist)
+        }
+        else {
+            print("Unaccounted for segue in home view controller")
+        }
+    }
 }
