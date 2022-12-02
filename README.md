@@ -35,24 +35,17 @@ For NotraMuse, we identified the following “must-have” features which a user
 
 After Sprint 1 most use cases are made in parts and just need to be joined to have the completed user story
 
-[x] User can login
-
-[x] User can sign up
-
-[x] User stays logged in across restarts
-
-[x] User can explore the top artists, tracks and albums world wide and default location set as the U.S.
-
-[x] User can search for tracks, albums, and artists
-
-* User can see detailed information about a track, artist, album
-* User can add searched tracks to personalize playlist
-* User can play previews from saved tracks on the playlist
-* User can play previews from searched tracks
-
-[x] User can visualize saved tracks on playlist
-
-[x] User can visualize own profile user information 
+- [x] User can login
+- [x] User can sign up
+- [x] User stays logged in across restarts
+- [x] User can explore the top artists, tracks and albums world wide and default location set as the U.S.
+- [x] User can search for tracks, albums, and artists
+- [] User can see detailed information about a track, artist, album
+- [] User can add searched tracks to personalize playlist
+- [] User can play previews from saved tracks on the playlist
+- [] User can play previews from searched tracks
+- [x] User can visualize saved tracks on playlist
+- [x] User can visualize own profile user information 
 
 **Optional Nice-to-have Stories**
 
