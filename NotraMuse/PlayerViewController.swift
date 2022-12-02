@@ -7,12 +7,14 @@
 
 import UIKit
 import AVFoundation
+import AlamofireImage
 
 class PlayerViewController: UIViewController {
 
     var track: String = ""
     var imageURL: String = ""
     var artistName: String = ""
+    var previewTrackURL: String = ""
     
     
     var player: AVPlayer?
@@ -67,7 +69,10 @@ class PlayerViewController: UIViewController {
         super.viewDidLoad()
         
         songTitleLabel.text = track
-
+        
+        let url = URL(string: imageURL)!
+        albumImage.af.setImage(withURL: url)
+        
         //)(UIImage(systemName: "person.fill"))
         artistnameLabel.text = artistName
         configure()// Do any additional setup after loading the view.
@@ -95,7 +100,7 @@ class PlayerViewController: UIViewController {
     func configure(){
         
         
-        let url = URL(string: "https://cdns-preview-8.dzcdn.net/stream/c-828a4c6ef4e912f1459f09791d26f863-4.mp3")
+        let url = URL(string: previewTrackURL)
                 let playerItem:AVPlayerItem = AVPlayerItem(url: url!)
                 player = AVPlayer(playerItem: playerItem)
         player!.play()

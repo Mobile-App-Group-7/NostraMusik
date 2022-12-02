@@ -54,14 +54,15 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
             let playlistImg = playlist["playlistImageURL"] as! String
             let url = URL(string: playlistImg)!
             cell.playlistImage.af.setImage(withURL: url)
-            
+            cell.usernameLabel.text = playlist["creatorName"] as? String
             return cell
         }
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "SinglePlaylistSongTableViewCell", for: indexPath) as! SinglePlaylistSongTableViewCell
             let currentTrack = tracks[indexPath.row - 1]
-            cell.songDurationLabel.text = "04:44" // need to fix
+            cell.songDurationLabel.text = currentTrack["trackDurationTime"] as? String
             cell.songTitleLabel.text = currentTrack["trackName"] as? String
+            cell.artistNameLabel.text = currentTrack["trackCreatorName"] as? String
             let trackImageURL = currentTrack["trackPosterURL"] as! String
             let url = URL(string: trackImageURL)!
             cell.AlbumImage.af.setImage(withURL: url)
@@ -108,14 +109,17 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
         let indexPath = tableView.indexPath(for: cell)!
         
         let currentTrack = tracks[indexPath.item - 1]
-        let song_name = currentTrack["trackName"]
-        let url = currentTrack["trackPosterURL"]
+        let trackName = currentTrack["trackName"]
+        let trackImage = currentTrack["trackPosterURL"]
+        let trackArtist = currentTrack["trackCreatorName"]
+        let trackPreviewTrack = currentTrack["trackPreviewURL"]
         
         let PVC = segue.destination as! PlayerViewController
         
-        PVC.track = song_name as! String
-        PVC.imageURL = url as! String
-        PVC.artistName = "Artist Name Here"
+        PVC.track = trackName as! String
+        PVC.imageURL = trackImage as! String
+        PVC.artistName = trackArtist as! String
+        PVC.previewTrackURL = trackPreviewTrack as! String
     }
 
 

@@ -34,29 +34,40 @@ class SearchTableViewCell: UITableViewCell {
         print(track.getId() as Any)
         print(track.getRemoteUrl() as Any)
         print(track.getSongImageUrl() as Any)
+        print(track.getAlbumName() as Any)
+        print(track.getArtistName() as Any)
+        print(track.getSongDuration() as Any)
         
         // save track on the user playlist
-        /*
-        let trackID = track.getId();
-        let trackTitle = track.getTitle();
-        let trackPreviewURL = track.getRemoteUrl();
-        let trackImage = track.getSongImageUrl();
+
+        let trackID = "\(track.getId())"; //ID Deezer
+        let trackTitle = track.getTitle(); // track name
+        let trackPreviewURL = track.getRemoteUrl(); //track preview
+        let trackImage = track.getSongImageUrl()?.absoluteString; //track poster
+        let trackArtist = track.getArtistName(); // track artist
+        let trackAlbumName = track.getAlbumName(); //track album name
+        let trackDuration = track.getSongDuration(); // track duration time
+        
+        let durationMinute = (trackDuration! % 3600) / 60;
+        let durationSecond = Double((trackDuration!) % 60);
+        
         let query = PFQuery(className: "PlaylistServer")
          
          query.whereKey("userID", equalTo: PFUser.current()!);
          
          query.findObjectsInBackground{ (playlist, error) in
                  if playlist != nil {
-                     var parseObject = PFObject(className:"PlaylistAlbumTrack")
+                     let parseObject = PFObject(className:"PlaylistAlbumTrack")
 
                      parseObject["userID"] = PFUser.current()!
                      parseObject["trackIDDeezer"] = trackID
-                     parseObject["trackCreatorName"] = "Need"
+                     parseObject["trackCreatorName"] = trackArtist
                      parseObject["trackName"] = trackTitle
                      parseObject["trackPosterURL"] = trackImage
                      parseObject["userPlaylistAlbumID"] = playlist![0]
-                     parseObject["trackPreviewURL"] = trackPreviewURL
-                     parseObject["trackCreatorAlbumName"] = "Need"
+                     parseObject["trackPreviewURL"] = "\(trackPreviewURL)"
+                     parseObject["trackCreatorAlbumName"] = trackAlbumName
+                     parseObject["trackDurationTime"] = "\(durationMinute):\(durationSecond)"
                      
                      // Saves the new object.
                      parseObject.saveInBackground {
@@ -72,7 +83,5 @@ class SearchTableViewCell: UITableViewCell {
                      print("There is not more information of the playlist")
                  }
          }
-         */
     }
-    
 }

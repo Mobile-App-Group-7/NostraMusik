@@ -183,13 +183,7 @@
                             <constraint firstItem="Q1q-AL-UWP" firstAttribute="leading" secondItem="Dts-MX-A7Y" secondAttribute="leading" id="idL-AA-jgE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Playlist" id="lvo-iu-NfL">
-                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="tus-dy-Etl">
-                            <connections>
-                                <action selector="userOnLogOut:" destination="92O-FJ-uu8" id="v5w-Gs-G8N"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Playlist" id="lvo-iu-NfL"/>
                     <connections>
                         <outlet property="tableView" destination="Q1q-AL-UWP" id="Qdg-BY-qNl"/>
                     </connections>
@@ -827,13 +821,7 @@
                             <constraint firstAttribute="bottom" secondItem="qlD-Tw-Fw6" secondAttribute="bottom" id="txM-a8-f7v"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="lEi-5l-eHw">
-                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="Rld-bV-3Ub">
-                            <connections>
-                                <action selector="userOnLogOut:" destination="Enl-BB-gc1" id="7DV-bL-H5Y"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Home" id="lEi-5l-eHw"/>
                     <connections>
                         <outlet property="tableView" destination="qlD-Tw-Fw6" id="xWp-oE-7hl"/>
                         <segue destination="fy6-yO-LSO" kind="show" identifier="homeToAlbum" id="PDH-G8-6aA"/>
