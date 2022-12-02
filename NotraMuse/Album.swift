@@ -8,6 +8,8 @@ class Album {
     private let coverImageUrl: URL?
     private var songs: [Song]?
     
+    private let artist: Artist?
+    
     private enum AlbumErrors: Error {
         case JsonParseError(String)
     }
@@ -17,6 +19,7 @@ class Album {
         self.title = title
         self.coverImageUrl = coverImageUrl
         self.songs = nil
+        self.artist = nil
     }
     
     init(json: [String:Any]) throws {
@@ -30,6 +33,13 @@ class Album {
         
         guard let coverImageUrl = json["cover"] as? String else {
             throw AlbumErrors.JsonParseError("unable to find cover image url")
+        }
+        
+        if let aristsJson = json["artist"] {
+            self.artist = try Artist(json: aristsJson as! [String: Any])
+        }
+        else {
+            self.artist = nil
         }
         
         self.songs = nil
@@ -66,5 +76,9 @@ class Album {
     
     public func getId() -> Int {
         return self.id
+    }
+    
+    public func getArtists() -> Artist? {
+        return self.artist
     }
 }

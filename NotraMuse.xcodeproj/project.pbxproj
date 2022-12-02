@@ -101,7 +101,7 @@
 		9E5487C89400304DBC9AF1AA /* Pods_NotraMuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotraMuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8559857B7261EB75BE58213 /* Pods-NotraMuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.release.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.release.xcconfig"; sourceTree = "<group>"; };
 		A9EE7F23292EBD9900BF9622 /* DeezerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerAPI.swift; sourceTree = "<group>"; };
-		A9EE7F25292EBDBA00BF9622 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		A9EE7F25292EBDBA00BF9622 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Album.swift; path = ../Album.swift; sourceTree = "<group>"; };
 		A9EE7F27292EBDD800BF9622 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		A9EE7F29292EBDE900BF9622 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		A9EE7F2B292EBDFD00BF9622 /* ChartResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartResult.swift; sourceTree = "<group>"; };
@@ -199,7 +199,6 @@
 				520C0A872922D692004EA851 /* ViewController.swift */,
 				52897C132935A7FB008FFC26 /* PlayerViewController.swift */,
 				520C0A892922D692004EA851 /* Main.storyboard */,
-				A9EE7F25292EBDBA00BF9622 /* Album.swift */,
 				520C0A8C2922D693004EA851 /* Assets.xcassets */,
 				520C0A8E2922D693004EA851 /* LaunchScreen.storyboard */,
 				520C0A912922D693004EA851 /* Info.plist */,
@@ -292,6 +291,7 @@
 		A9EE7F22292EBD8B00BF9622 /* Deezer */ = {
 			isa = PBXGroup;
 			children = (
+				A9EE7F25292EBDBA00BF9622 /* Album.swift */,
 				A9EE7F23292EBD9900BF9622 /* DeezerAPI.swift */,
 				A9EE7F27292EBDD800BF9622 /* Artist.swift */,
 				A9EE7F29292EBDE900BF9622 /* Song.swift */,

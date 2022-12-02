@@ -5,8 +5,9 @@ import AlamofireImage
 class Artist {
     private let id: Int
     private let name: String
-    private let profilePictureUrl: URL
+    private let profilePictureUrl: URL?
     private let numberFans: Int?
+    private let numberAlbums: Int?
     
     private enum ArtistErrors: Error {
         case JsonParseError(String)
@@ -17,6 +18,7 @@ class Artist {
         self.name = name
         self.profilePictureUrl = profilePictureUrl
         self.numberFans = nil
+        self.numberAlbums = nil
     }
     
     init(json: [String:Any]) throws {
@@ -28,14 +30,17 @@ class Artist {
             throw ArtistErrors.JsonParseError("unable to find name")
         }
         
-        guard let profilePictureUrl = json["picture"] as? String else {
-            throw ArtistErrors.JsonParseError("unable to find profile image url")
+        if let profilePictureUrl = json["picture"] as? String {
+            self.profilePictureUrl = URL(string: profilePictureUrl)!
+        }
+        else {
+            self.profilePictureUrl = nil
         }
         
         self.id = id
         self.name = name
-        self.profilePictureUrl = URL(string: profilePictureUrl)!
         self.numberFans = json["nb_fan"] as? Int
+        self.numberAlbums = json["nb_album"] as? Int
     }
     
     public func getName() -> String {
@@ -46,11 +51,15 @@ class Artist {
         return self.id
     }
     
-    public func getProfilePictureUrl() -> URL {
+    public func getProfilePictureUrl() -> URL? {
         return self.profilePictureUrl
     }
     
     public func getNumFans() -> Int? {
         return self.numberFans
+    }
+    
+    public func getNumAlbums() -> Int? {
+        return self.numberAlbums
     }
 }

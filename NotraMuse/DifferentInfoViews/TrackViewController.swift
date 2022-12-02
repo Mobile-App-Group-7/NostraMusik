@@ -27,20 +27,20 @@ class TrackViewController: UIViewController {
     
     @IBOutlet weak var tracknumLabel: UILabel!
     
-   
     
     var track: Song?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if track?.getRank() != nil {
+            rankLabel.text = String(track!.getRank()!)
+        }
         
         nameLabl.text = track?.getTitle()
+        artistnameLabel.text = track?.getArtistName()
         trackimg.af.setImage(withURL: (track?.getSongImageUrl())!)
-
-
-        
-}
+    }
     
     
 
