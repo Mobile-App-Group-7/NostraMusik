@@ -144,27 +144,40 @@
                                                         <constraint firstAttribute="width" secondItem="OSb-nk-xeK" secondAttribute="height" multiplier="6:7" id="YnP-Pw-Jj2"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlist 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJl-Ko-cMu">
-                                                    <rect key="frame" x="132" y="11" width="262" height="108"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlist 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJl-Ko-cMu">
+                                                    <rect key="frame" x="132" y="11" width="262" height="76"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="TJl-Ko-cMu" secondAttribute="height" multiplier="68:27" id="tpe-rR-mS9"/>
+                                                        <constraint firstAttribute="width" secondItem="TJl-Ko-cMu" secondAttribute="height" multiplier="131:38" id="xYO-Bf-mh7"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By: Jese Rodriguez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JD5-wX-MHj">
+                                                    <rect key="frame" x="132" y="87" width="262" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="gvT-Nd-hNH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.15544196930000001" green="0.20738118489999999" blue="0.11942482240000001" alpha="0.73543057489999997" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="JD5-wX-MHj" firstAttribute="top" secondItem="TJl-Ko-cMu" secondAttribute="bottom" id="ENw-ud-0Hp"/>
+                                                <constraint firstItem="JD5-wX-MHj" firstAttribute="bottom" secondItem="731-Cb-Ebo" secondAttribute="bottomMargin" id="Izx-gc-Bff"/>
                                                 <constraint firstItem="TJl-Ko-cMu" firstAttribute="top" secondItem="731-Cb-Ebo" secondAttribute="topMargin" id="PYp-4S-h2C"/>
                                                 <constraint firstItem="TJl-Ko-cMu" firstAttribute="trailing" secondItem="731-Cb-Ebo" secondAttribute="trailingMargin" id="Q3V-Gi-c93"/>
                                                 <constraint firstAttribute="bottom" secondItem="OSb-nk-xeK" secondAttribute="bottom" id="ZCp-hK-qPI"/>
                                                 <constraint firstItem="OSb-nk-xeK" firstAttribute="leading" secondItem="731-Cb-Ebo" secondAttribute="leading" constant="20" symbolic="YES" id="kK9-dE-mZq"/>
+                                                <constraint firstItem="JD5-wX-MHj" firstAttribute="leading" secondItem="OSb-nk-xeK" secondAttribute="trailing" constant="10" id="lHq-qh-5mX"/>
+                                                <constraint firstItem="JD5-wX-MHj" firstAttribute="trailing" secondItem="731-Cb-Ebo" secondAttribute="trailingMargin" id="nUz-vb-iXj"/>
                                                 <constraint firstItem="OSb-nk-xeK" firstAttribute="top" secondItem="731-Cb-Ebo" secondAttribute="top" id="ptC-Gz-Gjd"/>
-                                                <constraint firstAttribute="bottom" secondItem="TJl-Ko-cMu" secondAttribute="bottom" id="tGf-uU-ZUF"/>
                                                 <constraint firstItem="TJl-Ko-cMu" firstAttribute="leading" secondItem="OSb-nk-xeK" secondAttribute="trailing" constant="10" id="tm4-JT-5qX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="createrNameLabel" destination="JD5-wX-MHj" id="oMr-BK-bpC"/>
                                             <outlet property="playlistImage" destination="OSb-nk-xeK" id="Zt3-WH-mBt"/>
                                             <outlet property="playlistName" destination="TJl-Ko-cMu" id="Rk9-ZN-3MP"/>
                                             <segue destination="SUy-qg-c03" kind="show" id="REP-pj-lkg"/>
@@ -755,13 +768,13 @@
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.quarternote.3" catalog="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="47S-d9-mQx">
-                                                                        <rect key="frame" x="0.0" y="1" width="123" height="139.33333333333334"/>
+                                                                        <rect key="frame" x="8" y="1" width="115" height="130"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="47S-d9-mQx" secondAttribute="height" multiplier="131:150" id="flL-xD-DRF"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Song Name Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nB-4A-LlY">
-                                                                        <rect key="frame" x="10" y="141" width="103" height="29"/>
+                                                                        <rect key="frame" x="10" y="131.66666666666666" width="103" height="30"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="Dnu-DK-xr7"/>
@@ -775,7 +788,7 @@
                                                                     <constraint firstAttribute="trailing" secondItem="5nB-4A-LlY" secondAttribute="trailing" constant="10" id="4qA-Un-c3P"/>
                                                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5nB-4A-LlY" secondAttribute="bottom" id="ETk-nI-mk5"/>
                                                                     <constraint firstItem="5nB-4A-LlY" firstAttribute="leading" secondItem="CbJ-SO-DVt" secondAttribute="leading" constant="10" id="TfM-p0-93l"/>
-                                                                    <constraint firstItem="47S-d9-mQx" firstAttribute="leading" secondItem="CbJ-SO-DVt" secondAttribute="leading" id="g41-i2-mSP"/>
+                                                                    <constraint firstItem="47S-d9-mQx" firstAttribute="leading" secondItem="CbJ-SO-DVt" secondAttribute="leading" constant="8" id="g41-i2-mSP"/>
                                                                     <constraint firstItem="5nB-4A-LlY" firstAttribute="top" secondItem="47S-d9-mQx" secondAttribute="bottom" id="qYy-uo-Km8"/>
                                                                     <constraint firstItem="47S-d9-mQx" firstAttribute="top" secondItem="CbJ-SO-DVt" secondAttribute="top" id="x8M-Fm-UPl"/>
                                                                     <constraint firstAttribute="trailing" secondItem="47S-d9-mQx" secondAttribute="trailing" id="zJw-VQ-DIX"/>

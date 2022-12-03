@@ -60,6 +60,7 @@ class PlaylistViewController: UIViewController, UITableViewDelegate, UITableView
         
         cell.playlistName.text = "Playlist: \(nameOfPlaylist)"
         cell.playlistImage.af.setImage(withURL: url)
+        cell.createrNameLabel.text = "By: \(creatorName)"
         
         return cell
         

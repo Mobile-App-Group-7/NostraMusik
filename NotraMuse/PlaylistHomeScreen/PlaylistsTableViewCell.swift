@@ -11,6 +11,7 @@ class PlaylistsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var playlistImage: UIImageView!
     @IBOutlet weak var playlistName: UILabel!
+    @IBOutlet weak var createrNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
