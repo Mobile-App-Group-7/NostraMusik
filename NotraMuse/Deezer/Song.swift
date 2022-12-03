@@ -10,7 +10,7 @@ class Song {
     // Data that may or not be present depending on which enpoint was hit
     private var artist: Artist?
     private var album: Album?
-    private let duration: Int?
+    private let duration: String?
     private let rank: Int?
     
     private enum SongErrors: Error {
@@ -49,8 +49,11 @@ class Song {
             self.artist = try Artist(json: artist as! [String : Any])
         }
         
-        if let duration = json["duration"] as? Int {
-            self.duration = duration
+        if let trackDuration = json["duration"] as? Int {
+            let minutes = Int(exactly: trackDuration)! / 60 % 60
+            let seconds = Int(exactly: trackDuration)! % 60
+            let strDuration = String(format:"%02d:%02d", minutes, seconds)
+            self.duration = strDuration
         }
         else {
             self.duration = nil
@@ -98,7 +101,7 @@ class Song {
         return nil
     }
     
-    public func getSongDuration() -> Int? {
+    public func getSongDuration() -> String? {
         return self.duration
     }
     

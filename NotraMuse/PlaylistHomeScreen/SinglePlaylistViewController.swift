@@ -8,6 +8,7 @@
 import UIKit
 import Parse
 import AlamofireImage
+import AVFoundation
 
 class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -60,6 +61,24 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "SinglePlaylistSongTableViewCell", for: indexPath) as! SinglePlaylistSongTableViewCell
             let currentTrack = tracks[indexPath.row - 1]
+            let duration = currentTrack["trackDurationTime"] as? String
+            
+            print(duration as Any)
+            
+            
+//            let minutes = Int(duration!)! / 60 % 60
+//            let seconds = Int(duration!)! % 60
+//            let strDuration = String(format:"%02d:%02d", minutes, seconds)
+//            print(strDuration)
+            //let seconds = CMTimeGetSeconds(duration)
+            
+            //print("Duration: \(duration)")
+            //print("seconds: \(seconds)")
+            //let secondsText = Int(seconds.truncatingRemainder(dividingBy: 60))
+            
+            //let minutesText = String(format: "%02d", Int(seconds) / 60)
+            //songDurationLabel.text = "\(minutesText):\(secondsText)"
+            
             cell.songDurationLabel.text = currentTrack["trackDurationTime"] as? String
             cell.songTitleLabel.text = currentTrack["trackName"] as? String
             cell.artistNameLabel.text = currentTrack["trackCreatorName"] as? String
@@ -86,21 +105,6 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.row != 0{
-//            let vc = storyboard!.instantiateViewController(withIdentifier: "PlayerViewController") as? PlayerViewController
-//
-//            let currentTrack = tracks[indexPath.row - 1]
-//            let track_name = currentTrack["trackName"]
-//            print(track_name as Any)
-//            //vc.songTitleLabel.text = track_name
-//            let trackImageURL = currentTrack["trackPosterURL"] as! String
-//            let url = URL(string: trackImageURL)!
-//            vc!.albumImage.af.setImage(withURL: url)
-//            vc!.artistnameLabel.text = "El Chingon"
-//            present(vc!, animated: true)
-//        }
-//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.

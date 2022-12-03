@@ -48,8 +48,9 @@ class SearchTableViewCell: UITableViewCell {
         let trackAlbumName = track.getAlbumName(); //track album name
         let trackDuration = track.getSongDuration(); // track duration time
         
-        let durationMinute = (trackDuration! % 3600) / 60;
-        let durationSecond = Double((trackDuration!) % 60);
+        //let durationMinute = (trackDuration! % 3600) / 60;
+        //let durationSecond = Double((trackDuration!) % 60);
+        
         
         let query = PFQuery(className: "PlaylistServer")
          
@@ -67,7 +68,8 @@ class SearchTableViewCell: UITableViewCell {
                      parseObject["userPlaylistAlbumID"] = playlist![0]
                      parseObject["trackPreviewURL"] = "\(trackPreviewURL)"
                      parseObject["trackCreatorAlbumName"] = trackAlbumName
-                     parseObject["trackDurationTime"] = "\(durationMinute):\(durationSecond)"
+                     //parseObject["trackDurationTime"] = "\(durationMinute):\(durationSecond)"
+                     parseObject["trackDurationTime"] = trackDuration
                      
                      // Saves the new object.
                      parseObject.saveInBackground {

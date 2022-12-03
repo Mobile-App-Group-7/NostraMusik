@@ -32,6 +32,7 @@ class PlayerViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var songSlider: UISlider!
     
+    // when chaning song slider action
     @IBAction func changeAudioTime(_ sender: Any) {
         print(songSlider.value)
         
@@ -51,23 +52,47 @@ class PlayerViewController: UIViewController {
             player?.pause()
             playPauseBtn.setBackgroundImage(UIImage(systemName: "play"), for: .normal)
             //holder.addSubview(playPauseBtn)
-            print("inside played constraint with \(holder.subviews.count)")
+            //print("inside played constraint with \(holder.subviews.count)")
         } else if player!.timeControlStatus == .paused{
             player?.play()
             playPauseBtn.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
             //holder.addSubview(playPauseBtn)
-            print("inside paused constraint with \(holder.subviews.count)")
+            //print("inside paused constraint with \(holder.subviews.count)")
         }
     }
     
     @IBAction func pressforwardButton(_ sender: Any) {
+        guard let duration  = player?.currentItem?.asset.duration else{
+                return
+            }
+        let playerCurrentTime = CMTimeGetSeconds((player?.currentTime())!)
+            let newTime = playerCurrentTime + Float64(5)
+
+            if newTime < CMTimeGetSeconds(duration) {
+
+                let time2: CMTime = CMTimeMake(value: Int64(newTime * 1000 as Float64), timescale: 1000)
+                player?.seek(to: time2)
+            } else if newTime >= CMTimeGetSeconds(duration){
+                player?.seek(to: duration)
+            }
+
     }
     
     @IBAction func pressBackwardButton(_ sender: Any) {
+        let playerCurrentTime = CMTimeGetSeconds((player?.currentTime())!)
+            var newTime = playerCurrentTime - Float64(5)
+
+            if newTime < 0 {
+                newTime = 0
+            }
+        let time2: CMTime = CMTimeMake(value: Int64(newTime * 1000 as Float64), timescale: 1000)
+            player?.seek(to: time2)
+
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        songSlider.value = 0.0
         songTitleLabel.text = track
         
         let url = URL(string: imageURL)!
@@ -78,24 +103,6 @@ class PlayerViewController: UIViewController {
         configure()// Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    /*override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        print("inside view did layout submvies")
-        if holder.subviews.count == 7 {
-            configure()
-        }
-    }*/
     
     func configure(){
         
@@ -103,11 +110,17 @@ class PlayerViewController: UIViewController {
         let url = URL(string: previewTrackURL)
                 let playerItem:AVPlayerItem = AVPlayerItem(url: url!)
                 player = AVPlayer(playerItem: playerItem)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(songDidEnd), name:
+        NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
+
         player!.play()
+        
         
         let interval = CMTime(value: 1, timescale: 2)
         player?.addPeriodicTimeObserver(forInterval: interval, queue: DispatchQueue.main, using: { [self](progressTime) in
             let seconds = CMTimeGetSeconds(progressTime)
+            //if (player.didfin)
             let secondsString = String(format: "%02d", Int(seconds.truncatingRemainder(dividingBy: 60)))
             let minutesString = String(format: "%02d", Int(seconds / 60))
             self.currentTimeLabel.text = "\(minutesString):\(secondsString)"
@@ -147,6 +160,12 @@ class PlayerViewController: UIViewController {
         
     }
     
+    @objc func songDidEnd(notification: NSNotification) {
+        let seekTime = CMTime(value: Int64(0), timescale: 1)
+        player?.seek(to: seekTime)
+        playPauseBtn.setBackgroundImage(UIImage(systemName: "play"), for: .normal)
+    }
+    
     @objc func didSlideSlider(_ slider: UISlider){
         let value = slider.value
         player?.volume = value
@@ -156,7 +175,17 @@ class PlayerViewController: UIViewController {
         if let player = player {
             player.pause()
             playPauseBtn.setBackgroundImage(UIImage(systemName: "play"), for: .normal)
+            
 
+        }
+    }
+    override func willMove(toParent parent: UIViewController?) {
+        super.willMove(toParent: parent)
+
+        if parent == nil {
+            // The view is being removed from the stack, so call your function here
+            NotificationCenter.default.removeObserver(self)
+            print("Back button pressed")
         }
     }
 

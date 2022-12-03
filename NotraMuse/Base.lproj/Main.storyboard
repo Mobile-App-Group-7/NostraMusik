@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -59,7 +58,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jog-Kg-1Ko">
-                                <rect key="frame" x="247.66666666666663" y="789.33333333333337" width="84" height="34.333333333333371"/>
+                                <rect key="frame" x="252.33333333333337" y="791" width="75" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign Up">
                                     <color key="baseForegroundColor" red="0.78144782779999999" green="0.4845833182" blue="0.92491501570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -70,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03e-kr-dQm">
-                                <rect key="frame" x="86.333333333333314" y="789.33333333333337" width="75.666666666666686" height="34.333333333333371"/>
+                                <rect key="frame" x="90.333333333333329" y="791" width="67.999999999999986" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign In">
                                     <color key="baseForegroundColor" red="0.78144782779999999" green="0.4845833182" blue="0.92491501570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -133,7 +132,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaylistsTableViewCell" rowHeight="119" id="LnJ-Kf-hyC" customClass="PlaylistsTableViewCell" customModule="NotraMuse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="119"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LnJ-Kf-hyC" id="731-Cb-Ebo">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
@@ -205,14 +204,15 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SinglePlaylistInfoTableViewCell" rowHeight="330" id="5bL-uc-Uyt" customClass="SinglePlaylistInfoTableViewCell" customModule="NotraMuse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="330"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="330"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5bL-uc-Uyt" id="dru-Va-VE9">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="17611" translatesAutoresizingMaskIntoConstraints="NO" id="pC5-lt-SLf">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="17611" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pC5-lt-SLf">
                                                     <rect key="frame" x="20" y="11" width="374" height="230"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whm-zh-T24">
                                                     <rect key="frame" x="20" y="253" width="374" height="28"/>
@@ -262,7 +262,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SinglePlaylistSongTableViewCell" rowHeight="96" id="wgZ-rT-wiH" customClass="SinglePlaylistSongTableViewCell" customModule="NotraMuse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="380" width="414" height="96"/>
+                                        <rect key="frame" x="0.0" y="374.66666603088379" width="414" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wgZ-rT-wiH" id="Abe-C8-ORg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
@@ -385,11 +385,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZLB-us-OIm">
-                                        <rect key="frame" x="18" y="665" width="378" height="31"/>
+                                        <rect key="frame" x="18" y="655" width="378" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="fcw-GS-G0Z"/>
+                                        </constraints>
                                         <color key="minimumTrackTintColor" red="0.78144782779999999" green="0.4845833182" blue="0.92491501570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </slider>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vcl-Uy-d6X">
-                                        <rect key="frame" x="187" y="597.33333333333337" width="40" height="35.666666666666629"/>
+                                        <rect key="frame" x="187" y="592.33333333333337" width="40" height="35.666666666666629"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="BlT-Dp-Ee3"/>
                                             <constraint firstAttribute="width" constant="40" id="hdn-xm-U36"/>
@@ -409,7 +412,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJh-UN-HgI">
-                                        <rect key="frame" x="267" y="595" width="40" height="40"/>
+                                        <rect key="frame" x="267" y="590" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="bzh-2X-zX8"/>
                                             <constraint firstAttribute="height" constant="40" id="zeO-by-z2I"/>
@@ -431,7 +434,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hl-mH-WaK">
-                                        <rect key="frame" x="107" y="595" width="40" height="40"/>
+                                        <rect key="frame" x="107" y="590" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="4gc-x9-VaG"/>
                                             <constraint firstAttribute="width" constant="40" id="Rrg-8f-pPl"/>
@@ -453,7 +456,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZo-oy-Sx6">
-                                        <rect key="frame" x="5" y="549.66666666666663" width="40" height="21"/>
+                                        <rect key="frame" x="5" y="544.66666666666663" width="40" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="uKs-dW-9ag"/>
                                         </constraints>
@@ -462,7 +465,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-ke-yJJ">
-                                        <rect key="frame" x="369" y="549.66666666666663" width="40" height="21"/>
+                                        <rect key="frame" x="369" y="544.66666666666663" width="40" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="yso-b7-XIw"/>
                                         </constraints>
@@ -471,7 +474,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JWi-IB-X2D">
-                                        <rect key="frame" x="48" y="545" width="318" height="31"/>
+                                        <rect key="frame" x="48" y="540" width="318" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="fuK-Cn-hzd"/>
+                                        </constraints>
                                         <color key="minimumTrackTintColor" red="0.78144782779999999" green="0.4845833182" blue="0.92491501570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <action selector="changeAudioTime:" destination="WZr-mN-QVt" eventType="valueChanged" id="buw-u0-4hm"/>
@@ -491,6 +497,7 @@
                                     <constraint firstItem="5h7-ke-yJJ" firstAttribute="leading" secondItem="JWi-IB-X2D" secondAttribute="trailing" constant="5" id="MBT-Ro-f7D"/>
                                     <constraint firstItem="iJh-UN-HgI" firstAttribute="top" secondItem="JWi-IB-X2D" secondAttribute="bottom" constant="20" id="NeC-hQ-VJa"/>
                                     <constraint firstItem="Vcl-Uy-d6X" firstAttribute="centerX" secondItem="yR1-Za-8Zr" secondAttribute="centerX" id="Qka-7d-4Om"/>
+                                    <constraint firstItem="ZLB-us-OIm" firstAttribute="centerX" secondItem="yR1-Za-8Zr" secondAttribute="centerX" id="Uqz-Pe-BBP"/>
                                     <constraint firstAttribute="trailing" secondItem="msS-kP-qsI" secondAttribute="trailing" constant="10" id="ahh-4r-x29"/>
                                     <constraint firstItem="msS-kP-qsI" firstAttribute="top" secondItem="dDR-71-AzK" secondAttribute="bottom" constant="8" symbolic="YES" id="anv-bF-T4v"/>
                                     <constraint firstItem="5h7-ke-yJJ" firstAttribute="height" secondItem="JWi-IB-X2D" secondAttribute="height" multiplier="0.7" id="bpD-W7-upS"/>
@@ -500,12 +507,12 @@
                                     <constraint firstAttribute="trailing" secondItem="6vh-qH-5dq" secondAttribute="trailing" constant="8" id="h74-Jp-2sw"/>
                                     <constraint firstItem="dDR-71-AzK" firstAttribute="leading" secondItem="yR1-Za-8Zr" secondAttribute="leading" constant="10" id="hsr-q6-LVc"/>
                                     <constraint firstItem="5h7-ke-yJJ" firstAttribute="centerY" secondItem="JWi-IB-X2D" secondAttribute="centerY" id="iIh-U3-1ra"/>
-                                    <constraint firstItem="JWi-IB-X2D" firstAttribute="top" secondItem="msS-kP-qsI" secondAttribute="bottom" constant="20" id="m6Z-aI-G1o"/>
+                                    <constraint firstItem="JWi-IB-X2D" firstAttribute="top" secondItem="msS-kP-qsI" secondAttribute="bottom" constant="15" id="m6Z-aI-G1o"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZLB-us-OIm" secondAttribute="bottom" constant="20" id="mV4-ld-b3r"/>
                                     <constraint firstItem="lZo-oy-Sx6" firstAttribute="centerY" secondItem="JWi-IB-X2D" secondAttribute="centerY" id="qQa-W0-bsT"/>
                                     <constraint firstItem="ZLB-us-OIm" firstAttribute="leading" secondItem="yR1-Za-8Zr" secondAttribute="leading" constant="20" symbolic="YES" id="t5Z-cm-xXO"/>
                                     <constraint firstItem="Vcl-Uy-d6X" firstAttribute="leading" secondItem="7hl-mH-WaK" secondAttribute="trailing" constant="40" id="ulV-el-36D"/>
-                                    <constraint firstItem="ZLB-us-OIm" firstAttribute="top" secondItem="Vcl-Uy-d6X" secondAttribute="bottom" constant="30" id="uyG-hl-r8c"/>
+                                    <constraint firstItem="ZLB-us-OIm" firstAttribute="top" secondItem="Vcl-Uy-d6X" secondAttribute="bottom" constant="25" id="uyG-hl-r8c"/>
                                     <constraint firstItem="6vh-qH-5dq" firstAttribute="leading" secondItem="yR1-Za-8Zr" secondAttribute="leading" constant="8" id="xiT-R5-Suw"/>
                                     <constraint firstItem="iJh-UN-HgI" firstAttribute="top" secondItem="Vcl-Uy-d6X" secondAttribute="top" id="yrj-bg-tvJ"/>
                                 </constraints>
@@ -644,7 +651,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableViewCell" rowHeight="145" id="16E-Ra-96j" customClass="SearchTableViewCell" customModule="NotraMuse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="145"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="16E-Ra-96j" id="ZJg-X5-uym">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
@@ -725,7 +732,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeSongsTableCell" rowHeight="221" id="9s7-uf-PpF" customClass="HomeSongTableViewCell" customModule="NotraMuse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="221"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="221"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9s7-uf-PpF" id="FEk-LC-QFi">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="221"/>
@@ -1236,7 +1243,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FullAlbumTableViewCell" rowHeight="365" id="usG-63-Y2L" customClass="FullAlbumTableViewCell" customModule="NotraMuse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="365"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="365"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="usG-63-Y2L" id="umw-P4-0md">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="365"/>
@@ -1309,7 +1316,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SonginAlbumTableViewCell" rowHeight="77" id="HT5-wY-gf4" customClass="SonginAlbumTableViewCell" customModule="NotraMuse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="415" width="414" height="77"/>
+                                        <rect key="frame" x="0.0" y="409.66666603088379" width="414" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HT5-wY-gf4" id="3xa-JI-MzS">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
@@ -1383,25 +1390,25 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="17611" width="512" height="512"/>
-        <image name="backward.circle" catalog="system" width="128" height="123"/>
-        <image name="books.vertical.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="calendar" catalog="system" width="128" height="107"/>
-        <image name="forward.circle" catalog="system" width="128" height="123"/>
-        <image name="magnifyingglass.circle" catalog="system" width="128" height="123"/>
+        <image name="backward.circle" catalog="system" width="128" height="121"/>
+        <image name="books.vertical.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="forward.circle" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
         <image name="music-notes-neon-sign-illustration-vector" width="356" height="200"/>
-        <image name="music.house" catalog="system" width="128" height="104"/>
-        <image name="music.note" catalog="system" width="96" height="128"/>
+        <image name="music.house" catalog="system" width="128" height="106"/>
+        <image name="music.note" catalog="system" width="97" height="128"/>
         <image name="music.note.list" catalog="system" width="128" height="115"/>
-        <image name="music.quarternote.3" catalog="system" width="128" height="102"/>
-        <image name="number" catalog="system" width="128" height="123"/>
+        <image name="music.quarternote.3" catalog="system" width="128" height="103"/>
+        <image name="number" catalog="system" width="128" height="124"/>
         <image name="pause" catalog="system" width="88" height="128"/>
-        <image name="person" catalog="system" width="128" height="121"/>
-        <image name="person.circle" catalog="system" width="128" height="123"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1410,7 +1417,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
