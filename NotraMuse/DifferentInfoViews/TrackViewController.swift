@@ -28,6 +28,9 @@ class TrackViewController: UIViewController {
     @IBOutlet weak var tracknumLabel: UILabel!
     
     
+    @IBOutlet weak var ablumLabel: UILabel!
+    
+    
     var track: Song?
     
     override func viewDidLoad() {
@@ -40,6 +43,10 @@ class TrackViewController: UIViewController {
         nameLabl.text = track?.getTitle()
         artistnameLabel.text = track?.getArtistName()
         trackimg.af.setImage(withURL: (track?.getSongImageUrl())!)
+        //tracknumLabel.text =
+        //releaseLabel.text
+        ablumLabel.text = track?.getAlbumName()
+        
     }
     
     

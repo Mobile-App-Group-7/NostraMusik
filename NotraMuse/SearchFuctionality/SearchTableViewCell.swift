@@ -18,6 +18,9 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var addtoplaylistButton: UIButton!
     
+    @IBOutlet weak var authorLabel: UILabel!
+    
+    
     var track: Song!
     
     weak var delegate: CellDelegate?

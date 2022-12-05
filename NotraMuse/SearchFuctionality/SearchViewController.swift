@@ -46,6 +46,12 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         // Sets this view controller as presenting view controller for the search interface
         definesPresentationContext = true
         
+        
+        //editing the search bar COLORS
+        searchController.searchBar.tintColor = UIColor.systemPurple
+        //searchController.searchBar.barTintColor = UIColor.
+        searchController.searchBar.backgroundColor = UIColor.black
+        
     }
     
     
@@ -59,6 +65,7 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         cell.delegate = self
         cell.coverView.af.setImage(withURL: searchResult[indexPath.row].getSongImageUrl()!)
         cell.songLabel?.text = searchResult[indexPath.row].getTitle()
+        cell.authorLabel.text = searchResult[indexPath.row].getArtistName()
         cell.track = searchResult[indexPath.row]
         return cell
         
