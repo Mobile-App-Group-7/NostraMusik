@@ -30,7 +30,7 @@ class Artist {
             throw ArtistErrors.JsonParseError("unable to find name")
         }
         
-        if let profilePictureUrl = json["picture"] as? String {
+        if let profilePictureUrl = json["picture_xl"] as? String {
             self.profilePictureUrl = URL(string: profilePictureUrl)!
         }
         else {

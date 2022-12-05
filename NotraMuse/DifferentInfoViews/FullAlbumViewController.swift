@@ -58,7 +58,12 @@ extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
             cell.AlbumReleaseDate.text = "November 21,2022"
             cell.ArtistNameLabel.text = album?.getArtists()?.getName()
             if album?.getCoverImageUrl() != nil {
-                cell.AlbumImage.af.setImage(withURL: (album!.getArtists()?.getProfilePictureUrl()!)!)
+                cell.AlbumImage.af.setImage(withURL: album!.getCoverImageUrl()!)
+                cell.ArtistImage.af.setImage(withURL: (album!.getArtists()?.getProfilePictureUrl()!)!)
+                cell.ArtistImage.layer.borderWidth = 1
+                cell.ArtistImage.layer.borderColor = UIColor.black.cgColor
+                cell.ArtistImage.layer.cornerRadius = cell.ArtistImage.frame.size.height/2
+                //cell.ArtistImage.clipsToBounds = true
             }
             return cell
         } else {
@@ -66,6 +71,7 @@ extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
             cell.TrackTitleLabel.text = self.album?.getSongs()![indexPath.row - 1].getTitle()
             cell.TrackDurationLabel.text = String((self.album?.getSongs()![indexPath.row - 1].getSongDuration())!)
             cell.AlbumImage.af.setImage(withURL: album!.getCoverImageUrl()!)
+            
             return cell
         }
         
@@ -73,7 +79,7 @@ extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0{
-            return 352
+            return 400
         } else{
             let navigationBarHeight = self.navigationController!.navigationBar.frame.height
             let tabBarheight = self.tabBarController!.tabBar.frame.height
@@ -81,5 +87,20 @@ extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
             return height
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        
+        let playerViewController = segue.destination as! PlayerViewController
+        playerViewController.track = (self.album?.getSongs()![indexPath.row - 1].getTitle())!
+        //playerViewController. = album!.getCoverImageUrl()
+        //playerViewController.artistName = self.album?.getArtists()
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
     }
 }

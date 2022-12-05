@@ -31,7 +31,7 @@ class Album {
             throw AlbumErrors.JsonParseError("unable to find title")
         }
         
-        guard let coverImageUrl = json["cover"] as? String else {
+        guard let coverImageUrl = json["cover_xl"] as? String else {
             throw AlbumErrors.JsonParseError("unable to find cover image url")
         }
         

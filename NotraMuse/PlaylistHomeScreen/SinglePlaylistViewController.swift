@@ -125,6 +125,9 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
         PVC.artistName = trackArtist as! String
         PVC.previewTrackURL = trackPreviewTrack as! String
     }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
 
 
     

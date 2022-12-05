@@ -89,5 +89,8 @@ class PlaylistViewController: UIViewController, UITableViewDelegate, UITableView
         //after selecting a movie, and moving to detail tab deselected the action
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
 
 }

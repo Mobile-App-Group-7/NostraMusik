@@ -8,6 +8,10 @@
 import UIKit
 import Parse
 
+protocol CellDelegate: AnyObject{
+    func playSong()
+}
+
 class SearchTableViewCell: UITableViewCell {
     
     @IBOutlet weak var coverView: UIImageView!
@@ -15,6 +19,8 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var addtoplaylistButton: UIButton!
     
     var track: Song!
+    
+    weak var delegate: CellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,6 +33,13 @@ class SearchTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+//    @IBAction func playSong(_ sender: Any) {
+//        delegate?.playSong()
+//    }
+    @IBAction func playSong(_ sender: Any) {
+        self.delegate?.playSong()
+        print("Button clicked inside tableview cell file now")
+    }
     
     @IBAction func AddTrackToPlaylist(_ sender: Any) {
         print("button clicked!")

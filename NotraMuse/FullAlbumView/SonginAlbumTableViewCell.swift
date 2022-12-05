@@ -13,6 +13,10 @@ class SonginAlbumTableViewCell: UITableViewCell {
     @IBOutlet weak var AlbumImage: UIImageView!
     @IBOutlet weak var TrackDurationLabel: UILabel!
     
+
+    @IBAction func clickaddButton(_ sender: Any) {
+        print("button clicked")
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

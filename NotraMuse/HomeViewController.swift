@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.tableView.backgroundColor = UIColor.black
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -102,5 +103,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         else {
             print("Unaccounted for segue in home view controller")
         }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
     }
 }

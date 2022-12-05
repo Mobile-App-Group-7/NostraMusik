@@ -7,7 +7,14 @@
 
 import UIKit
 
-class SearchViewController: UIViewController, UITableViewDataSource,UITableViewDelegate,UISearchResultsUpdating {
+class SearchViewController: UIViewController, UITableViewDataSource,UITableViewDelegate,UISearchResultsUpdating, CellDelegate {
+    func playSong() {
+        //performSegue(withIdentifier: "playSongVC", sender: nil)
+        print("Moving to music player VC")
+    }
+    
+    
+    
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -49,7 +56,7 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchTableViewCell") as! SearchTableViewCell
-        
+        cell.delegate = self
         cell.coverView.af.setImage(withURL: searchResult[indexPath.row].getSongImageUrl()!)
         cell.songLabel?.text = searchResult[indexPath.row].getTitle()
         cell.track = searchResult[indexPath.row]
@@ -67,6 +74,10 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
             let view = segue.destination as! TrackViewController
             let selectedSong = self.searchResult[self.selectedIndex!]
             view.track = selectedSong
+        } else if segue.identifier == "playSongVC"{
+            print("Setting up cell")
+            
+
         }
     }
     
@@ -85,6 +96,7 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
                 tableview.reloadData()
             }
         }
+    }}
         
         /*// MARK: - Navigation
               
@@ -98,4 +110,3 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         } */
               
         
-    }}
