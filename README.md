@@ -308,7 +308,7 @@ User can play previews of tracks saved on playlist:
 
 Fixtures:
 
-<img src='https://imgur.com/IHw3skn' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/IHw3skn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Nelly Delgado
 
