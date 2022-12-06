@@ -8,6 +8,7 @@ App Design Project - README
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 3. [Schema](#Schema)
+4. [Sprint 4](#Sprint-4)
 4. [Sprint 3](#Sprint-3)
 4. [Sprint 2](#Sprint-2)
 5. [Sprint 1](#Sprint-1)
@@ -40,10 +41,10 @@ After Sprint 1 most use cases are made in parts and just need to be joined to ha
 - [x] User stays logged in across restarts
 - [x] User can explore the top artists, tracks and albums world wide and default location set as the U.S.
 - [x] User can search for tracks, albums, and artists
-- [ ] User can see detailed information about a track, artist, album
-- [ ] User can add searched tracks to personalize playlist
-- [ ] User can play previews from saved tracks on the playlist
-- [ ] User can play previews from searched tracks
+- [x] User can see detailed information about a track, artist, album
+- [x] User can add searched tracks to personalize playlist
+- [x] User can play previews from saved tracks on the playlist
+- [x] User can play previews from searched tracks
 - [x] User can visualize saved tracks on playlist
 - [x] User can visualize own profile user information 
 
@@ -55,7 +56,7 @@ After Sprint 1 most use cases are made in parts and just need to be joined to ha
 * User has the ability to traverse over the top artist, tracks and albums on the current location
 * User can do customize search for only tracks, only artist and only albums
 * User can do combination of filter cutomize search
-* User can edit profile name, add description and profile picture
+[x] User can edit profile name, add description and profile picture
 
 ### 2. Screen Archetypes
 
@@ -277,6 +278,40 @@ List of network requests by screen:
     `GET`    | /search?q=word | Search query for anything that contains given word
     `GET`    | /chart | Get top artist,tracks, albums, playlist, and podcast 
     
+## Sprint 4
+
+## Nelson Mendez
+
+Wrap Up screens:
+
+<img src='https://media.giphy.com/media/BRcRNpHMX3FehgNrAu/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Move to player VC when possible:
+
+<img src='https://media.giphy.com/media/6gIORiwD93dLjITg3G/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Leonardo Osorio
+
+User can add tracks to their playlist:
+
+<img src='https://media.giphy.com/media/uGgVNoaMmBoBQdEIyr/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+User can see their profile information:
+
+<img src='https://media.giphy.com/media/gk5062YGo4CwaH0OpC/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+User can play previews of tracks saved on playlist:
+
+<img src='https://media.giphy.com/media/MhMLhKSYwV7WuOjddv/giphy.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Carter Sellgren
+
+Fixtures:
+
+<img src='https://imgur.com/IHw3skn' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Nelly Delgado
+
     
 ## Sprint 3
 
