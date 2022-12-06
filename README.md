@@ -302,7 +302,7 @@ User can see their profile information:
 
 User can play previews of tracks saved on playlist:
 
-<img src='https://media.giphy.com/media/MhMLhKSYwV7WuOjddv/giphy.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/MhMLhKSYwV7WuOjddv/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Carter Sellgren
 
