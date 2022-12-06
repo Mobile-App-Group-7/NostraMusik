@@ -31,6 +31,15 @@ class TrackViewController: UIViewController {
     @IBOutlet weak var ablumLabel: UILabel!
     
     
+    @IBAction func playSongButton(_ sender: Any) {
+        print("pressing play button")
+        performSegue(withIdentifier: "songInfotoPlayer", sender: nil)
+    }
+    
+    @IBAction func addSongtoPlaylistButton(_ sender: Any) {
+        print("Saving song to playlist button")
+    }
+    
     var track: Song?
     
     override func viewDidLoad() {

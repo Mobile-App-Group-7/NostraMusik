@@ -24,6 +24,7 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -41,6 +42,9 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         searchController.dimsBackgroundDuringPresentation = false
         
         searchController.searchBar.sizeToFit()
+        searchController.searchBar.backgroundColor = UIColor.black
+        searchController.searchBar.barTintColor = UIColor.black
+//        searchController.searchBar.tintColor = UIColor.white
         tableview.tableHeaderView = searchController.searchBar
         
         // Sets this view controller as presenting view controller for the search interface
@@ -48,9 +52,9 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         
         
         //editing the search bar COLORS
-        searchController.searchBar.tintColor = UIColor.systemPurple
+        searchController.searchBar.tintColor = UIColor.white
         //searchController.searchBar.barTintColor = UIColor.
-        searchController.searchBar.backgroundColor = UIColor.black
+        //searchController.searchBar.backgroundColor = UIColor.black
         
     }
     
@@ -89,8 +93,10 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
     }
     
     func updateSearchResults(for searchController: UISearchController) {
+        searchController.searchBar.searchTextField.textColor = UIColor.white
         if let searchText = searchController.searchBar.text {
             Task {
+                //searchText.textColor = UIColor.white
                 let (songs, error) = await Deezer.shared.searchSongs(searchTerm: searchText)
                 
                 if error == nil {
@@ -103,7 +109,13 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
                 tableview.reloadData()
             }
         }
-    }}
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
+    
+}
+    
         
         /*// MARK: - Navigation
               

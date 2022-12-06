@@ -24,6 +24,7 @@
 		520C0AB62922DB2E004EA851 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 520C0AB42922DB2E004EA851 /* Orbitron-Medium.ttf */; };
 		520C0AB72922DB2E004EA851 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 520C0AB42922DB2E004EA851 /* Orbitron-Medium.ttf */; };
 		520C0AB92922DB46004EA851 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C0AB82922DB46004EA851 /* LoginViewController.swift */; };
+		521593C5293F341500D4A651 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521593C4293F341500D4A651 /* EditProfileViewController.swift */; };
 		524958A929235267003F8AC4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524958A829235267003F8AC4 /* HomeViewController.swift */; };
 		524958AB2923531F003F8AC4 /* HomeSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524958AA2923531F003F8AC4 /* HomeSongTableViewCell.swift */; };
 		5273AD19292CB7DA00183301 /* FullAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273AD18292CB7DA00183301 /* FullAlbumViewController.swift */; };
@@ -85,6 +86,7 @@
 		520C0AA62922D693004EA851 /* NotraMuseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotraMuseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		520C0AB42922DB2E004EA851 /* Orbitron-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Medium.ttf"; sourceTree = "<group>"; };
 		520C0AB82922DB46004EA851 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		521593C4293F341500D4A651 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		524958A829235267003F8AC4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		524958AA2923531F003F8AC4 /* HomeSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSongTableViewCell.swift; sourceTree = "<group>"; };
 		5273AD18292CB7DA00183301 /* FullAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullAlbumViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				5273AD25292D305E00183301 /* SearchFuctionality */,
 				C7665BAB292E70300064BF32 /* ItemCollectionViewCell.swift */,
 				C7665BAD292E78CD0064BF32 /* ProfileViewController.swift */,
+				521593C4293F341500D4A651 /* EditProfileViewController.swift */,
 			);
 			path = NotraMuse;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				A9EE7F26292EBDBA00BF9622 /* Album.swift in Sources */,
 				5273AD29292D335900183301 /* PlaylistsTableViewCell.swift in Sources */,
 				5273AD2D292D3A2100183301 /* SinglePlaylistInfoTableViewCell.swift in Sources */,
+				521593C5293F341500D4A651 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
