@@ -9,7 +9,7 @@ import UIKit
 import Parse
 
 protocol CellDelegate: AnyObject{
-    func playSong()
+    func playSong(Track: Song!)
 }
 
 class SearchTableViewCell: UITableViewCell {
@@ -39,8 +39,8 @@ class SearchTableViewCell: UITableViewCell {
 //    @IBAction func playSong(_ sender: Any) {
 //        delegate?.playSong()
 //    }
-    @IBAction func playSong(_ sender: Any) {
-        self.delegate?.playSong()
+    @IBAction func playSong( _ sender: Any) {
+        self.delegate?.playSong(Track: track)
         print("Button clicked inside tableview cell file now")
     }
     
@@ -63,10 +63,6 @@ class SearchTableViewCell: UITableViewCell {
         let trackArtist = track.getArtistName(); // track artist
         let trackAlbumName = track.getAlbumName(); //track album name
         let trackDuration = track.getSongDuration(); // track duration time
-        
-        //let durationMinute = (trackDuration! % 3600) / 60;
-        //let durationSecond = Double((trackDuration!) % 60);
-        
         
         let query = PFQuery(className: "PlaylistServer")
          

@@ -8,13 +8,6 @@
 import UIKit
 
 class SearchViewController: UIViewController, UITableViewDataSource,UITableViewDelegate,UISearchResultsUpdating, CellDelegate {
-    func playSong() {
-        //performSegue(withIdentifier: "playSongVC", sender: nil)
-        print("Moving to music player VC")
-    }
-    
-    
-    
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -22,6 +15,10 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
     var selectedIndex: Int?
     var searchController: UISearchController!
     
+    var trackName: String?
+    var trackImage: String?
+    var trackArtist: String?
+    var trackPreview: String?
     
     override func viewDidLoad() {
         
@@ -86,9 +83,11 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
             let selectedSong = self.searchResult[self.selectedIndex!]
             view.track = selectedSong
         } else if segue.identifier == "playSongVC"{
-            print("Setting up cell")
-            
-
+            let PVC = segue.destination as! PlayerViewController
+            PVC.track = trackName!
+            PVC.imageURL = trackImage!
+            PVC.artistName = trackArtist!
+            PVC.previewTrackURL = trackPreview!
         }
     }
     
@@ -112,6 +111,14 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
+    }
+    
+    func playSong(Track: Song!) {
+        trackName = Track.getTitle()
+        trackImage = Track.getSongImageUrl()!.absoluteString
+        trackArtist = Track.getArtistName()!
+        trackPreview = Track.getRemoteUrl().absoluteString
+        performSegue(withIdentifier: "playSongVC", sender: nil)
     }
     
 }

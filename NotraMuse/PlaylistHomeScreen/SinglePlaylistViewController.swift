@@ -19,12 +19,16 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         tableView.delegate = self
         tableView.dataSource = self
         print("On the new detail page")
         print(playlist as Any)
         userTrackPlaylist()
-        // Do any additional setup after loading the view.
     }
     
     func userTrackPlaylist(){

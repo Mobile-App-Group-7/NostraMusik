@@ -71,7 +71,7 @@ extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
             cell.TrackTitleLabel.text = self.album?.getSongs()![indexPath.row - 1].getTitle()
             cell.TrackDurationLabel.text = String((self.album?.getSongs()![indexPath.row - 1].getSongDuration())!)
             cell.AlbumImage.af.setImage(withURL: album!.getCoverImageUrl()!)
-            
+            cell.track = album?.getSongs()![indexPath.row - 1]
             return cell
         }
         
@@ -94,9 +94,11 @@ extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
         let indexPath = tableView.indexPath(for: cell)!
         
         let playerViewController = segue.destination as! PlayerViewController
+        
         playerViewController.track = (self.album?.getSongs()![indexPath.row - 1].getTitle())!
-        //playerViewController. = album!.getCoverImageUrl()
-        //playerViewController.artistName = self.album?.getArtists()
+        playerViewController.imageURL = album!.getCoverImageUrl()!.absoluteString
+        playerViewController.artistName = (album?.getArtists()?.getName())!
+        playerViewController.previewTrackURL = (album?.getSongs()![indexPath.row - 1].getRemoteUrl().absoluteString)!
         
         tableView.deselectRow(at: indexPath, animated: true)
     }

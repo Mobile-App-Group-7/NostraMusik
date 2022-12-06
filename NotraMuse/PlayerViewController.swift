@@ -95,11 +95,11 @@ class PlayerViewController: UIViewController {
         songSlider.value = 0.0
         songTitleLabel.text = track
         
-       // let url = URL(string: imageURL)!
-        //albumImage.af.setImage(withURL: url)
+        let url = URL(string: imageURL)!
+        albumImage.af.setImage(withURL: url)
         
-        //artistnameLabel.text = artistName
-        //configure()// Do any additional setup after loading the view.
+        artistnameLabel.text = artistName
+        configure()// Do any additional setup after loading the view.
     }
     
     

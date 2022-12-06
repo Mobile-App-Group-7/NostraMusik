@@ -33,6 +33,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     }
     @IBAction func confirmProfileUpdate(_ sender: Any) {
         _ = navigationController?.popViewController(animated: true)
+        
     }
                 
     override func viewDidLoad() {
