@@ -311,7 +311,7 @@ Fixtures:
 <img src='https://imgur.com/IHw3skn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Nelly Delgado
-<img src=' http://g.recordit.co/SccaDHL34W.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/SccaDHL34W.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
     
 ## Sprint 3
