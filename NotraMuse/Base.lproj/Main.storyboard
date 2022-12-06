@@ -1288,6 +1288,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Delete Account">
                                     <color key="baseBackgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="DeleteUserAccount:" destination="uLU-Ht-sqA" eventType="touchUpInside" id="0vm-wb-oeE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Nu-Cg-RMY"/>

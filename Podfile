@@ -10,6 +10,7 @@ target 'NotraMuse' do
   pod 'AlamofireImage'
   pod 'Parse'
   pod 'SwiftAudioPlayer'
+  pod 'MBProgressHUD'
 
   target 'NotraMuseTests' do
     inherit! :search_paths
