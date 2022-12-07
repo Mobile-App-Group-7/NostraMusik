@@ -33,7 +33,11 @@ class ArtistViewController: UIViewController {
                 print("Error with deezer api: \(String(describing: error))")
             }
             else {
-                numfansLabel.text = String(art!.getNumFans()!)
+                let number = art!.getNumFans()! 
+                let numberFormatter = NumberFormatter()
+                numberFormatter.numberStyle = .decimal
+                let formattedNum = numberFormatter.string(from: NSNumber(value:number))
+                numfansLabel.text = formattedNum
                 artistLabel.af.setImage(withURL: art!.getProfilePictureUrl()!)
                 nameLabel.text = art!.getName()
                 numalbumLabel.text = String(art!.getNumAlbums()!)
