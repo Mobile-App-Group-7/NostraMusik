@@ -38,6 +38,8 @@
 		52897C142935A7FB008FFC26 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52897C132935A7FB008FFC26 /* PlayerViewController.swift */; };
 		52897C162935DA8B008FFC26 /* Test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52897C152935DA8A008FFC26 /* Test.mp3 */; };
 		92044B5ADD4E9B8B3AF7A977 /* Pods_NotraMuse_NotraMuseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED119C4B44DD02E6E0D6C901 /* Pods_NotraMuse_NotraMuseUITests.framework */; };
+		A9749CB72944ED7600186E29 /* SearchAlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9749CB62944ED7600186E29 /* SearchAlbumViewCell.swift */; };
+		A9CC22FC29450CE80050ED83 /* SearchArtistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CC22FB29450CE80050ED83 /* SearchArtistViewCell.swift */; };
 		A9EE7F24292EBD9900BF9622 /* DeezerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F23292EBD9900BF9622 /* DeezerAPI.swift */; };
 		A9EE7F26292EBDBA00BF9622 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F25292EBDBA00BF9622 /* Album.swift */; };
 		A9EE7F28292EBDD800BF9622 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F27292EBDD800BF9622 /* Artist.swift */; };
@@ -102,6 +104,8 @@
 		5EB8D92D7D63BEB169B4F501 /* Pods-NotraMuse-NotraMuseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse-NotraMuseUITests.debug.xcconfig"; path = "Target Support Files/Pods-NotraMuse-NotraMuseUITests/Pods-NotraMuse-NotraMuseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E5487C89400304DBC9AF1AA /* Pods_NotraMuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotraMuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8559857B7261EB75BE58213 /* Pods-NotraMuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotraMuse.release.xcconfig"; path = "Target Support Files/Pods-NotraMuse/Pods-NotraMuse.release.xcconfig"; sourceTree = "<group>"; };
+		A9749CB62944ED7600186E29 /* SearchAlbumViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlbumViewCell.swift; sourceTree = "<group>"; };
+		A9CC22FB29450CE80050ED83 /* SearchArtistViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistViewCell.swift; sourceTree = "<group>"; };
 		A9EE7F23292EBD9900BF9622 /* DeezerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerAPI.swift; sourceTree = "<group>"; };
 		A9EE7F25292EBDBA00BF9622 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Album.swift; path = ../Album.swift; sourceTree = "<group>"; };
 		A9EE7F27292EBDD800BF9622 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 			children = (
 				E253832D29299B6D007AC30B /* SearchViewController.swift */,
 				E253832F2929A128007AC30B /* SearchTableViewCell.swift */,
+				A9749CB62944ED7600186E29 /* SearchAlbumViewCell.swift */,
+				A9CC22FB29450CE80050ED83 /* SearchArtistViewCell.swift */,
 			);
 			path = SearchFuctionality;
 			sourceTree = "<group>";
@@ -548,6 +554,7 @@
 			files = (
 				A9EE7F2C292EBDFD00BF9622 /* ChartResult.swift in Sources */,
 				E253832E29299B6D007AC30B /* SearchViewController.swift in Sources */,
+				A9749CB72944ED7600186E29 /* SearchAlbumViewCell.swift in Sources */,
 				03CB29A82923F2C30080FFF3 /* TrackViewController.swift in Sources */,
 				C7665BAE292E78CD0064BF32 /* ProfileViewController.swift in Sources */,
 				524958AB2923531F003F8AC4 /* HomeSongTableViewCell.swift in Sources */,
@@ -555,6 +562,7 @@
 				E25383302929A128007AC30B /* SearchTableViewCell.swift in Sources */,
 				52897C142935A7FB008FFC26 /* PlayerViewController.swift in Sources */,
 				A9EE7F24292EBD9900BF9622 /* DeezerAPI.swift in Sources */,
+				A9CC22FC29450CE80050ED83 /* SearchArtistViewCell.swift in Sources */,
 				524958A929235267003F8AC4 /* HomeViewController.swift in Sources */,
 				520C0AB92922DB46004EA851 /* LoginViewController.swift in Sources */,
 				520C0A882922D692004EA851 /* ViewController.swift in Sources */,

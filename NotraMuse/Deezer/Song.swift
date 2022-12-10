@@ -12,6 +12,7 @@ class Song {
     private var album: Album?
     private let duration: String?
     private let rank: Int?
+    private let releaseDate: String?
     
     private enum SongErrors: Error {
         case JsonParseError(String)
@@ -23,6 +24,7 @@ class Song {
         self.songRemoteUrl = URL(string: songLink)!
         self.duration = nil
         self.rank = nil
+        self.releaseDate = nil
     }
     
     init(json: [String:Any]) throws {
@@ -64,6 +66,13 @@ class Song {
         }
         else {
             self.rank = nil
+        }
+        
+        if let releaseDate = json["release_date"] as? String {
+            self.releaseDate = releaseDate
+        }
+        else {
+            self.releaseDate = nil
         }
         
         self.id = id
@@ -115,6 +124,10 @@ class Song {
     
     public func getRank() -> Int? {
         return self.rank
+    }
+
+    public func getReleaseDate() -> String? {
+        return self.releaseDate
     }
     
     public func downloadSong() {

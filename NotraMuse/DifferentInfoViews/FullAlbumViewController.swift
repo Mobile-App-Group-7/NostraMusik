@@ -30,18 +30,8 @@ class FullAlbumViewController: UIViewController {
             }
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
+
 extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if album?.getSongs() != nil {
@@ -55,7 +45,7 @@ extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "FullAlbumTableViewCell", for: indexPath) as! FullAlbumTableViewCell
             cell.AlbumTitleLabel.text = album?.getTitle()
-            cell.AlbumReleaseDate.text = "November 21,2022"
+            cell.AlbumReleaseDate.text = convertDate(dateStr: album?.getReleaseDate())
             cell.ArtistNameLabel.text = album?.getArtists()?.getName()
             if album?.getCoverImageUrl() != nil {
                 cell.AlbumImage.af.setImage(withURL: album!.getCoverImageUrl()!)
@@ -86,7 +76,6 @@ extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
             let height = (view.frame.size.height - (navigationBarHeight*2) - tabBarheight) / 8
             return height
         }
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -104,5 +93,49 @@ extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
+    }
+    
+    private func convertDate(dateStr: String?) -> String? {
+        guard let date = dateStr else {
+            return nil
+        }
+        
+        let parts = date.components(separatedBy: "-")
+        let year = parts[0]
+        let month = getMonth(parts[1])
+        let day = parts[2]
+        
+        return month + " " + day + " " + year
+    }
+    
+    private func getMonth(_ s: String) -> String {
+        switch s {
+        case "01":
+            return "January"
+        case "02":
+            return "Febuary"
+        case "03":
+            return "March"
+        case "04":
+            return "April"
+        case "05":
+            return "May"
+        case "06":
+            return "June"
+        case "07":
+            return "July"
+        case "08":
+            return "August"
+        case "09":
+            return "September"
+        case "10":
+            return "October"
+        case "11":
+            return "November"
+        case "12":
+            return "December"
+        default:
+            return ""
+        }
     }
 }

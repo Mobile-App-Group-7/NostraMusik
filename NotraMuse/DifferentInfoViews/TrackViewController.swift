@@ -14,8 +14,6 @@ class TrackViewController: UIViewController {
     @IBOutlet weak var nameLabl: UILabel!
     @IBOutlet weak var rankLabel: UILabel!
     @IBOutlet weak var artistnameLabel: UILabel!
-    @IBOutlet weak var releaseLabel: UILabel!
-    @IBOutlet weak var tracknumLabel: UILabel!
     @IBOutlet weak var ablumLabel: UILabel!
     
     var track: Song?
@@ -33,7 +31,6 @@ class TrackViewController: UIViewController {
         //tracknumLabel.text =
         //releaseLabel.text
         ablumLabel.text = track?.getAlbumName()
-        
     }
     
     @IBAction func playSongButton(_ sender: Any) {

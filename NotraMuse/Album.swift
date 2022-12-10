@@ -9,6 +9,7 @@ class Album {
     private var songs: [Song]?
     
     private let artist: Artist?
+    private let releaseDate: String?
     
     private enum AlbumErrors: Error {
         case JsonParseError(String)
@@ -20,6 +21,7 @@ class Album {
         self.coverImageUrl = coverImageUrl
         self.songs = nil
         self.artist = nil
+        self.releaseDate = nil
     }
     
     init(json: [String:Any]) throws {
@@ -40,6 +42,13 @@ class Album {
         }
         else {
             self.artist = nil
+        }
+        
+        if let releaseDate = json["release_date"] {
+            self.releaseDate = releaseDate as? String
+        }
+        else {
+            self.releaseDate = nil
         }
         
         self.songs = nil
@@ -80,5 +89,9 @@ class Album {
     
     public func getArtists() -> Artist? {
         return self.artist
+    }
+    
+    public func getReleaseDate() -> String? {
+        return self.releaseDate
     }
 }

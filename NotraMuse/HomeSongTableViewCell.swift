@@ -34,6 +34,7 @@ class HomeSongTableViewCell: UITableViewCell {
     }
 
 }
+
 extension HomeSongTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if self.chart == nil {
