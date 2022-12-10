@@ -85,7 +85,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         }else{
             print("There was not image inputted, no update to user profile")
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(2500)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3500)) {
             MBProgressHUD.hide(for: self.view, animated: true)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000)) {

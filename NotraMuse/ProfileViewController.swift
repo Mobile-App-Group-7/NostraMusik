@@ -38,7 +38,7 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate{
     
     override func viewDidAppear(_ animated: Bool) {
         MBProgressHUD.showAdded(to: self.view, animated: true)
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1500)) {
             let currentUser = PFUser.current()
             self.usernameLabel.text = currentUser?.username
             self.nameLabel.text = currentUser!["userFirstName"] as? String
