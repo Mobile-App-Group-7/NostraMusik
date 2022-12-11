@@ -50,12 +50,12 @@ After Sprint 1 most use cases are made in parts and just need to be joined to ha
 
 **Optional Nice-to-have Stories**
 
-- [] User can edit playlist changing playlist name and deleting tracks
-- [] User can create new playlist, maximum 15
-- [] User can add albums to their personal account saved playlist
-- [] User has the ability to traverse over the top artist, tracks and albums on the current location
-- [] User can do customize search for only tracks, only artist and only albums
-- [] User can do combination of filter cutomize search
+- [ ] User can edit playlist changing playlist name and deleting tracks
+- [ ] User can create new playlist, maximum 15
+- [ ] User can add albums to their personal account saved playlist
+- [ ] User has the ability to traverse over the top artist, tracks and albums on the current location
+- [ ] User can do customize search for only tracks, only artist and only albums
+- [ ] User can do combination of filter cutomize search
 - [x] User can edit profile name, add description and profile picture
 
 ### 2. Screen Archetypes
