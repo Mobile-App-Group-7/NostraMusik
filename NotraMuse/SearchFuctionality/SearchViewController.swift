@@ -68,7 +68,7 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
             cell.delegate = self
             cell.coverView.af.setImage(withURL: songs[indexPath.row].getSongImageUrl()!)
             cell.songLabel?.text = songs[indexPath.row].getTitle()
-            cell.authorLabel.text = songs[indexPath.row].getArtistName()
+            cell.authorLabel.text = "Song \u{2022} \(String(describing: songs[indexPath.row].getArtistName() ?? ""))"
             cell.track = songs[indexPath.row]
             return cell
         }
@@ -78,7 +78,7 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
             cell.album = album
             cell.albumImage.af.setImage(withURL: album.getCoverImageUrl()!)
             cell.albumNameLabel.text = album.getTitle()
-            cell.authorLabel.text = album.getArtists()!.getName()
+            cell.authorLabel.text = "Album \u{2022} \(album.getArtists()!.getName())"
             return cell
         }
         else {
@@ -183,6 +183,13 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         trackArtist = Track.getArtistName()!
         trackPreview = Track.getRemoteUrl().absoluteString
         performSegue(withIdentifier: "playSongVC", sender: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let navigationBarHeight = self.navigationController!.navigationBar.frame.height
+        let tabBarheight = self.tabBarController!.tabBar.frame.height
+        let height = (view.frame.size.height - (navigationBarHeight*2) - tabBarheight) / 6
+        return height
     }
 }
     

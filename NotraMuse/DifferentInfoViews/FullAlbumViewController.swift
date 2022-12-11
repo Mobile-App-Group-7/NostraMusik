@@ -71,9 +71,7 @@ extension FullAlbumViewController: UITableViewDelegate, UITableViewDataSource{
         if indexPath.row == 0{
             return 400
         } else{
-            let navigationBarHeight = self.navigationController!.navigationBar.frame.height
-            let tabBarheight = self.tabBarController!.tabBar.frame.height
-            let height = (view.frame.size.height - (navigationBarHeight*2) - tabBarheight) / 8
+            let height = (view.frame.size.height - 88) / 8
             return height
         }
     }

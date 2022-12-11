@@ -4,7 +4,7 @@ import AlamofireImage
 
 class Artist {
     private let id: Int
-    private let name: String
+    private let name: String!
     private let profilePictureUrl: URL?
     private let numberFans: Int?
     private let numberAlbums: Int?

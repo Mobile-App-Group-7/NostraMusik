@@ -12,13 +12,6 @@ import MBProgressHUD
 
 class ProfileViewController: UIViewController, UIScrollViewDelegate{
     
-    lazy var scrollView: UIScrollView = {
-            let scroll = UIScrollView()
-            scroll.translatesAutoresizingMaskIntoConstraints = false
-            scroll.delegate = self
-            scroll.contentSize = CGSize(width: self.view.frame.size.width, height: 1000)
-            return scroll
-    }()
     
     let user = PFUser()
     
@@ -31,7 +24,6 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(scrollView)
         
         // Do any additional setup after loading the view.
     }
@@ -170,16 +162,6 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate{
                 }
          }
     }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        let layout = view.safeAreaLayoutGuide
-        scrollView.centerXAnchor.constraint(equalTo: layout.centerXAnchor).isActive = true
-        scrollView.centerYAnchor.constraint(equalTo: layout.centerYAnchor).isActive = true
-        scrollView.widthAnchor.constraint(equalTo: layout.widthAnchor).isActive = true
-        scrollView.heightAnchor.constraint(equalTo: layout.heightAnchor).isActive = true
-    }
-    
     /*
     // MARK: - Navigation
 

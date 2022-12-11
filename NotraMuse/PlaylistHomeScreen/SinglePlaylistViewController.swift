@@ -98,9 +98,7 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
             
             return 330
         } else{
-            let navigationBarHeight = self.navigationController!.navigationBar.frame.height
-            let tabBarheight = self.tabBarController!.tabBar.frame.height
-            let height = (view.frame.size.height - (navigationBarHeight*2) - tabBarheight) / 8
+            let height = (view.frame.size.height - 88) / 8
             return height
         }
         
