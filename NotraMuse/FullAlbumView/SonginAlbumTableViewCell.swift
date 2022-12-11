@@ -39,6 +39,7 @@ class SonginAlbumTableViewCell: UITableViewCell {
             //check if the track is already saved on the playlist
             let queryCheck = PFQuery(className: "PlaylistAlbumTrack")
             queryCheck.whereKey("trackIDDeezer", equalTo: trackID);
+            queryCheck.whereKey("userID", equalTo: PFUser.current()!);
             
             queryCheck.findObjectsInBackground{ (tracksMatch, error) in
                 if tracksMatch != nil {
