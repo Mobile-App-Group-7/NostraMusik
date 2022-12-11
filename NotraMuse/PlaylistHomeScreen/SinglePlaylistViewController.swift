@@ -10,7 +10,8 @@ import Parse
 import AlamofireImage
 import AVFoundation
 
-class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CellDeleteDelegate {
+    
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -28,6 +29,11 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
         tableView.dataSource = self
         print("On the new detail page")
         print(playlist as Any)
+        userTrackPlaylist()
+    }
+    
+    func Deletrack() {
+        print("Doing the reload")
         userTrackPlaylist()
     }
     
@@ -68,27 +74,14 @@ class SinglePlaylistViewController: UIViewController, UITableViewDelegate, UITab
             let duration = currentTrack["trackDurationTime"] as? String
             
             print(duration as Any)
-            
-            
-//            let minutes = Int(duration!)! / 60 % 60
-//            let seconds = Int(duration!)! % 60
-//            let strDuration = String(format:"%02d:%02d", minutes, seconds)
-//            print(strDuration)
-            //let seconds = CMTimeGetSeconds(duration)
-            
-            //print("Duration: \(duration)")
-            //print("seconds: \(seconds)")
-            //let secondsText = Int(seconds.truncatingRemainder(dividingBy: 60))
-            
-            //let minutesText = String(format: "%02d", Int(seconds) / 60)
-            //songDurationLabel.text = "\(minutesText):\(secondsText)"
-            
+            cell.delegate = self
             cell.songDurationLabel.text = currentTrack["trackDurationTime"] as? String
             cell.songTitleLabel.text = currentTrack["trackName"] as? String
             cell.artistNameLabel.text = currentTrack["trackCreatorName"] as? String
             let trackImageURL = currentTrack["trackPosterURL"] as! String
             let url = URL(string: trackImageURL)!
             cell.AlbumImage.af.setImage(withURL: url)
+            cell.track = currentTrack
             return cell
         }
     }
