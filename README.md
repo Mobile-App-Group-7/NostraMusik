@@ -456,7 +456,7 @@ Show Track Info and Artist Info:
 
 ## Authors
 
-Leonardo Osorio
+Leonardo Osorio 
 Nelson Mendez
 Nelly Delgado
 Carter Sellgren
